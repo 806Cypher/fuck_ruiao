@@ -171,9 +171,6 @@ def writeShell():
 
 
 def main():
-    # writeShell()
-    # exit()
-    # userId = 41824163
     userId = 41724235
     id1 = initFirst(userId)
     id2 = initSecond(userId)
