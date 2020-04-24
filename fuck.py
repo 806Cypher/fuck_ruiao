@@ -72,7 +72,7 @@ def initThird(userId):
     <BizCode>UstcOri.BLL.BLLLabClent</BizCode><EnableCache>false</EnableCache><MethodName>JFIsAccess</MethodName>
     <Parameters xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
     <a:KeyValueOfstringanyType><a:Key>UserID</a:Key>
-    <a:Value i:type="b:string" xmlns:b="http://www.w3.org/2001/XMLSchema">"''' + str(userId) + '''"</a:Value></a:KeyValueOfstringanyType><a:KeyValueOfstringanyType><a:Key>LabName</a:Key><a:Value i:type="b:string" xmlns:b="http://www.w3.org/2001/XMLSchema">"01-光电效应和普朗克常量的测定"</a:Value></a:KeyValueOfstringanyType><a:KeyValueOfstringanyType><a:Key>SysID</a:Key><a:Value i:type="b:string" xmlns:b="http://www.w3.org/2001/XMLSchema">1</a:Value></a:KeyValueOfstringanyType></Parameters></request></DoService></s:Body></s:Envelope>
+    <a:Value i:type="b:string" xmlns:b="http://www.w3.org/2001/XMLSchema">"''' + str(userId) + '''"</a:Value></a:KeyValueOfstringanyType><a:KeyValueOfstringanyType><a:Key>LabName</a:Key><a:Value i:type="b:string" xmlns:b="http://www.w3.org/2001/XMLSchema">"02-光栅单色仪实验"</a:Value></a:KeyValueOfstringanyType><a:KeyValueOfstringanyType><a:Key>SysID</a:Key><a:Value i:type="b:string" xmlns:b="http://www.w3.org/2001/XMLSchema">1</a:Value></a:KeyValueOfstringanyType></Parameters></request></DoService></s:Body></s:Envelope>
     '''
 
     resp = requests.post(url=url, headers=headers, data=body.encode('utf-8'))
@@ -97,7 +97,7 @@ def sendFile(userId):
 
     body = '''<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
     <s:Body><UploadFile xmlns="http://tempuri.org/">
-    <fileName>''' + str(userId) + '''_2020421224510.xml</fileName><path>Upload\LabDate\\01-光电效应和普朗克常量的测定</path>'''
+    <fileName>''' + str(userId) + '''_2020421224510.xml</fileName><path>Upload\LabDate\\02-光栅单色仪实验</path>'''
     body += "<content>" + answer + "</content>" + "<append>false</append></UploadFile></s:Body></s:Envelope>"
     resp = requests.post(url=url, headers=headers, data=body.encode('utf-8'))
 
@@ -114,7 +114,7 @@ def setScore(userId, id, score):
                "SOAPAction": "http://www.ustcori.com/2009/10/IBizService/DoService"}
     body = '<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><DoService xmlns="http://www.ustcori.com/2009/10"><request xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><BizCode>UstcOri.BLL.BLLLabClent</BizCode><EnableCache>false</EnableCache><MethodName>SetLabTimeRecord</MethodName><Parameters xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:KeyValueOfstringanyType><a:Key>labTime</a:Key><a:Value i:type="b:string" xmlns:b="http://www.w3.org/2001/XMLSchema">{"ID":' + str(
         id) + ',"USERID":"' + str(
-        userId) + '","LABID":364,"STARTTIME":"\/Date(-62135596800000+0800)\/","ENDTIME":"\/Date(-62135596800000+0800)\/","Mark":"2","LabDateUrl":"Upload\\\\LabDate\\\\01-光电效应和普朗克常量的测定\\\\' + str(
+        userId) + '","LABID":364,"STARTTIME":"\/Date(-62135596800000+0800)\/","ENDTIME":"\/Date(-62135596800000+0800)\/","Mark":"2","LabDateUrl":"Upload\\\\LabDate\\\\02-光栅单色仪实验\\\\' + str(
         userId) + '_2020421224510.xml","Score":' + str(
         score) + '}</a:Value></a:KeyValueOfstringanyType></Parameters></request></DoService></s:Body></s:Envelope>'
     resp = requests.post(url=url, headers=headers, data=body.encode('utf-8'))
@@ -158,7 +158,7 @@ def writeShell():
     info("answer", payload)
     body = '''<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
         <s:Body><UploadFile xmlns="http://tempuri.org/">
-        <fileName>''' + str(41824208) + '''_2020421224510.asp</fileName><path>Upload\LabDate\\01-光电效应和普朗克常量的测定</path>'''
+        <fileName>''' + str(41824125) + '''_2020421224510.asp</fileName><path>Upload\LabDate\\02-光栅单色仪实验</path>'''
     body += "<content>" + f + "</content>" + "<append>false</append></UploadFile></s:Body></s:Envelope>"
     resp = requests.post(url=url, headers=headers, data=body.encode('utf-8'))
 
@@ -171,7 +171,7 @@ def writeShell():
 
 
 def main():
-    userId = 41724235
+    userId = 41824125
     id1 = initFirst(userId)
     id2 = initSecond(userId)
     status = initThird(userId)
