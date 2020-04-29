@@ -1,0 +1,1137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExamPaper>
+  <Title>
+    <Name>迈克尔逊干涉仪实验</Name>
+    <Id>SIMEXAM_MKEXGSYSY_ZGKXJSDX_V001</Id>
+    <Writer>
+      <Id>009</Id>
+      <Name>HeHongbo</Name>
+    </Writer>
+    <User>
+      <Id>使用者ID</Id>
+      <Name>使用者姓名</Name>
+      <Time>
+        <MaxTime>7200</MaxTime>
+        <RealTime>2156</RealTime>
+      </Time>
+    </User>
+    <FinalResult>true</FinalResult>
+  </Title>
+  <Content>
+    <Question Type="OP">
+      <Sn>00</Sn>
+      <Name>使用迈克尔逊干涉仪测量钠光的波长及双线波长差</Name>
+      <Id>SIMQUEST_MKEXGSYSY_CLHNJGBCHNGBC_ZGKXJSDX_V001</Id>
+      <Type>实验内容</Type>
+      <Score>
+        <RealScore>65</RealScore>
+        <Total>65</Total>
+      </Score>
+      <Script>
+        <DOC>
+          <Paragraph Name="" FontFamily="Portable User Interface" FontSize="12" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+            <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="12" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="实验室提供He-Ne激光器，钠光源，小孔光阑，短焦透镜，迈克尔逊干涉仪，请使用这些仪器测量钠光的波长及钠黄光双线的波长差。" TextDecorations="" />
+          </Paragraph>
+        </DOC>
+      </Script>
+      <InitialStatus>
+        <Script></Script>
+        <ConfigFile>SIMQUEST_MKEXGSYSY_KST1_ZGKXJSDX_V001.xml</ConfigFile>
+      </InitialStatus>
+      <KeyPoint>
+        <Script>
+          <DOC>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="M2上的三个螺钉的调节是显示屏的两排光点重合。" TextDecorations="" />
+            </Paragraph>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="观察干涉条纹的吞吐测出钠光的波长。" TextDecorations="" />
+            </Paragraph>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="观察干涉条纹的周期变化，测出钠黄光双线的波长差。" TextDecorations="" />
+            </Paragraph>
+          </DOC>
+        </Script>
+      </KeyPoint>
+      <CheckPoint>
+        <Script></Script>
+        <!--光路调节  27分-->
+        <TestTarget>
+          <Script>光路调节</Script>
+          <Group>
+            <!--放置He-Ne激光器，并打开激光器电源开关。 IsHeNejgqOnCheck 5分-->
+            <Para StudentVisible="False">
+              <Sn>100</Sn>
+              <Name>IsHeNejgqOnCheck_Na</Name>
+              <Script>放置He-Ne激光器，并打开激光器电源开关。</Script>
+              <VarType>bool</VarType>
+              <RealResult>True</RealResult>
+              <StdResult>True</StdResult>
+              <StdSource>DataBase</StdSource>
+              <StdResultShowInfo>操作正确</StdResultShowInfo>
+              <TotalScore>5</TotalScore>
+              <RealScore>5</RealScore>
+              <JudgeRule>
+                <RightRule>
+                  <Score>5</Score>
+                  <RuleShowInfo>操作正确</RuleShowInfo>
+                </RightRule>
+                <WrongRule>
+                  <Score>LostWholeQuestion</Score>
+                  <RuleShowInfo>操作错误</RuleShowInfo>
+                </WrongRule>
+              </JudgeRule>
+              <StudentResultShowInfo>操作错误</StudentResultShowInfo>
+            </Para>
+            <!--放置小孔光阑，调节M2镜上的三个螺钉, 使光点重合。GDCHCheck  12分-->
+            <Para StudentVisible="False">
+              <Name>GDCHCheck_Na</Name>
+              <Script>放置小孔光阑，调节M2镜上的三个螺钉, 使光点重合。</Script>
+              <VarType>bool</VarType>
+              <RealResult>True</RealResult>
+              <StdResult>True</StdResult>
+              <StdResultShowInfo>光点重合</StdResultShowInfo>
+              <StdSource>DataBase</StdSource>
+              <TotalScore>12</TotalScore>
+              <RealScore>12</RealScore>
+              <JudgeRule>
+                <RightRule>
+                  <Score>12</Score>
+                  <RuleShowInfo>光点重合</RuleShowInfo>
+                </RightRule>
+                <WrongRule>
+                  <Score>0</Score>
+                  <RuleShowInfo>光点没有重合</RuleShowInfo>
+                </WrongRule>
+              </JudgeRule>
+              <StudentResultShowInfo>光点没有重合</StudentResultShowInfo>
+            </Para>
+            <!--移除小孔光阑，放置短焦透镜， 出现明亮的干涉条纹，小心的调节M2上的旋钮，使圆心位于毛玻璃中间。-->
+            <!--HeNeGSTWCheck   10分-->
+            <Para StudentVisible="False">
+              <Name>HeNeGSTWCheck_Na</Name>
+              <Script>移除小孔光阑，放置短焦透镜， 出现明亮的干涉条纹，小心的调节M2上的旋钮，使圆心位于毛玻璃中间。</Script>
+              <VarType>bool</VarType>
+              <RealResult>True</RealResult>
+              <StdResult>True</StdResult>
+              <StdSource>DataBase</StdSource>
+              <StdResultShowInfo>圆心位于毛玻璃中心</StdResultShowInfo>
+              <TotalScore>10</TotalScore>
+              <RealScore>10</RealScore>
+              <JudgeRule>
+                <RightRule>
+                  <Score>10</Score>
+                  <RuleShowInfo>圆心位于毛玻璃中心</RuleShowInfo>
+                </RightRule>
+                <WrongRule>
+                  <Score>0</Score>
+                  <RuleShowInfo>圆心没有位于毛玻璃中心</RuleShowInfo>
+                </WrongRule>
+              </JudgeRule>
+              <StudentResultShowInfo>圆心没有位于毛玻璃中心</StudentResultShowInfo>
+            </Para>
+          </Group>
+          <RealScore>27</RealScore>
+        </TestTarget>
+        <!--读数检查   DSGS   3分-->
+        <TestTarget>
+          <Script>读数检查</Script>
+          <Group>
+            <Para StudentVisible="False">
+              <Sn>28</Sn>
+              <Name>DSGS_Na</Name>
+              <Script>迈克尔逊干涉仪读数格式检查（以毫米为单位，保留小数点后5位）</Script>
+              <VarType>bool</VarType>
+              <RealResult>True</RealResult>
+              <StdResult>True</StdResult>
+              <StdResultShowInfo>格式正确</StdResultShowInfo>
+              <StdSource>DataBase</StdSource>
+              <TotalScore>3</TotalScore>
+              <RealScore>3</RealScore>
+              <JudgeRule>
+                <RightRule>
+                  <RuleShowInfo>格式正确</RuleShowInfo>
+                  <Score>3</Score>
+                </RightRule>
+                <WrongRule>
+                  <RuleShowInfo>格式错误</RuleShowInfo>
+                  <Score>0</Score>
+                </WrongRule>
+              </JudgeRule>
+              <StudentResultShowInfo>格式错误</StudentResultShowInfo>
+            </Para>
+          </Group>
+          <RealScore>3</RealScore>
+        </TestTarget>
+        <!--换钠光光源，调节鼓轮，观察到条纹的吞吐状况，中心每“生成”或“吞进”30个干涉条纹记录一次数据，连续记录6次。-->
+        <!--25分-->
+        <TestTarget>
+          <Script>换钠光光源，调节鼓轮，观察到条纹的吞吐状况，中心每“生成”或“吞进”30个干涉条纹记录一次数据，连续记录6次。</Script>
+          <Group>
+            <!--选择M1镜的一个初始位置，作为第一列填入表格，然后将中心每“生出”或“吞进”30个条纹时M1镜的位置填入表格其他列中。-->
+            <Para StudentVisible="True">
+              <Sn>00</Sn>
+              <Name>M1PosList_Na</Name>
+              <Script>选择M1镜的一个初始位置，作为第一列填入表格，然后将中心每“生出”或“吞进”30个条纹时M1镜的位置填入表格其他列中。	</Script>
+              <VarType Count="6">TList</VarType>
+              <RealResult>(测量编号,D(mm));(1,);(2,);(3,);(4,);(5,);(6,)</RealResult>
+              <StdResult>(测量编号,D(mm));(1,);(2,);(3,);(4,);(5,);(6,)</StdResult>
+              <StdSource>Exp</StdSource>
+              <TotalScore>0</TotalScore>
+              <StdResultShowInfo>原值</StdResultShowInfo>
+              <RealScore>0</RealScore>
+              <Para StudentVisible="True">
+                <Sn>00</Sn>
+                <Name>INDEX</Name>
+                <Script>测量编号</Script>
+                <VarType Count="1">double</VarType>
+                <StdSource>DataBase</StdSource>
+              </Para>
+              <Para StudentVisible="True">
+                <Sn>00</Sn>
+                <Name>M1Pos</Name>
+                <Script>D(mm)</Script>
+                <VarType Count="1">double</VarType>
+                <StdSource>Exp</StdSource>
+              </Para>
+              <JudgeRule />
+            </Para>
+            <!--利用逐差法，根据上面的数据算出三组差值，并填入下表  15分-->
+            <Para StudentVisible="True">
+              <Sn>00</Sn>
+              <Name>FDYGS_XXMS_Na</Name>
+              <Script>利用逐差法，根据上面的数据算出三组差值，并填入下表</Script>
+              <VarType Count="3">TList</VarType>
+              <RealResult>(测量编号,ΔD(mm));(1,0.00000);(2,0.00000);(3,0.00000)</RealResult>
+              <StdResult>(测量编号,ΔD(mm));(1,0.00000);(2,0.00000);(3,0.00000)</StdResult>
+              <StdSource>Exp</StdSource>
+              <TotalScore>15</TotalScore>
+              <StdResultShowInfo>原值</StdResultShowInfo>
+              <RealScore>15</RealScore>
+              <Para StudentVisible="True">
+                <Sn>00</Sn>
+                <Name>INDEX</Name>
+                <Script>测量编号</Script>
+                <VarType Count="1">double</VarType>>
+                <StdSource>DataBase</StdSource></Para>
+              <Para StudentVisible="True">
+                <Sn>00</Sn>
+                <Name>DeltaH_30_Na_3</Name>
+                <Script>ΔD(mm)</Script>
+                <VarType Count="1">double</VarType>
+                <StdSource>Exp</StdSource>
+                <JudgeRule>
+                  <Rule>
+                    <StdValue>1</StdValue>
+                    <Range>
+                      <Type>百分比</Type>
+                      <Min>-0.1</Min>
+                      <Max>0.1</Max>
+                    </Range>
+                    <Score>5</Score>
+                    <RuleShowInfo>每空正确</RuleShowInfo>
+                  </Rule>
+                </JudgeRule>
+              </Para>
+            </Para>
+            <!--用逐差法处理数据，根据相应公式计算钠光的波长λ（nm）   10分-->
+            <!--Nanbda_Na-->
+            <Para StudentVisible="True">
+              <Sn>00</Sn>
+              <Name>Nanbda_Na</Name>
+              <Script>用逐差法处理数据，根据相应公式计算钠光的波长λ（nm）=</Script>
+              <VarType>Double</VarType>
+              <RealResult>0.00</RealResult>
+              <StdResult>0.00</StdResult>
+              <StdSource>Exp</StdSource>
+              <StdResultShowInfo>原值</StdResultShowInfo>
+              <TotalScore>10</TotalScore>
+              <RealScore>10</RealScore>
+              <JudgeRule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>-0.05</Min>
+                    <Max>0.05</Max>
+                  </Range>
+                  <Score>10</Score>
+                  <!--<AnswerShowInfo>原值</AnswerShowInfo>-->
+                  <RuleShowInfo>实际测量偏差</RuleShowInfo>
+                </Rule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>-0.1</Min>
+                    <Max>0.1</Max>
+                  </Range>
+                  <Score>9</Score>
+                  <!--<AnswerShowInfo>原值</AnswerShowInfo>-->
+                  <RuleShowInfo>实际测量偏差</RuleShowInfo>
+                </Rule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>-0.5</Min>
+                    <Max>0.5</Max>
+                  </Range>
+                  <Score>6</Score>
+                  <!--<AnswerShowInfo>原值</AnswerShowInfo>-->
+                  <RuleShowInfo>实际测量偏差</RuleShowInfo>
+                </Rule>
+              </JudgeRule>
+            </Para>
+          </Group>
+          <RealScore>25</RealScore>
+        </TestTarget>
+        <!--再移动M1，观察到条纹的可见度周期变化，记录条纹从不可见到次不可见时M1的位置读数，连续记录4次。-->
+        <!--10分-->
+        <TestTarget>
+          <Script>再移动M1，观察到条纹的可见度周期变化，记录条纹从不可见到次不可见时M1的位置读数，连续记录4次。</Script>
+          <Name>M1PosList</Name>
+          <Group>
+            <!--选择M1镜的一个条纹不可见位置，作为第一列填入表格，然后将条纹从不可见到次不可见时M1的位置读数填入表格其他列中。-->
+            <Para StudentVisible="True">
+              <Sn>00</Sn>
+              <Name>M1PosList</Name>
+              <Script>选择M1镜的一个条纹不可见位置，作为第一列填入表格，然后将条纹从不可见到次不可见时M1的位置读数填入表格其他列中。</Script>
+              <VarType Count="4">TList</VarType>
+              <RealResult>(测量编号,D(mm));(1,);(2,);(3,);(4,)</RealResult>
+              <StdResult>(测量编号,D(mm));(1,);(2,);(3,);(4,)</StdResult>
+              <StdSource>Exp</StdSource>
+              <StdResultShowInfo>原值</StdResultShowInfo>
+              <TotalScore>0</TotalScore>
+              <RealScore>0</RealScore>
+              <Para StudentVisible="True">
+                <Sn>00</Sn>
+                <Name>INDEX</Name>
+                <Script>测量编号</Script>
+                <VarType Count="1">double</VarType>
+                <StdSource>DataBase</StdSource>
+              </Para>
+              <Para StudentVisible="True">
+                <Sn>00</Sn>
+                <Name>M1Pos</Name>
+                <Script>D(mm)</Script>
+                <VarType Count="1">double</VarType>
+                <StdSource>Exp</StdSource>>
+              </Para>
+              <JudgeRule />
+            </Para>
+            <!--利用逐差法，根据上面的数据算出两组差值，并填入下表  6分-->
+            <Para StudentVisible="True">
+              <Sn>00</Sn>
+              <Name>FDYGS_XXMS</Name>
+              <Script>利用逐差法，根据上面的数据算出两组差值，并填入下表</Script>
+              <VarType Count="2">TList</VarType>
+              <RealResult>(测量编号,ΔD(mm));(1,0.00000);(2,0.00000)</RealResult>
+              <StdResult>(测量编号,ΔD(mm));(1,0.00000);(2,0.00000)</StdResult>
+              <StdSource>Exp</StdSource>
+              <StdResultShowInfo>原值</StdResultShowInfo>
+              <TotalScore>6</TotalScore>
+              <RealScore>6</RealScore>
+              <Para StudentVisible="True">
+                <Sn>00</Sn>
+                <Name>INDEX</Name>
+                <Script>测量编号</Script>
+                <VarType Count="1">double</VarType>
+                <StdSource>DataBase</StdSource>
+              </Para>
+              <Para StudentVisible="True">
+                <Sn>00</Sn>
+                <Name>DeltaH_KJD_Na_2</Name>
+                <Script>ΔD(mm)</Script>
+                <VarType Count="1">double</VarType>
+                <StdSource>Exp</StdSource>
+                <JudgeRule>
+                  <Rule>
+                    <StdValue>1</StdValue>
+                    <Range>
+                      <Type>百分比</Type>
+                      <Min>-0.1</Min>
+                      <Max>0.1</Max>
+                    </Range>
+                    <Score>3</Score>
+                    <RuleShowInfo>每空正确</RuleShowInfo>
+                  </Rule>
+                </JudgeRule>
+              </Para>
+            </Para>
+            <!--用逐差法处理数据，根据相应公式计算钠光双线的波长差 d（nm）   4分-->
+            <Para StudentVisible="True">
+              <Sn>00</Sn>
+              <Name>Nanbda_NaEx</Name>
+              <Script>用逐差法处理数据，根据相应公式计算钠光双线的波长差 d（nm）=</Script>
+              <VarType>Double</VarType>
+              <RealResult>0.00</RealResult>
+              <StdResult>0.00</StdResult>
+              <StdSource>Exp</StdSource>
+              <StdResultShowInfo>原值</StdResultShowInfo>
+              <TotalScore>4</TotalScore>
+              <RealScore>4</RealScore>
+              <JudgeRule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>-0.1</Min>
+                    <Max>0.1</Max>
+                  </Range>
+                  <Score>4</Score>
+                  <!--<AnswerShowInfo>原值</AnswerShowInfo>-->
+                  <RuleShowInfo>实际测量偏差</RuleShowInfo>
+                </Rule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>-0.2</Min>
+                    <Max>0.2</Max>
+                  </Range>
+                  <Score>3</Score>
+                  <!--<AnswerShowInfo>原值</AnswerShowInfo>-->
+                  <RuleShowInfo>实际测量偏差</RuleShowInfo>
+                </Rule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>-0.5</Min>
+                    <Max>0.5</Max>
+                  </Range>
+                  <Score>2</Score>
+                  <!--<AnswerShowInfo>原值</AnswerShowInfo>-->
+                  <RuleShowInfo>实际测量偏差</RuleShowInfo>
+                </Rule>
+              </JudgeRule>
+            </Para>
+          </Group>
+          <RealScore>10</RealScore>
+        </TestTarget>
+      </CheckPoint>
+    </Question>
+    <Question Type="OP">
+      <Sn>01</Sn>
+      <Name>使用迈克尔逊干涉仪测量透明薄片的折射率</Name>
+      <Id>SIMQUEST_MKEXGSYSY_CLMBPZSL_ZGKXJSDX_V001</Id>
+      <Type>考试题目</Type>
+      <Score>
+        <RealScore>60</RealScore>
+        <Total>60</Total>
+      </Score>
+      <Script>
+        <DOC>
+          <Paragraph Name="" FontFamily="Portable User Interface" FontSize="12" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+            <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="12" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="实验室提供He-Ne激光器，白光源，小孔光阑，短焦透镜，迈克尔逊干涉仪，请使用这些仪器测量透明薄片的折射率。" TextDecorations="System.Windows.TextDecorationCollection" />
+          </Paragraph>
+        </DOC>
+      </Script>
+      <InitialStatus>
+        <Script></Script>
+        <ConfigFile>SIMQUEST_MKEXGSYSY_KST2_ZGKXJSDX_V001.xml</ConfigFile>
+      </InitialStatus>
+      <KeyPoint>
+        <Script>
+          <DOC>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="M2上的三个螺钉的调节使显示屏的两排光点重合。" TextDecorations="" />
+            </Paragraph>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="测量透明薄片的折射率。" TextDecorations="" />
+            </Paragraph>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="利用逐差法处理数据。" TextDecorations="" />
+            </Paragraph>
+          </DOC>
+        </Script>
+      </KeyPoint>
+      <CheckPoint>
+        <Script></Script>
+        <!--光路调节  27分-->
+        <TestTarget>
+          <Script>光路调节</Script>
+          <Group>
+            <!--放置He-Ne激光器，并打开激光器电源开关。 5分-->
+            <Para StudentVisible="False">
+              <Sn>100</Sn>
+              <Name>IsHeNejgqOnCheck_HeNe</Name>
+              <Script>放置He-Ne激光器，并打开激光器电源开关。</Script>
+              <VarType>bool</VarType>
+              <RealResult>True</RealResult>
+              <StdResult>True</StdResult>
+              <StdSource>DataBase</StdSource>
+              <StdResultShowInfo>操作正确</StdResultShowInfo>
+              <TotalScore>5</TotalScore>
+              <RealScore>5</RealScore>
+              <JudgeRule>
+                <RightRule>
+                  <Score>5</Score>
+                  <RuleShowInfo>操作正确</RuleShowInfo>
+                </RightRule>
+                <WrongRule>
+                  <Score>LostWholeQuestion</Score>
+                  <RuleShowInfo>操作错误</RuleShowInfo>
+                </WrongRule>
+              </JudgeRule>
+              <StudentResultShowInfo>操作错误</StudentResultShowInfo>
+            </Para>
+            <!--放置小孔光阑，调节M2镜上的三个螺钉, 使光点重合。12分-->
+            <Para StudentVisible="False">
+              <Name>GDCHCheck_HeNe</Name>
+              <Script>放置小孔光阑，调节M2镜上的三个螺钉, 使光点重合。</Script>
+              <VarType>bool</VarType>
+              <RealResult>True</RealResult>
+              <StdResult>True</StdResult>
+              <StdResultShowInfo>光点重合</StdResultShowInfo>
+              <StdSource>DataBase</StdSource>
+              <TotalScore>12</TotalScore>
+              <RealScore>12</RealScore>
+              <JudgeRule>
+                <RightRule>
+                  <Score>12</Score>
+                  <RuleShowInfo>光点重合</RuleShowInfo>
+                </RightRule>
+                <WrongRule>
+                  <Score>0</Score>
+                  <RuleShowInfo>光点没有重合</RuleShowInfo>
+                </WrongRule>
+              </JudgeRule>
+              <StudentResultShowInfo>光点没有重合</StudentResultShowInfo>
+            </Para>
+            <!--移除小孔光阑，放置短焦透镜， 出现明亮的干涉条纹，小心的调节M2上的旋钮，使圆心位于毛玻璃中间。10分-->
+            <Para StudentVisible="False">
+              <Name>HeNeGSTWCheck_HeNe</Name>
+              <Script>移除小孔光阑，放置短焦透镜， 出现明亮的干涉条纹，小心的调节M2上的旋钮，使圆心位于毛玻璃中间。</Script>
+              <VarType>bool</VarType>
+              <RealResult>True</RealResult>
+              <StdResult>True</StdResult>
+              <StdSource>DataBase</StdSource>
+              <StdResultShowInfo>圆心位于毛玻璃中心</StdResultShowInfo>
+              <TotalScore>10</TotalScore>
+              <RealScore>10</RealScore>
+              <JudgeRule>
+                <RightRule>
+                  <Score>10</Score>
+                  <RuleShowInfo>圆心位于毛玻璃中心</RuleShowInfo>
+                </RightRule>
+                <WrongRule>
+                  <Score>0</Score>
+                  <RuleShowInfo>圆心没有位于毛玻璃中心</RuleShowInfo>
+                </WrongRule>
+              </JudgeRule>
+              <StudentResultShowInfo>圆心没有位于毛玻璃中心</StudentResultShowInfo>
+            </Para>
+          </Group>
+          <RealScore>27</RealScore>
+        </TestTarget>
+        <!--读数检查 3分-->
+        <TestTarget>
+          <Script>读数检查</Script>
+          <Group>
+            <Para StudentVisible="False">
+              <Sn>28</Sn>
+              <Name>DSGS_HeNe</Name>
+              <Script>迈克尔逊干涉仪读数格式检查（以毫米为单位，保留小数点后5位）</Script>
+              <VarType>bool</VarType>
+              <RealResult>True</RealResult>
+              <StdResult>True</StdResult>
+              <StdResultShowInfo>格式正确</StdResultShowInfo>
+              <StdSource>DataBase</StdSource>
+              <TotalScore>3</TotalScore>
+              <RealScore>3</RealScore>
+              <JudgeRule>
+                <RightRule>
+                  <RuleShowInfo>格式正确</RuleShowInfo>
+                  <Score>3</Score>
+                </RightRule>
+                <WrongRule>
+                  <RuleShowInfo>格式错误</RuleShowInfo>
+                  <Score>0</Score>
+                </WrongRule>
+              </JudgeRule>
+              <StudentResultShowInfo>格式错误</StudentResultShowInfo>
+            </Para>
+          </Group>
+          <RealScore>3</RealScore>
+        </TestTarget>
+        <!--换白光源，移动M1，找到d=0的位置，观察到中央是直线黑纹两边对称分布彩色花纹的直线干涉条纹，开始测量玻璃薄片的折射率。-->
+        <TestTarget>
+          <Script>换白光源，移动M1，找到d=0的位置，观察到中央是直线黑纹两边对称分布彩色花纹的直线干涉条纹，开始测量玻璃薄片的折射率。</Script>
+          <Group>
+            <!--将中央黑纹移到中间，然后点击按钮保存状态  D0PosCheck  6分-->
+            <Para StudentVisible="False">
+              <Sn>03</Sn>
+              <Name>D0PosCheck</Name>
+              <Script>将中央黑纹移到中间，然后点击按钮保存状态</Script>
+              <VarType>int</VarType>
+              <RealResult>1</RealResult>
+              <StdResult>1</StdResult>
+              <StdSource>DataBase</StdSource>
+              <StdResultShowInfo>中央黑纹位于视场中心</StdResultShowInfo>
+              <TotalScore>6</TotalScore>
+              <RealScore>6</RealScore>
+              <JudgeRule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>0</Min>
+                    <Max>0</Max>
+                  </Range>
+                  <Score>6</Score>
+                  <!--<AnswerShowInfo>中央黑纹位于视场中心</AnswerShowInfo>-->
+                  <RuleShowInfo>中央黑纹位于视场中心</RuleShowInfo>
+                </Rule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>0.1</Min>
+                    <Max>1.1</Max>
+                  </Range>
+                  <Score>2</Score>
+                  <!--<AnswerShowInfo>中央黑纹的位置有一些偏差</AnswerShowInfo>-->
+                  <RuleShowInfo>中央黑纹的位置有一些偏差</RuleShowInfo>
+                </Rule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>-1.1</Min>
+                    <Max>-0.1</Max>
+                  </Range>
+                  <Score>0</Score>
+                  <!--<AnswerShowInfo>操作错误或者没有出现彩色条纹</AnswerShowInfo>-->
+                  <RuleShowInfo>操作错误或者没有出现彩色条纹</RuleShowInfo>
+                </Rule>
+              </JudgeRule>
+            </Para>
+            <!--此时M1的位置(mm)  D0Pos-->
+            <Para StudentVisible="True">
+              <Sn>04</Sn>
+              <Name>D0Pos</Name>
+              <Script>此时M1的位置(mm)</Script>
+              <VarType>double</VarType>
+              <RealResult></RealResult>
+              <StdResult></StdResult>
+              <StdSource>Exp</StdSource>
+              <StdResultShowInfo>原值</StdResultShowInfo>
+              <TotalScore>0</TotalScore>
+              <RealScore>0</RealScore>
+              <JudgeRule />
+            </Para>
+            <!--放置玻璃薄片，再将中央黑纹移动至中心，点击按钮保存状态  D_BL_PosCheck  6分-->
+            <Para StudentVisible="False">
+              <Sn>00</Sn>
+              <Name>D_BL_PosCheck</Name>
+              <Script>放置玻璃薄片，再将中央黑纹移动至中心，点击按钮保存状态</Script>
+              <VarType>int</VarType>
+              <RealResult>1</RealResult>
+              <StdResult>1</StdResult>
+              <StdSource>DataBase</StdSource>
+              <StdResultShowInfo>中央黑纹位于视场中心</StdResultShowInfo>
+              <TotalScore>6</TotalScore>
+              <RealScore>6</RealScore>
+              <JudgeRule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>0</Min>
+                    <Max>0</Max>
+                  </Range>
+                  <Score>6</Score>
+                  <!--<AnswerShowInfo>中央黑纹位于视场中心</AnswerShowInfo>-->
+                  <RuleShowInfo>中央黑纹位于视场中心</RuleShowInfo>
+                </Rule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>0.1</Min>
+                    <Max>1.1</Max>
+                  </Range>
+                  <Score>2</Score>
+                  <!--<AnswerShowInfo>中央黑纹的位置有一些偏差</AnswerShowInfo>-->
+                  <RuleShowInfo>中央黑纹的位置有一些偏差</RuleShowInfo>
+                </Rule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>-1.1</Min>
+                    <Max>-0.1</Max>
+                  </Range>
+                  <Score>0</Score>
+                  <!--<AnswerShowInfo>操作错误或者没有出现彩色条纹</AnswerShowInfo>-->
+                  <RuleShowInfo>操作错误或者没有出现彩色条纹</RuleShowInfo>
+                </Rule>
+              </JudgeRule>
+            </Para>
+            <!--此时M1的位置(mm)  D_SYBL_Pos-->
+            <Para StudentVisible="True">
+              <Sn>04</Sn>
+              <Name>D_SYBL_Pos</Name>
+              <Script>此时M1的位置(mm)</Script>
+              <VarType>double</VarType>
+              <RealResult></RealResult>
+              <StdResult></StdResult>
+              <StdSource>Exp</StdSource>
+              <StdResultShowInfo>原值</StdResultShowInfo>
+              <TotalScore>0</TotalScore>
+              <RealScore>0</RealScore>
+              <JudgeRule />
+            </Para>
+          </Group>
+          <RealScore>12</RealScore>
+        </TestTarget>
+        <!--移除玻璃薄片，移动M1，找到d=0的位置，观察到中央是直线黑纹两边对称分布彩色花纹的直线干涉条纹，开始测量水晶薄片的折射率。-->
+        <TestTarget StudentVisible="True">
+          <Script>移除玻璃薄片，移动M1，找到d=0的位置，观察到中央是直线黑纹两边对称分布彩色花纹的直线干涉条纹，开始测量水晶薄片的折射率。</Script>
+          <Group>
+            <!--将中央黑纹移到中间，然后点击按钮保存状态  D0PosCheck  6分-->
+            <Para StudentVisible="False">
+              <Sn>03</Sn>
+              <Name>D0PosCheck</Name>
+              <Script>将中央黑纹移到中间，然后点击按钮保存状态</Script>
+              <VarType>int</VarType>
+              <RealResult>1</RealResult>
+              <StdResult>1</StdResult>
+              <StdSource>DataBase</StdSource>
+              <StdResultShowInfo>中央黑纹位于视场中心</StdResultShowInfo>
+              <TotalScore>6</TotalScore>
+              <RealScore>6</RealScore>
+              <JudgeRule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>0</Min>
+                    <Max>0</Max>
+                  </Range>
+                  <Score>6</Score>
+                  <AnswerShowInfo>中央黑纹位于视场中心</AnswerShowInfo>
+                  <RuleShowInfo>中央黑纹位于视场中心</RuleShowInfo>
+                </Rule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>0.1</Min>
+                    <Max>1.1</Max>
+                  </Range>
+                  <Score>2</Score>
+                  <AnswerShowInfo>中央黑纹的位置有一些偏差</AnswerShowInfo>
+                  <RuleShowInfo>中央黑纹的位置有一些偏差</RuleShowInfo>
+                </Rule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>-1.1</Min>
+                    <Max>-0.1</Max>
+                  </Range>
+                  <Score>0</Score>
+                  <AnswerShowInfo>操作错误或者没有出现彩色条纹</AnswerShowInfo>
+                  <RuleShowInfo>操作错误或者没有出现彩色条纹</RuleShowInfo>
+                </Rule>
+              </JudgeRule>
+            </Para>
+            <!--此时M1的位置(mm)  D0Pos-->
+            <Para StudentVisible="True">
+              <Sn>04</Sn>
+              <Name>D0Pos</Name>
+              <Script>此时M1的位置(mm)</Script>
+              <VarType>double</VarType>
+              <RealResult></RealResult>
+              <StdResult></StdResult>
+              <StdSource>Exp</StdSource>
+              <StdResultShowInfo>原值</StdResultShowInfo>
+              <TotalScore>0</TotalScore>
+              <RealScore>0</RealScore>
+              <JudgeRule />
+            </Para>
+            <!--放置水晶薄片，再将中央黑纹移动至中心，点击按钮保存状态  D_SJ_PosCheck  6分-->
+            <Para StudentVisible="False">
+              <Sn>00</Sn>
+              <Name>D_SJ_PosCheck</Name>
+              <Script>放置水晶薄片，再将中央黑纹移动至中心，点击按钮保存状态</Script>
+              <VarType>int</VarType>
+              <RealResult>1</RealResult>
+              <StdResult>1</StdResult>
+              <StdSource>DataBase</StdSource>
+              <StdResultShowInfo>中央黑纹位于视场中心</StdResultShowInfo>
+              <TotalScore>6</TotalScore>
+              <RealScore>6</RealScore>
+              <JudgeRule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>0</Min>
+                    <Max>0</Max>
+                  </Range>
+                  <Score>6</Score>
+                  <!--<AnswerShowInfo>中央黑纹位于视场中心</AnswerShowInfo>-->
+                  <RuleShowInfo>中央黑纹位于视场中心</RuleShowInfo>
+                </Rule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>0.1</Min>
+                    <Max>1.1</Max>
+                  </Range>
+                  <Score>2</Score>
+                  <!--<AnswerShowInfo>中央黑纹的位置有一些偏差</AnswerShowInfo>-->
+                  <RuleShowInfo>中央黑纹的位置有一些偏差</RuleShowInfo>
+                </Rule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>-1.1</Min>
+                    <Max>-0.1</Max>
+                  </Range>
+                  <Score>0</Score>
+                  <!--<AnswerShowInfo>操作错误或者没有出现彩色条纹</AnswerShowInfo>-->
+                  <RuleShowInfo>操作错误或者没有出现彩色条纹</RuleShowInfo>
+                </Rule>
+              </JudgeRule>
+            </Para>
+            <!--此时M1的位置(mm)   D_SJBP_Pos-->
+            <Para StudentVisible="True">
+              <Sn>04</Sn>
+              <Name>D_SJBP_Pos</Name>
+              <Script>此时M1的位置(mm)</Script>
+              <VarType>double</VarType>
+              <RealResult></RealResult>
+              <StdResult></StdResult>
+              <StdSource>Exp</StdSource>
+              <StdResultShowInfo>原值</StdResultShowInfo>
+              <TotalScore>0</TotalScore>
+              <RealScore>0</RealScore>
+              <JudgeRule />
+            </Para>
+          </Group>
+          <RealScore>12</RealScore>
+        </TestTarget>
+        <!--根据上面测量出的数据和薄片的厚度（0.01mm），计算出两种薄片的折射率。-->
+        <TestTarget StudentVisible="True">
+          <Script>根据上面测量出的数据和薄片的厚度（0.01mm），计算出两种薄片的折射率。</Script>
+          <Group>
+            <!--将计算结果填入下表 6分-->
+            <Para StudentVisible="True">
+              <Sn>05</Sn>
+              <Name>CalcNList</Name>
+              <Script>将计算结果填入下表</Script>
+              <VarType Count="2">TList</VarType>
+              <RealResult>(透明薄片,折射率N);(玻璃,1.51);(水晶,1.54)</RealResult>
+              <StdResult>(透明薄片,折射率N);(玻璃,1.51);(水晶,1.54)</StdResult>
+              <StdSource>Exp</StdSource>
+              <StdResultShowInfo>原值</StdResultShowInfo>
+              <TotalScore>6</TotalScore>
+              <RealScore>6</RealScore>
+              <Para StudentVisible="True">
+                <Sn>00</Sn>
+                <Name>INDEX</Name>
+                <Script>透明薄片</Script>
+                <VarType Count="1">double</VarType>
+                <StdSource></StdSource>
+              </Para>
+              <Para StudentVisible="True">
+                <Sn>00</Sn>
+                <Name>BPZSL</Name>
+                <Script>折射率N</Script>
+                <VarType Count="1">double</VarType>
+                <StdSource></StdSource>
+                <JudgeRule>
+                  <Rule>
+                    <StdValue>1</StdValue>
+                    <Range>
+                      <Type>百分比</Type>
+                      <Min>-0.05</Min>
+                      <Max>0.05</Max>
+                    </Range>
+                    <Score>3</Score>
+                    <RuleShowInfo>每空正确</RuleShowInfo>
+                  </Rule>
+                </JudgeRule>
+              </Para>
+            </Para>
+          </Group>
+          <RealScore>6</RealScore>
+        </TestTarget>
+      </CheckPoint>
+    </Question>
+    <Question Type="OP">
+      <Sn>01</Sn>
+      <Name>使用迈克尔逊干涉仪测量He-Ne激光的波长</Name>
+      <Id>SIMQUEST_MKEXGSYSY_CLHNJGBC_ZGKXJSDX_V001</Id>
+      <Type>考试题目</Type>
+      <Score>
+        <RealScore>55</RealScore>
+        <Total>55</Total>
+      </Score>
+      <Script>
+        <DOC>
+          <Paragraph Name="" FontFamily="Portable User Interface" FontSize="12" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+            <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="12" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="实验室提供He-Ne激光器，白光源，小孔光阑，短焦透镜，迈克尔逊干涉仪，请使用这些仪器测量He-Ne激光的波长。" TextDecorations="System.Windows.TextDecorationCollection" />
+          </Paragraph>
+        </DOC>
+      </Script>
+      <InitialStatus>
+        <Script></Script>
+        <ConfigFile>SIMQUEST_MKEXGSYSY_KST3_ZGKXJSDX_V001.xml</ConfigFile>
+      </InitialStatus>
+      <KeyPoint>
+        <Script>
+          <DOC>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="M2上的三个螺钉的调节使显示屏的两排光点重合。" TextDecorations="" />
+            </Paragraph>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="利用干涉图像的吞吐测量He-Ne激光的波长。" TextDecorations="" />
+            </Paragraph>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="利用逐差法处理数据。" TextDecorations="" />
+            </Paragraph>
+          </DOC>
+        </Script>
+      </KeyPoint>
+      <CheckPoint>
+        <Script></Script>
+        <!--光路调节  27分-->
+        <TestTarget>
+          <Script>光路调节</Script>
+          <Group>
+            <!--放置He-Ne激光器，并打开激光器电源开关。5分-->
+            <Para StudentVisible="False">
+              <Sn>100</Sn>
+              <Name>IsHeNejgqOnCheck_white</Name>
+              <Script>放置He-Ne激光器，并打开激光器电源开关。</Script>
+              <VarType>bool</VarType>
+              <RealResult>True</RealResult>
+              <StdResult>True</StdResult>
+              <StdSource>DataBase</StdSource>
+              <StdResultShowInfo>操作正确</StdResultShowInfo>
+              <TotalScore>5</TotalScore>
+              <RealScore>5</RealScore>
+              <JudgeRule>
+                <RightRule>
+                  <Score>5</Score>
+                  <RuleShowInfo>操作正确</RuleShowInfo>
+                </RightRule>
+                <WrongRule>
+                  <Score>LostWholeQuestion</Score>
+                  <RuleShowInfo>操作错误</RuleShowInfo>
+                </WrongRule>
+              </JudgeRule>
+              <StudentResultShowInfo>操作错误</StudentResultShowInfo>
+            </Para>
+            <!--放置小孔光阑，调节M2镜上的三个螺钉, 使光点重合。  12分-->
+            <Para StudentVisible="False">
+              <Name>GDCHCheck_white</Name>
+              <Script>放置小孔光阑，调节M2镜上的三个螺钉, 使光点重合。</Script>
+              <VarType>bool</VarType>
+              <RealResult>True</RealResult>
+              <StdResult>True</StdResult>
+              <StdResultShowInfo>光点重合</StdResultShowInfo>
+              <StdSource>DataBase</StdSource>
+              <TotalScore>12</TotalScore>
+              <RealScore>12</RealScore>
+              <JudgeRule>
+                <RightRule>
+                  <Score>12</Score>
+                  <RuleShowInfo>光点重合</RuleShowInfo>
+                </RightRule>
+                <WrongRule>
+                  <Score>0</Score>
+                  <RuleShowInfo>光点没有重合</RuleShowInfo>
+                </WrongRule>
+              </JudgeRule>
+              <StudentResultShowInfo>光点没有重合</StudentResultShowInfo>
+            </Para>
+            <!--移除小孔光阑，放置短焦透镜， 出现明亮的干涉条纹，小心的调节M2上的旋钮，使圆心位于毛玻璃中间。 10分-->
+            <Para StudentVisible="False">
+              <Name>HeNeGSTWCheck_white</Name>
+              <Script>移除小孔光阑，放置短焦透镜， 出现明亮的干涉条纹，小心的调节M2上的旋钮，使圆心位于毛玻璃中间。</Script>
+              <VarType>bool</VarType>
+              <RealResult>True</RealResult>
+              <StdResult>True</StdResult>
+              <StdSource>DataBase</StdSource>
+              <StdResultShowInfo>圆心位于毛玻璃中心</StdResultShowInfo>
+              <TotalScore>10</TotalScore>
+              <RealScore>10</RealScore>
+              <JudgeRule>
+                <RightRule>
+                  <Score>10</Score>
+                  <RuleShowInfo>圆心位于毛玻璃中心</RuleShowInfo>
+                </RightRule>
+                <WrongRule>
+                  <Score>0</Score>
+                  <RuleShowInfo>圆心没有位于毛玻璃中心</RuleShowInfo>
+                </WrongRule>
+              </JudgeRule>
+              <StudentResultShowInfo>圆心没有位于毛玻璃中心</StudentResultShowInfo>
+            </Para>
+          </Group>
+          <RealScore>27</RealScore>
+        </TestTarget>
+        <!--读数检查  3分-->
+        <TestTarget>
+          <Script>读数检查</Script>
+          <Group>
+            <Para StudentVisible="False">
+              <Sn>28</Sn>
+              <Name>DSGS_white</Name>
+              <Script>迈克尔逊干涉仪读数格式检查（以毫米为单位，保留小数点后5位）</Script>
+              <VarType>bool</VarType>
+              <RealResult>True</RealResult>
+              <StdResult>True</StdResult>
+              <StdResultShowInfo>格式正确</StdResultShowInfo>
+              <StdSource>DataBase</StdSource>
+              <TotalScore>3</TotalScore>
+              <RealScore>3</RealScore>
+              <JudgeRule>
+                <RightRule>
+                  <RuleShowInfo>格式正确</RuleShowInfo>
+                  <Score>3</Score>
+                </RightRule>
+                <WrongRule>
+                  <RuleShowInfo>格式错误</RuleShowInfo>
+                  <Score>0</Score>
+                </WrongRule>
+              </JudgeRule>
+              <StudentResultShowInfo>格式错误</StudentResultShowInfo>
+            </Para>
+          </Group>
+          <RealScore>3</RealScore>
+        </TestTarget>
+        <!--转动鼓轮，观察到干涉条纹中“吞”“吐”变化。中心每“生成”或“吞进”30个干涉条纹记录一次数据，连续记录6次。-->
+        <TestTarget>
+          <Script>转动鼓轮，观察到干涉条纹中“吞”“吐”变化。中心每“生成”或“吞进”30个干涉条纹记录一次数据，连续记录6次。</Script>
+          <Group>
+            <!--选择M1镜的一个初始位置，作为第一列填入表格，然后将中心每“生出”或“吞进”30个条纹时M1镜的位置填入表格其他列中。-->
+            <Para StudentVisible="True">
+              <Sn>00</Sn>
+              <Name>M1PosList</Name>
+              <Script>选择M1镜的一个初始位置，作为第一列填入表格，然后将中心每“生出”或“吞进”30个条纹时M1镜的位置填入表格其他列中。</Script>
+              <VarType Count="6">TList</VarType>
+              <RealResult>(测量编号,D(mm));(1,);(2,);(3,);(4,);(5,);(6,)</RealResult>
+              <StdResult>(测量编号,D(mm));(1,);(2,);(3,);(4,);(5,);(6,)</StdResult>
+              <StdSource>Exp</StdSource>
+              <StdResultShowInfo>原值</StdResultShowInfo>
+              <TotalScore>0</TotalScore>
+              <RealScore>0</RealScore>
+              <Para StudentVisible="True">
+                <Sn>00</Sn>
+                <Name>INDEX</Name>
+                <Script>测量编号</Script>
+                <VarType Count="1">double</VarType>
+                <StdSource>DataBase</StdSource>
+              </Para>
+              <Para StudentVisible="True">
+                <Sn>00</Sn>
+                <Name>M1Pos</Name>
+                <Script>D(mm)</Script>
+                <VarType>double</VarType>
+                <StdSource>Exp</StdSource>
+              </Para>
+            </Para>
+            <!--利用逐差法，根据上面的数据算出三组差值，并填入下表  15分-->
+            <Para StudentVisible="True">
+              <Sn>00</Sn>
+              <Name>FDYGS_XXMS</Name>
+              <Script>利用逐差法，根据上面的数据算出三组差值，并填入下表</Script>
+              <VarType Count="3">TList</VarType>
+              <RealResult>(测量编号,ΔD(mm));(1,0.00000);(2,0.00000);(3,0.00000)</RealResult>
+              <StdResult>(测量编号,ΔD(mm));(1,0.00000);(2,0.00000);(3,0.00000)</StdResult>
+              <StdSource>Exp</StdSource>
+              <StdResultShowInfo>原值</StdResultShowInfo>
+              <TotalScore>15</TotalScore>
+              <RealScore>15</RealScore>
+              <Para StudentVisible="True">
+                <Sn>00</Sn>
+                <Name>INDEX</Name>
+                <Script>测量编号</Script>
+                <VarType Count="3">double</VarType>
+                <StdSource>DataBase</StdSource>
+              </Para>
+              <Para StudentVisible="True">
+                <Sn>00</Sn>
+                <Name>DeltaH_30_HeNe_3</Name>
+                <Script>ΔD(mm)</Script>
+                <VarType Count="1">double</VarType>
+                <StdSource>Exp</StdSource>
+                <JudgeRule>
+                  <Rule>
+                    <StdValue>1</StdValue>
+                    <Range>
+                      <Type>百分比</Type>
+                      <Min>-0.1</Min>
+                      <Max>0.1</Max>
+                    </Range>
+                    <Score>5</Score>
+                    <RuleShowInfo>每空正确</RuleShowInfo>
+                  </Rule>
+                </JudgeRule>
+              </Para>
+            </Para>
+            <!--用逐差法处理数据，根据相应公式计算He-Ne激光的波长λ（nm） 10分-->
+            <Para StudentVisible="True">
+              <Sn>00</Sn>
+              <Name>Nanbda_HeNe</Name>
+              <Script>用逐差法处理数据，根据相应公式计算He-Ne激光的波长λ（nm）=</Script>
+              <VarType>Double</VarType>
+              <RealResult>0.00</RealResult>
+              <StdResult>0.00</StdResult>
+              <StdSource>Exp</StdSource>
+              <StdResultShowInfo>原值</StdResultShowInfo>
+              <TotalScore>10</TotalScore>
+              <RealScore>10</RealScore>
+              <JudgeRule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>-0.05</Min>
+                    <Max>0.05</Max>
+                  </Range>
+                  <Score>10</Score>
+                  <RuleShowInfo>实际测量偏差</RuleShowInfo>
+                </Rule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>-0.1</Min>
+                    <Max>0.1</Max>
+                  </Range>
+                  <Score>9</Score>
+                  <RuleShowInfo>实际测量偏差</RuleShowInfo>
+                </Rule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>-0.5</Min>
+                    <Max>0.5</Max>
+                  </Range>
+                  <Score>6</Score>
+                  <RuleShowInfo>实际测量偏差</RuleShowInfo>
+                </Rule>
+              </JudgeRule>
+            </Para>
+          </Group>
+          <RealScore>25</RealScore>
+        </TestTarget>
+      </CheckPoint>
+    </Question>
+  </Content>
+</ExamPaper>
+
+
+77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPEV4YW1QYXBlcj4KICA8VGl0bGU+CiAgICA8TmFtZT7ov4jlhYvlsJTpgIrlubLmtonku6rlrp7pqow8L05hbWU+CiAgICA8SWQ+U0lNRVhBTV9NS0VYR1NZU1lfWkdLWEpTRFhfVjAwMTwvSWQ+CiAgICA8V3JpdGVyPgogICAgICA8SWQ+MDA5PC9JZD4KICAgICAgPE5hbWU+SGVIb25nYm88L05hbWU+CiAgICA8L1dyaXRlcj4KICAgIDxVc2VyPgogICAgICA8SWQ+5L2/55So6ICFSUQ8L0lkPgogICAgICA8TmFtZT7kvb/nlKjogIXlp5PlkI08L05hbWU+CiAgICAgIDxUaW1lPgogICAgICAgIDxNYXhUaW1lPjcyMDA8L01heFRpbWU+CiAgICAgICAgPFJlYWxUaW1lPjIxNTY8L1JlYWxUaW1lPgogICAgICA8L1RpbWU+CiAgICA8L1VzZXI+CiAgICA8RmluYWxSZXN1bHQ+dHJ1ZTwvRmluYWxSZXN1bHQ+CiAgPC9UaXRsZT4KICA8Q29udGVudD4KICAgIDxRdWVzdGlvbiBUeXBlPSJPUCI+CiAgICAgIDxTbj4wMDwvU24+CiAgICAgIDxOYW1lPuS9v+eUqOi/iOWFi+WwlOmAiuW5sua2ieS7qua1i+mHj+mSoOWFieeahOazoumVv+WPiuWPjOe6v+azoumVv+W3rjwvTmFtZT4KICAgICAgPElkPlNJTVFVRVNUX01LRVhHU1lTWV9DTEhOSkdCQ0hOR0JDX1pHS1hKU0RYX1YwMDE8L0lkPgogICAgICA8VHlwZT7lrp7pqozlhoXlrrk8L1R5cGU+CiAgICAgIDxTY29yZT4KICAgICAgICA8UmVhbFNjb3JlPjY1PC9SZWFsU2NvcmU+CiAgICAgICAgPFRvdGFsPjY1PC9Ub3RhbD4KICAgICAgPC9TY29yZT4KICAgICAgPFNjcmlwdD4KICAgICAgICA8RE9DPgogICAgICAgICAgPFBhcmFncmFwaCBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTIiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCI+CiAgICAgICAgICAgIDxJbmxpbmUgVHlwZT0iUnVuIiBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTIiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCIgVGV4dD0i5a6e6aqM5a6k5o+Q5L6bSGUtTmXmv4DlhYnlmajvvIzpkqDlhYnmupDvvIzlsI/lrZTlhYnpmJHvvIznn63nhKbpgI/plZzvvIzov4jlhYvlsJTpgIrlubLmtonku6rvvIzor7fkvb/nlKjov5nkupvku6rlmajmtYvph4/pkqDlhYnnmoTms6Lplb/lj4rpkqDpu4TlhYnlj4znur/nmoTms6Lplb/lt67jgIIiIFRleHREZWNvcmF0aW9ucz0iIiAvPgogICAgICAgICAgPC9QYXJhZ3JhcGg+CiAgICAgICAgPC9ET0M+CiAgICAgIDwvU2NyaXB0PgogICAgICA8SW5pdGlhbFN0YXR1cz4KICAgICAgICA8U2NyaXB0PjwvU2NyaXB0PgogICAgICAgIDxDb25maWdGaWxlPlNJTVFVRVNUX01LRVhHU1lTWV9LU1QxX1pHS1hKU0RYX1YwMDEueG1sPC9Db25maWdGaWxlPgogICAgICA8L0luaXRpYWxTdGF0dXM+CiAgICAgIDxLZXlQb2ludD4KICAgICAgICA8U2NyaXB0PgogICAgICAgICAgPERPQz4KICAgICAgICAgICAgPFBhcmFncmFwaCBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCI+CiAgICAgICAgICAgICAgPElubGluZSBUeXBlPSJSdW4iIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIiBUZXh0PSJNMuS4iueahOS4ieS4quieuumSieeahOiwg+iKguaYr+aYvuekuuWxj+eahOS4pOaOkuWFieeCuemHjeWQiOOAgiIgVGV4dERlY29yYXRpb25zPSIiIC8+CiAgICAgICAgICAgIDwvUGFyYWdyYXBoPgogICAgICAgICAgICA8UGFyYWdyYXBoIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIj4KICAgICAgICAgICAgICA8SW5saW5lIFR5cGU9IlJ1biIgTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEzIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiIFRleHQ9IuinguWvn+W5sua2ieadoee6ueeahOWQnuWQkOa1i+WHuumSoOWFieeahOazoumVv+OAgiIgVGV4dERlY29yYXRpb25zPSIiIC8+CiAgICAgICAgICAgIDwvUGFyYWdyYXBoPgogICAgICAgICAgICA8UGFyYWdyYXBoIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIj4KICAgICAgICAgICAgICA8SW5saW5lIFR5cGU9IlJ1biIgTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEzIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiIFRleHQ9IuinguWvn+W5sua2ieadoee6ueeahOWRqOacn+WPmOWMlu+8jOa1i+WHuumSoOm7hOWFieWPjOe6v+eahOazoumVv+W3ruOAgiIgVGV4dERlY29yYXRpb25zPSIiIC8+CiAgICAgICAgICAgIDwvUGFyYWdyYXBoPgogICAgICAgICAgPC9ET0M+CiAgICAgICAgPC9TY3JpcHQ+CiAgICAgIDwvS2V5UG9pbnQ+CiAgICAgIDxDaGVja1BvaW50PgogICAgICAgIDxTY3JpcHQ+PC9TY3JpcHQ+CiAgICAgICAgPCEtLeWFiei3r+iwg+iKgiAgMjfliIYtLT4KICAgICAgICA8VGVzdFRhcmdldD4KICAgICAgICAgIDxTY3JpcHQ+5YWJ6Lev6LCD6IqCPC9TY3JpcHQ+CiAgICAgICAgICA8R3JvdXA+CiAgICAgICAgICAgIDwhLS3mlL7nva5IZS1OZea/gOWFieWZqO+8jOW5tuaJk+W8gOa/gOWFieWZqOeUtea6kOW8gOWFs+OAgiBJc0hlTmVqZ3FPbkNoZWNrIDXliIYtLT4KICAgICAgICAgICAgPFBhcmEgU3R1ZGVudFZpc2libGU9IkZhbHNlIj4KICAgICAgICAgICAgICA8U24+MTAwPC9Tbj4KICAgICAgICAgICAgICA8TmFtZT5Jc0hlTmVqZ3FPbkNoZWNrX05hPC9OYW1lPgogICAgICAgICAgICAgIDxTY3JpcHQ+5pS+572uSGUtTmXmv4DlhYnlmajvvIzlubbmiZPlvIDmv4DlhYnlmajnlLXmupDlvIDlhbPjgII8L1NjcmlwdD4KICAgICAgICAgICAgICA8VmFyVHlwZT5ib29sPC9WYXJUeXBlPgogICAgICAgICAgICAgIDxSZWFsUmVzdWx0PlRydWU8L1JlYWxSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdD5UcnVlPC9TdGRSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFNvdXJjZT5EYXRhQmFzZTwvU3RkU291cmNlPgogICAgICAgICAgICAgIDxTdGRSZXN1bHRTaG93SW5mbz7mk43kvZzmraPnoa48L1N0ZFJlc3VsdFNob3dJbmZvPgogICAgICAgICAgICAgIDxUb3RhbFNjb3JlPjU8L1RvdGFsU2NvcmU+CiAgICAgICAgICAgICAgPFJlYWxTY29yZT41PC9SZWFsU2NvcmU+CiAgICAgICAgICAgICAgPEp1ZGdlUnVsZT4KICAgICAgICAgICAgICAgIDxSaWdodFJ1bGU+CiAgICAgICAgICAgICAgICAgIDxTY29yZT41PC9TY29yZT4KICAgICAgICAgICAgICAgICAgPFJ1bGVTaG93SW5mbz7mk43kvZzmraPnoa48L1J1bGVTaG93SW5mbz4KICAgICAgICAgICAgICAgIDwvUmlnaHRSdWxlPgogICAgICAgICAgICAgICAgPFdyb25nUnVsZT4KICAgICAgICAgICAgICAgICAgPFNjb3JlPkxvc3RXaG9sZVF1ZXN0aW9uPC9TY29yZT4KICAgICAgICAgICAgICAgICAgPFJ1bGVTaG93SW5mbz7mk43kvZzplJnor688L1J1bGVTaG93SW5mbz4KICAgICAgICAgICAgICAgIDwvV3JvbmdSdWxlPgogICAgICAgICAgICAgIDwvSnVkZ2VSdWxlPgogICAgICAgICAgICAgIDxTdHVkZW50UmVzdWx0U2hvd0luZm8+5pON5L2c6ZSZ6K+vPC9TdHVkZW50UmVzdWx0U2hvd0luZm8+CiAgICAgICAgICAgIDwvUGFyYT4KICAgICAgICAgICAgPCEtLeaUvue9ruWwj+WtlOWFiemYke+8jOiwg+iKgk0y6ZWc5LiK55qE5LiJ5Liq6J666ZKJLCDkvb/lhYnngrnph43lkIjjgIJHRENIQ2hlY2sgIDEy5YiGLS0+CiAgICAgICAgICAgIDxQYXJhIFN0dWRlbnRWaXNpYmxlPSJGYWxzZSI+CiAgICAgICAgICAgICAgPE5hbWU+R0RDSENoZWNrX05hPC9OYW1lPgogICAgICAgICAgICAgIDxTY3JpcHQ+5pS+572u5bCP5a2U5YWJ6ZiR77yM6LCD6IqCTTLplZzkuIrnmoTkuInkuKronrrpkoksIOS9v+WFieeCuemHjeWQiOOAgjwvU2NyaXB0PgogICAgICAgICAgICAgIDxWYXJUeXBlPmJvb2w8L1ZhclR5cGU+CiAgICAgICAgICAgICAgPFJlYWxSZXN1bHQ+VHJ1ZTwvUmVhbFJlc3VsdD4KICAgICAgICAgICAgICA8U3RkUmVzdWx0PlRydWU8L1N0ZFJlc3VsdD4KICAgICAgICAgICAgICA8U3RkUmVzdWx0U2hvd0luZm8+5YWJ54K56YeN5ZCIPC9TdGRSZXN1bHRTaG93SW5mbz4KICAgICAgICAgICAgICA8U3RkU291cmNlPkRhdGFCYXNlPC9TdGRTb3VyY2U+CiAgICAgICAgICAgICAgPFRvdGFsU2NvcmU+MTI8L1RvdGFsU2NvcmU+CiAgICAgICAgICAgICAgPFJlYWxTY29yZT4xMjwvUmVhbFNjb3JlPgogICAgICAgICAgICAgIDxKdWRnZVJ1bGU+CiAgICAgICAgICAgICAgICA8UmlnaHRSdWxlPgogICAgICAgICAgICAgICAgICA8U2NvcmU+MTI8L1Njb3JlPgogICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuWFieeCuemHjeWQiDwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgPC9SaWdodFJ1bGU+CiAgICAgICAgICAgICAgICA8V3JvbmdSdWxlPgogICAgICAgICAgICAgICAgICA8U2NvcmU+MDwvU2NvcmU+CiAgICAgICAgICAgICAgICAgIDxSdWxlU2hvd0luZm8+5YWJ54K55rKh5pyJ6YeN5ZCIPC9SdWxlU2hvd0luZm8+CiAgICAgICAgICAgICAgICA8L1dyb25nUnVsZT4KICAgICAgICAgICAgICA8L0p1ZGdlUnVsZT4KICAgICAgICAgICAgICA8U3R1ZGVudFJlc3VsdFNob3dJbmZvPuWFieeCueayoeaciemHjeWQiDwvU3R1ZGVudFJlc3VsdFNob3dJbmZvPgogICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICAgIDwhLS3np7vpmaTlsI/lrZTlhYnpmJHvvIzmlL7nva7nn63nhKbpgI/plZzvvIwg5Ye6546w5piO5Lqu55qE5bmy5raJ5p2h57q577yM5bCP5b+D55qE6LCD6IqCTTLkuIrnmoTml4vpkq7vvIzkvb/lnIblv4PkvY3kuo7mr5vnjrvnkoPkuK3pl7TjgIItLT4KICAgICAgICAgICAgPCEtLUhlTmVHU1RXQ2hlY2sgICAxMOWIhi0tPgogICAgICAgICAgICA8UGFyYSBTdHVkZW50VmlzaWJsZT0iRmFsc2UiPgogICAgICAgICAgICAgIDxOYW1lPkhlTmVHU1RXQ2hlY2tfTmE8L05hbWU+CiAgICAgICAgICAgICAgPFNjcmlwdD7np7vpmaTlsI/lrZTlhYnpmJHvvIzmlL7nva7nn63nhKbpgI/plZzvvIwg5Ye6546w5piO5Lqu55qE5bmy5raJ5p2h57q577yM5bCP5b+D55qE6LCD6IqCTTLkuIrnmoTml4vpkq7vvIzkvb/lnIblv4PkvY3kuo7mr5vnjrvnkoPkuK3pl7TjgII8L1NjcmlwdD4KICAgICAgICAgICAgICA8VmFyVHlwZT5ib29sPC9WYXJUeXBlPgogICAgICAgICAgICAgIDxSZWFsUmVzdWx0PlRydWU8L1JlYWxSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdD5UcnVlPC9TdGRSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFNvdXJjZT5EYXRhQmFzZTwvU3RkU291cmNlPgogICAgICAgICAgICAgIDxTdGRSZXN1bHRTaG93SW5mbz7lnIblv4PkvY3kuo7mr5vnjrvnkoPkuK3lv4M8L1N0ZFJlc3VsdFNob3dJbmZvPgogICAgICAgICAgICAgIDxUb3RhbFNjb3JlPjEwPC9Ub3RhbFNjb3JlPgogICAgICAgICAgICAgIDxSZWFsU2NvcmU+MTA8L1JlYWxTY29yZT4KICAgICAgICAgICAgICA8SnVkZ2VSdWxlPgogICAgICAgICAgICAgICAgPFJpZ2h0UnVsZT4KICAgICAgICAgICAgICAgICAgPFNjb3JlPjEwPC9TY29yZT4KICAgICAgICAgICAgICAgICAgPFJ1bGVTaG93SW5mbz7lnIblv4PkvY3kuo7mr5vnjrvnkoPkuK3lv4M8L1J1bGVTaG93SW5mbz4KICAgICAgICAgICAgICAgIDwvUmlnaHRSdWxlPgogICAgICAgICAgICAgICAgPFdyb25nUnVsZT4KICAgICAgICAgICAgICAgICAgPFNjb3JlPjA8L1Njb3JlPgogICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuWchuW/g+ayoeacieS9jeS6juavm+eOu+eSg+S4reW/gzwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgPC9Xcm9uZ1J1bGU+CiAgICAgICAgICAgICAgPC9KdWRnZVJ1bGU+CiAgICAgICAgICAgICAgPFN0dWRlbnRSZXN1bHRTaG93SW5mbz7lnIblv4PmsqHmnInkvY3kuo7mr5vnjrvnkoPkuK3lv4M8L1N0dWRlbnRSZXN1bHRTaG93SW5mbz4KICAgICAgICAgICAgPC9QYXJhPgogICAgICAgICAgPC9Hcm91cD4KICAgICAgICAgIDxSZWFsU2NvcmU+Mjc8L1JlYWxTY29yZT4KICAgICAgICA8L1Rlc3RUYXJnZXQ+CiAgICAgICAgPCEtLeivu+aVsOajgOafpSAgIERTR1MgICAz5YiGLS0+CiAgICAgICAgPFRlc3RUYXJnZXQ+CiAgICAgICAgICA8U2NyaXB0Puivu+aVsOajgOafpTwvU2NyaXB0PgogICAgICAgICAgPEdyb3VwPgogICAgICAgICAgICA8UGFyYSBTdHVkZW50VmlzaWJsZT0iRmFsc2UiPgogICAgICAgICAgICAgIDxTbj4yODwvU24+CiAgICAgICAgICAgICAgPE5hbWU+RFNHU19OYTwvTmFtZT4KICAgICAgICAgICAgICA8U2NyaXB0Pui/iOWFi+WwlOmAiuW5sua2ieS7quivu+aVsOagvOW8j+ajgOafpe+8iOS7peavq+exs+S4uuWNleS9je+8jOS/neeVmeWwj+aVsOeCueWQjjXkvY3vvIk8L1NjcmlwdD4KICAgICAgICAgICAgICA8VmFyVHlwZT5ib29sPC9WYXJUeXBlPgogICAgICAgICAgICAgIDxSZWFsUmVzdWx0PlRydWU8L1JlYWxSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdD5UcnVlPC9TdGRSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdFNob3dJbmZvPuagvOW8j+ato+ehrjwvU3RkUmVzdWx0U2hvd0luZm8+CiAgICAgICAgICAgICAgPFN0ZFNvdXJjZT5EYXRhQmFzZTwvU3RkU291cmNlPgogICAgICAgICAgICAgIDxUb3RhbFNjb3JlPjM8L1RvdGFsU2NvcmU+CiAgICAgICAgICAgICAgPFJlYWxTY29yZT4zPC9SZWFsU2NvcmU+CiAgICAgICAgICAgICAgPEp1ZGdlUnVsZT4KICAgICAgICAgICAgICAgIDxSaWdodFJ1bGU+CiAgICAgICAgICAgICAgICAgIDxSdWxlU2hvd0luZm8+5qC85byP5q2j56GuPC9SdWxlU2hvd0luZm8+CiAgICAgICAgICAgICAgICAgIDxTY29yZT4zPC9TY29yZT4KICAgICAgICAgICAgICAgIDwvUmlnaHRSdWxlPgogICAgICAgICAgICAgICAgPFdyb25nUnVsZT4KICAgICAgICAgICAgICAgICAgPFJ1bGVTaG93SW5mbz7moLzlvI/plJnor688L1J1bGVTaG93SW5mbz4KICAgICAgICAgICAgICAgICAgPFNjb3JlPjA8L1Njb3JlPgogICAgICAgICAgICAgICAgPC9Xcm9uZ1J1bGU+CiAgICAgICAgICAgICAgPC9KdWRnZVJ1bGU+CiAgICAgICAgICAgICAgPFN0dWRlbnRSZXN1bHRTaG93SW5mbz7moLzlvI/plJnor688L1N0dWRlbnRSZXN1bHRTaG93SW5mbz4KICAgICAgICAgICAgPC9QYXJhPgogICAgICAgICAgPC9Hcm91cD4KICAgICAgICAgIDxSZWFsU2NvcmU+MzwvUmVhbFNjb3JlPgogICAgICAgIDwvVGVzdFRhcmdldD4KICAgICAgICA8IS0t5o2i6ZKg5YWJ5YWJ5rqQ77yM6LCD6IqC6byT6L2u77yM6KeC5a+f5Yiw5p2h57q555qE5ZCe5ZCQ54q25Ya177yM5Lit5b+D5q+P4oCc55Sf5oiQ4oCd5oiW4oCc5ZCe6L+b4oCdMzDkuKrlubLmtonmnaHnurnorrDlvZXkuIDmrKHmlbDmja7vvIzov57nu63orrDlvZU25qyh44CCLS0+CiAgICAgICAgPCEtLTI15YiGLS0+CiAgICAgICAgPFRlc3RUYXJnZXQ+CiAgICAgICAgICA8U2NyaXB0PuaNoumSoOWFieWFiea6kO+8jOiwg+iKgum8k+i9ru+8jOinguWvn+WIsOadoee6ueeahOWQnuWQkOeKtuWGte+8jOS4reW/g+avj+KAnOeUn+aIkOKAneaIluKAnOWQnui/m+KAnTMw5Liq5bmy5raJ5p2h57q56K6w5b2V5LiA5qyh5pWw5o2u77yM6L+e57ut6K6w5b2VNuasoeOAgjwvU2NyaXB0PgogICAgICAgICAgPEdyb3VwPgogICAgICAgICAgICA8IS0t6YCJ5oupTTHplZznmoTkuIDkuKrliJ3lp4vkvY3nva7vvIzkvZzkuLrnrKzkuIDliJfloavlhaXooajmoLzvvIznhLblkI7lsIbkuK3lv4Pmr4/igJznlJ/lh7rigJ3miJbigJzlkJ7ov5vigJ0zMOS4quadoee6ueaXtk0x6ZWc55qE5L2N572u5aGr5YWl6KGo5qC85YW25LuW5YiX5Lit44CCLS0+CiAgICAgICAgICAgIDxQYXJhIFN0dWRlbnRWaXNpYmxlPSJUcnVlIj4KICAgICAgICAgICAgICA8U24+MDA8L1NuPgogICAgICAgICAgICAgIDxOYW1lPk0xUG9zTGlzdF9OYTwvTmFtZT4KICAgICAgICAgICAgICA8U2NyaXB0PumAieaLqU0x6ZWc55qE5LiA5Liq5Yid5aeL5L2N572u77yM5L2c5Li656ys5LiA5YiX5aGr5YWl6KGo5qC877yM54S25ZCO5bCG5Lit5b+D5q+P4oCc55Sf5Ye64oCd5oiW4oCc5ZCe6L+b4oCdMzDkuKrmnaHnurnml7ZNMemVnOeahOS9jee9ruWhq+WFpeihqOagvOWFtuS7luWIl+S4reOAggk8L1NjcmlwdD4KICAgICAgICAgICAgICA8VmFyVHlwZSBDb3VudD0iNiI+VExpc3Q8L1ZhclR5cGU+CiAgICAgICAgICAgICAgPFJlYWxSZXN1bHQ+KOa1i+mHj+e8luWPtyxEKG1tKSk7KDEsKTsoMiwpOygzLCk7KDQsKTsoNSwpOyg2LCk8L1JlYWxSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdD4o5rWL6YeP57yW5Y+3LEQobW0pKTsoMSwpOygyLCk7KDMsKTsoNCwpOyg1LCk7KDYsKTwvU3RkUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRTb3VyY2U+RXhwPC9TdGRTb3VyY2U+CiAgICAgICAgICAgICAgPFRvdGFsU2NvcmU+MDwvVG90YWxTY29yZT4KICAgICAgICAgICAgICA8U3RkUmVzdWx0U2hvd0luZm8+5Y6f5YC8PC9TdGRSZXN1bHRTaG93SW5mbz4KICAgICAgICAgICAgICA8UmVhbFNjb3JlPjA8L1JlYWxTY29yZT4KICAgICAgICAgICAgICA8UGFyYSBTdHVkZW50VmlzaWJsZT0iVHJ1ZSI+CiAgICAgICAgICAgICAgICA8U24+MDA8L1NuPgogICAgICAgICAgICAgICAgPE5hbWU+SU5ERVg8L05hbWU+CiAgICAgICAgICAgICAgICA8U2NyaXB0Pua1i+mHj+e8luWPtzwvU2NyaXB0PgogICAgICAgICAgICAgICAgPFZhclR5cGUgQ291bnQ9IjEiPmRvdWJsZTwvVmFyVHlwZT4KICAgICAgICAgICAgICAgIDxTdGRTb3VyY2U+RGF0YUJhc2U8L1N0ZFNvdXJjZT4KICAgICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICAgICAgPFBhcmEgU3R1ZGVudFZpc2libGU9IlRydWUiPgogICAgICAgICAgICAgICAgPFNuPjAwPC9Tbj4KICAgICAgICAgICAgICAgIDxOYW1lPk0xUG9zPC9OYW1lPgogICAgICAgICAgICAgICAgPFNjcmlwdD5EKG1tKTwvU2NyaXB0PgogICAgICAgICAgICAgICAgPFZhclR5cGUgQ291bnQ9IjEiPmRvdWJsZTwvVmFyVHlwZT4KICAgICAgICAgICAgICAgIDxTdGRTb3VyY2U+RXhwPC9TdGRTb3VyY2U+CiAgICAgICAgICAgICAgPC9QYXJhPgogICAgICAgICAgICAgIDxKdWRnZVJ1bGUgLz4KICAgICAgICAgICAgPC9QYXJhPgogICAgICAgICAgICA8IS0t5Yip55So6YCQ5beu5rOV77yM5qC55o2u5LiK6Z2i55qE5pWw5o2u566X5Ye65LiJ57uE5beu5YC877yM5bm25aGr5YWl5LiL6KGoICAxNeWIhi0tPgogICAgICAgICAgICA8UGFyYSBTdHVkZW50VmlzaWJsZT0iVHJ1ZSI+CiAgICAgICAgICAgICAgPFNuPjAwPC9Tbj4KICAgICAgICAgICAgICA8TmFtZT5GRFlHU19YWE1TX05hPC9OYW1lPgogICAgICAgICAgICAgIDxTY3JpcHQ+5Yip55So6YCQ5beu5rOV77yM5qC55o2u5LiK6Z2i55qE5pWw5o2u566X5Ye65LiJ57uE5beu5YC877yM5bm25aGr5YWl5LiL6KGoPC9TY3JpcHQ+CiAgICAgICAgICAgICAgPFZhclR5cGUgQ291bnQ9IjMiPlRMaXN0PC9WYXJUeXBlPgogICAgICAgICAgICAgIDxSZWFsUmVzdWx0PijmtYvph4/nvJblj7cszpREKG1tKSk7KDEsMC4wMDAwMCk7KDIsMC4wMDAwMCk7KDMsMC4wMDAwMCk8L1JlYWxSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdD4o5rWL6YeP57yW5Y+3LM6URChtbSkpOygxLDAuMDAwMDApOygyLDAuMDAwMDApOygzLDAuMDAwMDApPC9TdGRSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFNvdXJjZT5FeHA8L1N0ZFNvdXJjZT4KICAgICAgICAgICAgICA8VG90YWxTY29yZT4xNTwvVG90YWxTY29yZT4KICAgICAgICAgICAgICA8U3RkUmVzdWx0U2hvd0luZm8+5Y6f5YC8PC9TdGRSZXN1bHRTaG93SW5mbz4KICAgICAgICAgICAgICA8UmVhbFNjb3JlPjE1PC9SZWFsU2NvcmU+CiAgICAgICAgICAgICAgPFBhcmEgU3R1ZGVudFZpc2libGU9IlRydWUiPgogICAgICAgICAgICAgICAgPFNuPjAwPC9Tbj4KICAgICAgICAgICAgICAgIDxOYW1lPklOREVYPC9OYW1lPgogICAgICAgICAgICAgICAgPFNjcmlwdD7mtYvph4/nvJblj7c8L1NjcmlwdD4KICAgICAgICAgICAgICAgIDxWYXJUeXBlIENvdW50PSIxIj5kb3VibGU8L1ZhclR5cGU+PgogICAgICAgICAgICAgICAgPFN0ZFNvdXJjZT5EYXRhQmFzZTwvU3RkU291cmNlPjwvUGFyYT4KICAgICAgICAgICAgICA8UGFyYSBTdHVkZW50VmlzaWJsZT0iVHJ1ZSI+CiAgICAgICAgICAgICAgICA8U24+MDA8L1NuPgogICAgICAgICAgICAgICAgPE5hbWU+RGVsdGFIXzMwX05hXzM8L05hbWU+CiAgICAgICAgICAgICAgICA8U2NyaXB0Ps6URChtbSk8L1NjcmlwdD4KICAgICAgICAgICAgICAgIDxWYXJUeXBlIENvdW50PSIxIj5kb3VibGU8L1ZhclR5cGU+CiAgICAgICAgICAgICAgICA8U3RkU291cmNlPkV4cDwvU3RkU291cmNlPgogICAgICAgICAgICAgICAgPEp1ZGdlUnVsZT4KICAgICAgICAgICAgICAgICAgPFJ1bGU+CiAgICAgICAgICAgICAgICAgICAgPFN0ZFZhbHVlPjE8L1N0ZFZhbHVlPgogICAgICAgICAgICAgICAgICAgIDxSYW5nZT4KICAgICAgICAgICAgICAgICAgICAgIDxUeXBlPueZvuWIhuavlDwvVHlwZT4KICAgICAgICAgICAgICAgICAgICAgIDxNaW4+LTAuMTwvTWluPgogICAgICAgICAgICAgICAgICAgICAgPE1heD4wLjE8L01heD4KICAgICAgICAgICAgICAgICAgICA8L1JhbmdlPgogICAgICAgICAgICAgICAgICAgIDxTY29yZT41PC9TY29yZT4KICAgICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuavj+epuuato+ehrjwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgICA8L1J1bGU+CiAgICAgICAgICAgICAgICA8L0p1ZGdlUnVsZT4KICAgICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICAgIDwvUGFyYT4KICAgICAgICAgICAgPCEtLeeUqOmAkOW3ruazleWkhOeQhuaVsOaNru+8jOagueaNruebuOW6lOWFrOW8j+iuoeeul+mSoOWFieeahOazoumVv86777yIbm3vvIkgICAxMOWIhi0tPgogICAgICAgICAgICA8IS0tTmFuYmRhX05hLS0+CiAgICAgICAgICAgIDxQYXJhIFN0dWRlbnRWaXNpYmxlPSJUcnVlIj4KICAgICAgICAgICAgICA8U24+MDA8L1NuPgogICAgICAgICAgICAgIDxOYW1lPk5hbmJkYV9OYTwvTmFtZT4KICAgICAgICAgICAgICA8U2NyaXB0PueUqOmAkOW3ruazleWkhOeQhuaVsOaNru+8jOagueaNruebuOW6lOWFrOW8j+iuoeeul+mSoOWFieeahOazoumVv86777yIbm3vvIk9PC9TY3JpcHQ+CiAgICAgICAgICAgICAgPFZhclR5cGU+RG91YmxlPC9WYXJUeXBlPgogICAgICAgICAgICAgIDxSZWFsUmVzdWx0PjAuMDA8L1JlYWxSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdD4wLjAwPC9TdGRSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFNvdXJjZT5FeHA8L1N0ZFNvdXJjZT4KICAgICAgICAgICAgICA8U3RkUmVzdWx0U2hvd0luZm8+5Y6f5YC8PC9TdGRSZXN1bHRTaG93SW5mbz4KICAgICAgICAgICAgICA8VG90YWxTY29yZT4xMDwvVG90YWxTY29yZT4KICAgICAgICAgICAgICA8UmVhbFNjb3JlPjEwPC9SZWFsU2NvcmU+CiAgICAgICAgICAgICAgPEp1ZGdlUnVsZT4KICAgICAgICAgICAgICAgIDxSdWxlPgogICAgICAgICAgICAgICAgICA8U3RkVmFsdWU+MTwvU3RkVmFsdWU+CiAgICAgICAgICAgICAgICAgIDxSYW5nZT4KICAgICAgICAgICAgICAgICAgICA8VHlwZT7nmb7liIbmr5Q8L1R5cGU+CiAgICAgICAgICAgICAgICAgICAgPE1pbj4tMC4wNTwvTWluPgogICAgICAgICAgICAgICAgICAgIDxNYXg+MC4wNTwvTWF4PgogICAgICAgICAgICAgICAgICA8L1JhbmdlPgogICAgICAgICAgICAgICAgICA8U2NvcmU+MTA8L1Njb3JlPgogICAgICAgICAgICAgICAgICA8IS0tPEFuc3dlclNob3dJbmZvPuWOn+WAvDwvQW5zd2VyU2hvd0luZm8+LS0+CiAgICAgICAgICAgICAgICAgIDxSdWxlU2hvd0luZm8+5a6e6ZmF5rWL6YeP5YGP5beuPC9SdWxlU2hvd0luZm8+CiAgICAgICAgICAgICAgICA8L1J1bGU+CiAgICAgICAgICAgICAgICA8UnVsZT4KICAgICAgICAgICAgICAgICAgPFN0ZFZhbHVlPjE8L1N0ZFZhbHVlPgogICAgICAgICAgICAgICAgICA8UmFuZ2U+CiAgICAgICAgICAgICAgICAgICAgPFR5cGU+55m+5YiG5q+UPC9UeXBlPgogICAgICAgICAgICAgICAgICAgIDxNaW4+LTAuMTwvTWluPgogICAgICAgICAgICAgICAgICAgIDxNYXg+MC4xPC9NYXg+CiAgICAgICAgICAgICAgICAgIDwvUmFuZ2U+CiAgICAgICAgICAgICAgICAgIDxTY29yZT45PC9TY29yZT4KICAgICAgICAgICAgICAgICAgPCEtLTxBbnN3ZXJTaG93SW5mbz7ljp/lgLw8L0Fuc3dlclNob3dJbmZvPi0tPgogICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuWunumZhea1i+mHj+WBj+W3rjwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgPC9SdWxlPgogICAgICAgICAgICAgICAgPFJ1bGU+CiAgICAgICAgICAgICAgICAgIDxTdGRWYWx1ZT4xPC9TdGRWYWx1ZT4KICAgICAgICAgICAgICAgICAgPFJhbmdlPgogICAgICAgICAgICAgICAgICAgIDxUeXBlPueZvuWIhuavlDwvVHlwZT4KICAgICAgICAgICAgICAgICAgICA8TWluPi0wLjU8L01pbj4KICAgICAgICAgICAgICAgICAgICA8TWF4PjAuNTwvTWF4PgogICAgICAgICAgICAgICAgICA8L1JhbmdlPgogICAgICAgICAgICAgICAgICA8U2NvcmU+NjwvU2NvcmU+CiAgICAgICAgICAgICAgICAgIDwhLS08QW5zd2VyU2hvd0luZm8+5Y6f5YC8PC9BbnN3ZXJTaG93SW5mbz4tLT4KICAgICAgICAgICAgICAgICAgPFJ1bGVTaG93SW5mbz7lrp7pmYXmtYvph4/lgY/lt648L1J1bGVTaG93SW5mbz4KICAgICAgICAgICAgICAgIDwvUnVsZT4KICAgICAgICAgICAgICA8L0p1ZGdlUnVsZT4KICAgICAgICAgICAgPC9QYXJhPgogICAgICAgICAgPC9Hcm91cD4KICAgICAgICAgIDxSZWFsU2NvcmU+MjU8L1JlYWxTY29yZT4KICAgICAgICA8L1Rlc3RUYXJnZXQ+CiAgICAgICAgPCEtLeWGjeenu+WKqE0x77yM6KeC5a+f5Yiw5p2h57q555qE5Y+v6KeB5bqm5ZGo5pyf5Y+Y5YyW77yM6K6w5b2V5p2h57q55LuO5LiN5Y+v6KeB5Yiw5qyh5LiN5Y+v6KeB5pe2TTHnmoTkvY3nva7or7vmlbDvvIzov57nu63orrDlvZU05qyh44CCLS0+CiAgICAgICAgPCEtLTEw5YiGLS0+CiAgICAgICAgPFRlc3RUYXJnZXQ+CiAgICAgICAgICA8U2NyaXB0PuWGjeenu+WKqE0x77yM6KeC5a+f5Yiw5p2h57q555qE5Y+v6KeB5bqm5ZGo5pyf5Y+Y5YyW77yM6K6w5b2V5p2h57q55LuO5LiN5Y+v6KeB5Yiw5qyh5LiN5Y+v6KeB5pe2TTHnmoTkvY3nva7or7vmlbDvvIzov57nu63orrDlvZU05qyh44CCPC9TY3JpcHQ+CiAgICAgICAgICA8TmFtZT5NMVBvc0xpc3Q8L05hbWU+CiAgICAgICAgICA8R3JvdXA+CiAgICAgICAgICAgIDwhLS3pgInmi6lNMemVnOeahOS4gOS4quadoee6ueS4jeWPr+ingeS9jee9ru+8jOS9nOS4uuesrOS4gOWIl+Whq+WFpeihqOagvO+8jOeEtuWQjuWwhuadoee6ueS7juS4jeWPr+ingeWIsOasoeS4jeWPr+ingeaXtk0x55qE5L2N572u6K+75pWw5aGr5YWl6KGo5qC85YW25LuW5YiX5Lit44CCLS0+CiAgICAgICAgICAgIDxQYXJhIFN0dWRlbnRWaXNpYmxlPSJUcnVlIj4KICAgICAgICAgICAgICA8U24+MDA8L1NuPgogICAgICAgICAgICAgIDxOYW1lPk0xUG9zTGlzdDwvTmFtZT4KICAgICAgICAgICAgICA8U2NyaXB0PumAieaLqU0x6ZWc55qE5LiA5Liq5p2h57q55LiN5Y+v6KeB5L2N572u77yM5L2c5Li656ys5LiA5YiX5aGr5YWl6KGo5qC877yM54S25ZCO5bCG5p2h57q55LuO5LiN5Y+v6KeB5Yiw5qyh5LiN5Y+v6KeB5pe2TTHnmoTkvY3nva7or7vmlbDloavlhaXooajmoLzlhbbku5bliJfkuK3jgII8L1NjcmlwdD4KICAgICAgICAgICAgICA8VmFyVHlwZSBDb3VudD0iNCI+VExpc3Q8L1ZhclR5cGU+CiAgICAgICAgICAgICAgPFJlYWxSZXN1bHQ+KOa1i+mHj+e8luWPtyxEKG1tKSk7KDEsKTsoMiwpOygzLCk7KDQsKTwvUmVhbFJlc3VsdD4KICAgICAgICAgICAgICA8U3RkUmVzdWx0PijmtYvph4/nvJblj7csRChtbSkpOygxLCk7KDIsKTsoMywpOyg0LCk8L1N0ZFJlc3VsdD4KICAgICAgICAgICAgICA8U3RkU291cmNlPkV4cDwvU3RkU291cmNlPgogICAgICAgICAgICAgIDxTdGRSZXN1bHRTaG93SW5mbz7ljp/lgLw8L1N0ZFJlc3VsdFNob3dJbmZvPgogICAgICAgICAgICAgIDxUb3RhbFNjb3JlPjA8L1RvdGFsU2NvcmU+CiAgICAgICAgICAgICAgPFJlYWxTY29yZT4wPC9SZWFsU2NvcmU+CiAgICAgICAgICAgICAgPFBhcmEgU3R1ZGVudFZpc2libGU9IlRydWUiPgogICAgICAgICAgICAgICAgPFNuPjAwPC9Tbj4KICAgICAgICAgICAgICAgIDxOYW1lPklOREVYPC9OYW1lPgogICAgICAgICAgICAgICAgPFNjcmlwdD7mtYvph4/nvJblj7c8L1NjcmlwdD4KICAgICAgICAgICAgICAgIDxWYXJUeXBlIENvdW50PSIxIj5kb3VibGU8L1ZhclR5cGU+CiAgICAgICAgICAgICAgICA8U3RkU291cmNlPkRhdGFCYXNlPC9TdGRTb3VyY2U+CiAgICAgICAgICAgICAgPC9QYXJhPgogICAgICAgICAgICAgIDxQYXJhIFN0dWRlbnRWaXNpYmxlPSJUcnVlIj4KICAgICAgICAgICAgICAgIDxTbj4wMDwvU24+CiAgICAgICAgICAgICAgICA8TmFtZT5NMVBvczwvTmFtZT4KICAgICAgICAgICAgICAgIDxTY3JpcHQ+RChtbSk8L1NjcmlwdD4KICAgICAgICAgICAgICAgIDxWYXJUeXBlIENvdW50PSIxIj5kb3VibGU8L1ZhclR5cGU+CiAgICAgICAgICAgICAgICA8U3RkU291cmNlPkV4cDwvU3RkU291cmNlPj4KICAgICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICAgICAgPEp1ZGdlUnVsZSAvPgogICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICAgIDwhLS3liKnnlKjpgJDlt67ms5XvvIzmoLnmja7kuIrpnaLnmoTmlbDmja7nrpflh7rkuKTnu4Tlt67lgLzvvIzlubbloavlhaXkuIvooaggIDbliIYtLT4KICAgICAgICAgICAgPFBhcmEgU3R1ZGVudFZpc2libGU9IlRydWUiPgogICAgICAgICAgICAgIDxTbj4wMDwvU24+CiAgICAgICAgICAgICAgPE5hbWU+RkRZR1NfWFhNUzwvTmFtZT4KICAgICAgICAgICAgICA8U2NyaXB0PuWIqeeUqOmAkOW3ruazle+8jOagueaNruS4iumdoueahOaVsOaNrueul+WHuuS4pOe7hOW3ruWAvO+8jOW5tuWhq+WFpeS4i+ihqDwvU2NyaXB0PgogICAgICAgICAgICAgIDxWYXJUeXBlIENvdW50PSIyIj5UTGlzdDwvVmFyVHlwZT4KICAgICAgICAgICAgICA8UmVhbFJlc3VsdD4o5rWL6YeP57yW5Y+3LM6URChtbSkpOygxLDAuMDAwMDApOygyLDAuMDAwMDApPC9SZWFsUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRSZXN1bHQ+KOa1i+mHj+e8luWPtyzOlEQobW0pKTsoMSwwLjAwMDAwKTsoMiwwLjAwMDAwKTwvU3RkUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRTb3VyY2U+RXhwPC9TdGRTb3VyY2U+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdFNob3dJbmZvPuWOn+WAvDwvU3RkUmVzdWx0U2hvd0luZm8+CiAgICAgICAgICAgICAgPFRvdGFsU2NvcmU+NjwvVG90YWxTY29yZT4KICAgICAgICAgICAgICA8UmVhbFNjb3JlPjY8L1JlYWxTY29yZT4KICAgICAgICAgICAgICA8UGFyYSBTdHVkZW50VmlzaWJsZT0iVHJ1ZSI+CiAgICAgICAgICAgICAgICA8U24+MDA8L1NuPgogICAgICAgICAgICAgICAgPE5hbWU+SU5ERVg8L05hbWU+CiAgICAgICAgICAgICAgICA8U2NyaXB0Pua1i+mHj+e8luWPtzwvU2NyaXB0PgogICAgICAgICAgICAgICAgPFZhclR5cGUgQ291bnQ9IjEiPmRvdWJsZTwvVmFyVHlwZT4KICAgICAgICAgICAgICAgIDxTdGRTb3VyY2U+RGF0YUJhc2U8L1N0ZFNvdXJjZT4KICAgICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICAgICAgPFBhcmEgU3R1ZGVudFZpc2libGU9IlRydWUiPgogICAgICAgICAgICAgICAgPFNuPjAwPC9Tbj4KICAgICAgICAgICAgICAgIDxOYW1lPkRlbHRhSF9LSkRfTmFfMjwvTmFtZT4KICAgICAgICAgICAgICAgIDxTY3JpcHQ+zpREKG1tKTwvU2NyaXB0PgogICAgICAgICAgICAgICAgPFZhclR5cGUgQ291bnQ9IjEiPmRvdWJsZTwvVmFyVHlwZT4KICAgICAgICAgICAgICAgIDxTdGRTb3VyY2U+RXhwPC9TdGRTb3VyY2U+CiAgICAgICAgICAgICAgICA8SnVkZ2VSdWxlPgogICAgICAgICAgICAgICAgICA8UnVsZT4KICAgICAgICAgICAgICAgICAgICA8U3RkVmFsdWU+MTwvU3RkVmFsdWU+CiAgICAgICAgICAgICAgICAgICAgPFJhbmdlPgogICAgICAgICAgICAgICAgICAgICAgPFR5cGU+55m+5YiG5q+UPC9UeXBlPgogICAgICAgICAgICAgICAgICAgICAgPE1pbj4tMC4xPC9NaW4+CiAgICAgICAgICAgICAgICAgICAgICA8TWF4PjAuMTwvTWF4PgogICAgICAgICAgICAgICAgICAgIDwvUmFuZ2U+CiAgICAgICAgICAgICAgICAgICAgPFNjb3JlPjM8L1Njb3JlPgogICAgICAgICAgICAgICAgICAgIDxSdWxlU2hvd0luZm8+5q+P56m65q2j56GuPC9SdWxlU2hvd0luZm8+CiAgICAgICAgICAgICAgICAgIDwvUnVsZT4KICAgICAgICAgICAgICAgIDwvSnVkZ2VSdWxlPgogICAgICAgICAgICAgIDwvUGFyYT4KICAgICAgICAgICAgPC9QYXJhPgogICAgICAgICAgICA8IS0t55So6YCQ5beu5rOV5aSE55CG5pWw5o2u77yM5qC55o2u55u45bqU5YWs5byP6K6h566X6ZKg5YWJ5Y+M57q/55qE5rOi6ZW/5beuIGTvvIhube+8iSAgIDTliIYtLT4KICAgICAgICAgICAgPFBhcmEgU3R1ZGVudFZpc2libGU9IlRydWUiPgogICAgICAgICAgICAgIDxTbj4wMDwvU24+CiAgICAgICAgICAgICAgPE5hbWU+TmFuYmRhX05hRXg8L05hbWU+CiAgICAgICAgICAgICAgPFNjcmlwdD7nlKjpgJDlt67ms5XlpITnkIbmlbDmja7vvIzmoLnmja7nm7jlupTlhazlvI/orqHnrpfpkqDlhYnlj4znur/nmoTms6Lplb/lt64gZO+8iG5t77yJPTwvU2NyaXB0PgogICAgICAgICAgICAgIDxWYXJUeXBlPkRvdWJsZTwvVmFyVHlwZT4KICAgICAgICAgICAgICA8UmVhbFJlc3VsdD4wLjAwPC9SZWFsUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRSZXN1bHQ+MC4wMDwvU3RkUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRTb3VyY2U+RXhwPC9TdGRTb3VyY2U+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdFNob3dJbmZvPuWOn+WAvDwvU3RkUmVzdWx0U2hvd0luZm8+CiAgICAgICAgICAgICAgPFRvdGFsU2NvcmU+NDwvVG90YWxTY29yZT4KICAgICAgICAgICAgICA8UmVhbFNjb3JlPjQ8L1JlYWxTY29yZT4KICAgICAgICAgICAgICA8SnVkZ2VSdWxlPgogICAgICAgICAgICAgICAgPFJ1bGU+CiAgICAgICAgICAgICAgICAgIDxTdGRWYWx1ZT4xPC9TdGRWYWx1ZT4KICAgICAgICAgICAgICAgICAgPFJhbmdlPgogICAgICAgICAgICAgICAgICAgIDxUeXBlPueZvuWIhuavlDwvVHlwZT4KICAgICAgICAgICAgICAgICAgICA8TWluPi0wLjE8L01pbj4KICAgICAgICAgICAgICAgICAgICA8TWF4PjAuMTwvTWF4PgogICAgICAgICAgICAgICAgICA8L1JhbmdlPgogICAgICAgICAgICAgICAgICA8U2NvcmU+NDwvU2NvcmU+CiAgICAgICAgICAgICAgICAgIDwhLS08QW5zd2VyU2hvd0luZm8+5Y6f5YC8PC9BbnN3ZXJTaG93SW5mbz4tLT4KICAgICAgICAgICAgICAgICAgPFJ1bGVTaG93SW5mbz7lrp7pmYXmtYvph4/lgY/lt648L1J1bGVTaG93SW5mbz4KICAgICAgICAgICAgICAgIDwvUnVsZT4KICAgICAgICAgICAgICAgIDxSdWxlPgogICAgICAgICAgICAgICAgICA8U3RkVmFsdWU+MTwvU3RkVmFsdWU+CiAgICAgICAgICAgICAgICAgIDxSYW5nZT4KICAgICAgICAgICAgICAgICAgICA8VHlwZT7nmb7liIbmr5Q8L1R5cGU+CiAgICAgICAgICAgICAgICAgICAgPE1pbj4tMC4yPC9NaW4+CiAgICAgICAgICAgICAgICAgICAgPE1heD4wLjI8L01heD4KICAgICAgICAgICAgICAgICAgPC9SYW5nZT4KICAgICAgICAgICAgICAgICAgPFNjb3JlPjM8L1Njb3JlPgogICAgICAgICAgICAgICAgICA8IS0tPEFuc3dlclNob3dJbmZvPuWOn+WAvDwvQW5zd2VyU2hvd0luZm8+LS0+CiAgICAgICAgICAgICAgICAgIDxSdWxlU2hvd0luZm8+5a6e6ZmF5rWL6YeP5YGP5beuPC9SdWxlU2hvd0luZm8+CiAgICAgICAgICAgICAgICA8L1J1bGU+CiAgICAgICAgICAgICAgICA8UnVsZT4KICAgICAgICAgICAgICAgICAgPFN0ZFZhbHVlPjE8L1N0ZFZhbHVlPgogICAgICAgICAgICAgICAgICA8UmFuZ2U+CiAgICAgICAgICAgICAgICAgICAgPFR5cGU+55m+5YiG5q+UPC9UeXBlPgogICAgICAgICAgICAgICAgICAgIDxNaW4+LTAuNTwvTWluPgogICAgICAgICAgICAgICAgICAgIDxNYXg+MC41PC9NYXg+CiAgICAgICAgICAgICAgICAgIDwvUmFuZ2U+CiAgICAgICAgICAgICAgICAgIDxTY29yZT4yPC9TY29yZT4KICAgICAgICAgICAgICAgICAgPCEtLTxBbnN3ZXJTaG93SW5mbz7ljp/lgLw8L0Fuc3dlclNob3dJbmZvPi0tPgogICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuWunumZhea1i+mHj+WBj+W3rjwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgPC9SdWxlPgogICAgICAgICAgICAgIDwvSnVkZ2VSdWxlPgogICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICA8L0dyb3VwPgogICAgICAgICAgPFJlYWxTY29yZT4xMDwvUmVhbFNjb3JlPgogICAgICAgIDwvVGVzdFRhcmdldD4KICAgICAgPC9DaGVja1BvaW50PgogICAgPC9RdWVzdGlvbj4KICAgIDxRdWVzdGlvbiBUeXBlPSJPUCI+CiAgICAgIDxTbj4wMTwvU24+CiAgICAgIDxOYW1lPuS9v+eUqOi/iOWFi+WwlOmAiuW5sua2ieS7qua1i+mHj+mAj+aYjuiWhOeJh+eahOaKmOWwhOeOhzwvTmFtZT4KICAgICAgPElkPlNJTVFVRVNUX01LRVhHU1lTWV9DTE1CUFpTTF9aR0tYSlNEWF9WMDAxPC9JZD4KICAgICAgPFR5cGU+6ICD6K+V6aKY55uuPC9UeXBlPgogICAgICA8U2NvcmU+CiAgICAgICAgPFJlYWxTY29yZT42MDwvUmVhbFNjb3JlPgogICAgICAgIDxUb3RhbD42MDwvVG90YWw+CiAgICAgIDwvU2NvcmU+CiAgICAgIDxTY3JpcHQ+CiAgICAgICAgPERPQz4KICAgICAgICAgIDxQYXJhZ3JhcGggTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEyIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiPgogICAgICAgICAgICA8SW5saW5lIFR5cGU9IlJ1biIgTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEyIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiIFRleHQ9IuWunumqjOWupOaPkOS+m0hlLU5l5r+A5YWJ5Zmo77yM55m95YWJ5rqQ77yM5bCP5a2U5YWJ6ZiR77yM55+t54Sm6YCP6ZWc77yM6L+I5YWL5bCU6YCK5bmy5raJ5Luq77yM6K+35L2/55So6L+Z5Lqb5Luq5Zmo5rWL6YeP6YCP5piO6JaE54mH55qE5oqY5bCE546H44CCIiBUZXh0RGVjb3JhdGlvbnM9IlN5c3RlbS5XaW5kb3dzLlRleHREZWNvcmF0aW9uQ29sbGVjdGlvbiIgLz4KICAgICAgICAgIDwvUGFyYWdyYXBoPgogICAgICAgIDwvRE9DPgogICAgICA8L1NjcmlwdD4KICAgICAgPEluaXRpYWxTdGF0dXM+CiAgICAgICAgPFNjcmlwdD48L1NjcmlwdD4KICAgICAgICA8Q29uZmlnRmlsZT5TSU1RVUVTVF9NS0VYR1NZU1lfS1NUMl9aR0tYSlNEWF9WMDAxLnhtbDwvQ29uZmlnRmlsZT4KICAgICAgPC9Jbml0aWFsU3RhdHVzPgogICAgICA8S2V5UG9pbnQ+CiAgICAgICAgPFNjcmlwdD4KICAgICAgICAgIDxET0M+CiAgICAgICAgICAgIDxQYXJhZ3JhcGggTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEzIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiPgogICAgICAgICAgICAgIDxJbmxpbmUgVHlwZT0iUnVuIiBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCIgVGV4dD0iTTLkuIrnmoTkuInkuKronrrpkonnmoTosIPoioLkvb/mmL7npLrlsY/nmoTkuKTmjpLlhYnngrnph43lkIjjgIIiIFRleHREZWNvcmF0aW9ucz0iIiAvPgogICAgICAgICAgICA8L1BhcmFncmFwaD4KICAgICAgICAgICAgPFBhcmFncmFwaCBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCI+CiAgICAgICAgICAgICAgPElubGluZSBUeXBlPSJSdW4iIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIiBUZXh0PSLmtYvph4/pgI/mmI7oloTniYfnmoTmipjlsITnjofjgIIiIFRleHREZWNvcmF0aW9ucz0iIiAvPgogICAgICAgICAgICA8L1BhcmFncmFwaD4KICAgICAgICAgICAgPFBhcmFncmFwaCBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCI+CiAgICAgICAgICAgICAgPElubGluZSBUeXBlPSJSdW4iIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIiBUZXh0PSLliKnnlKjpgJDlt67ms5XlpITnkIbmlbDmja7jgIIiIFRleHREZWNvcmF0aW9ucz0iIiAvPgogICAgICAgICAgICA8L1BhcmFncmFwaD4KICAgICAgICAgIDwvRE9DPgogICAgICAgIDwvU2NyaXB0PgogICAgICA8L0tleVBvaW50PgogICAgICA8Q2hlY2tQb2ludD4KICAgICAgICA8U2NyaXB0PjwvU2NyaXB0PgogICAgICAgIDwhLS3lhYnot6/osIPoioIgIDI35YiGLS0+CiAgICAgICAgPFRlc3RUYXJnZXQ+CiAgICAgICAgICA8U2NyaXB0PuWFiei3r+iwg+iKgjwvU2NyaXB0PgogICAgICAgICAgPEdyb3VwPgogICAgICAgICAgICA8IS0t5pS+572uSGUtTmXmv4DlhYnlmajvvIzlubbmiZPlvIDmv4DlhYnlmajnlLXmupDlvIDlhbPjgIIgNeWIhi0tPgogICAgICAgICAgICA8UGFyYSBTdHVkZW50VmlzaWJsZT0iRmFsc2UiPgogICAgICAgICAgICAgIDxTbj4xMDA8L1NuPgogICAgICAgICAgICAgIDxOYW1lPklzSGVOZWpncU9uQ2hlY2tfSGVOZTwvTmFtZT4KICAgICAgICAgICAgICA8U2NyaXB0PuaUvue9rkhlLU5l5r+A5YWJ5Zmo77yM5bm25omT5byA5r+A5YWJ5Zmo55S15rqQ5byA5YWz44CCPC9TY3JpcHQ+CiAgICAgICAgICAgICAgPFZhclR5cGU+Ym9vbDwvVmFyVHlwZT4KICAgICAgICAgICAgICA8UmVhbFJlc3VsdD5UcnVlPC9SZWFsUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRSZXN1bHQ+VHJ1ZTwvU3RkUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRTb3VyY2U+RGF0YUJhc2U8L1N0ZFNvdXJjZT4KICAgICAgICAgICAgICA8U3RkUmVzdWx0U2hvd0luZm8+5pON5L2c5q2j56GuPC9TdGRSZXN1bHRTaG93SW5mbz4KICAgICAgICAgICAgICA8VG90YWxTY29yZT41PC9Ub3RhbFNjb3JlPgogICAgICAgICAgICAgIDxSZWFsU2NvcmU+NTwvUmVhbFNjb3JlPgogICAgICAgICAgICAgIDxKdWRnZVJ1bGU+CiAgICAgICAgICAgICAgICA8UmlnaHRSdWxlPgogICAgICAgICAgICAgICAgICA8U2NvcmU+NTwvU2NvcmU+CiAgICAgICAgICAgICAgICAgIDxSdWxlU2hvd0luZm8+5pON5L2c5q2j56GuPC9SdWxlU2hvd0luZm8+CiAgICAgICAgICAgICAgICA8L1JpZ2h0UnVsZT4KICAgICAgICAgICAgICAgIDxXcm9uZ1J1bGU+CiAgICAgICAgICAgICAgICAgIDxTY29yZT5Mb3N0V2hvbGVRdWVzdGlvbjwvU2NvcmU+CiAgICAgICAgICAgICAgICAgIDxSdWxlU2hvd0luZm8+5pON5L2c6ZSZ6K+vPC9SdWxlU2hvd0luZm8+CiAgICAgICAgICAgICAgICA8L1dyb25nUnVsZT4KICAgICAgICAgICAgICA8L0p1ZGdlUnVsZT4KICAgICAgICAgICAgICA8U3R1ZGVudFJlc3VsdFNob3dJbmZvPuaTjeS9nOmUmeivrzwvU3R1ZGVudFJlc3VsdFNob3dJbmZvPgogICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICAgIDwhLS3mlL7nva7lsI/lrZTlhYnpmJHvvIzosIPoioJNMumVnOS4iueahOS4ieS4quieuumSiSwg5L2/5YWJ54K56YeN5ZCI44CCMTLliIYtLT4KICAgICAgICAgICAgPFBhcmEgU3R1ZGVudFZpc2libGU9IkZhbHNlIj4KICAgICAgICAgICAgICA8TmFtZT5HRENIQ2hlY2tfSGVOZTwvTmFtZT4KICAgICAgICAgICAgICA8U2NyaXB0PuaUvue9ruWwj+WtlOWFiemYke+8jOiwg+iKgk0y6ZWc5LiK55qE5LiJ5Liq6J666ZKJLCDkvb/lhYnngrnph43lkIjjgII8L1NjcmlwdD4KICAgICAgICAgICAgICA8VmFyVHlwZT5ib29sPC9WYXJUeXBlPgogICAgICAgICAgICAgIDxSZWFsUmVzdWx0PlRydWU8L1JlYWxSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdD5UcnVlPC9TdGRSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdFNob3dJbmZvPuWFieeCuemHjeWQiDwvU3RkUmVzdWx0U2hvd0luZm8+CiAgICAgICAgICAgICAgPFN0ZFNvdXJjZT5EYXRhQmFzZTwvU3RkU291cmNlPgogICAgICAgICAgICAgIDxUb3RhbFNjb3JlPjEyPC9Ub3RhbFNjb3JlPgogICAgICAgICAgICAgIDxSZWFsU2NvcmU+MTI8L1JlYWxTY29yZT4KICAgICAgICAgICAgICA8SnVkZ2VSdWxlPgogICAgICAgICAgICAgICAgPFJpZ2h0UnVsZT4KICAgICAgICAgICAgICAgICAgPFNjb3JlPjEyPC9TY29yZT4KICAgICAgICAgICAgICAgICAgPFJ1bGVTaG93SW5mbz7lhYnngrnph43lkIg8L1J1bGVTaG93SW5mbz4KICAgICAgICAgICAgICAgIDwvUmlnaHRSdWxlPgogICAgICAgICAgICAgICAgPFdyb25nUnVsZT4KICAgICAgICAgICAgICAgICAgPFNjb3JlPjA8L1Njb3JlPgogICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuWFieeCueayoeaciemHjeWQiDwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgPC9Xcm9uZ1J1bGU+CiAgICAgICAgICAgICAgPC9KdWRnZVJ1bGU+CiAgICAgICAgICAgICAgPFN0dWRlbnRSZXN1bHRTaG93SW5mbz7lhYnngrnmsqHmnInph43lkIg8L1N0dWRlbnRSZXN1bHRTaG93SW5mbz4KICAgICAgICAgICAgPC9QYXJhPgogICAgICAgICAgICA8IS0t56e76Zmk5bCP5a2U5YWJ6ZiR77yM5pS+572u55+t54Sm6YCP6ZWc77yMIOWHuueOsOaYjuS6rueahOW5sua2ieadoee6ue+8jOWwj+W/g+eahOiwg+iKgk0y5LiK55qE5peL6ZKu77yM5L2/5ZyG5b+D5L2N5LqO5q+b546755KD5Lit6Ze044CCMTDliIYtLT4KICAgICAgICAgICAgPFBhcmEgU3R1ZGVudFZpc2libGU9IkZhbHNlIj4KICAgICAgICAgICAgICA8TmFtZT5IZU5lR1NUV0NoZWNrX0hlTmU8L05hbWU+CiAgICAgICAgICAgICAgPFNjcmlwdD7np7vpmaTlsI/lrZTlhYnpmJHvvIzmlL7nva7nn63nhKbpgI/plZzvvIwg5Ye6546w5piO5Lqu55qE5bmy5raJ5p2h57q577yM5bCP5b+D55qE6LCD6IqCTTLkuIrnmoTml4vpkq7vvIzkvb/lnIblv4PkvY3kuo7mr5vnjrvnkoPkuK3pl7TjgII8L1NjcmlwdD4KICAgICAgICAgICAgICA8VmFyVHlwZT5ib29sPC9WYXJUeXBlPgogICAgICAgICAgICAgIDxSZWFsUmVzdWx0PlRydWU8L1JlYWxSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdD5UcnVlPC9TdGRSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFNvdXJjZT5EYXRhQmFzZTwvU3RkU291cmNlPgogICAgICAgICAgICAgIDxTdGRSZXN1bHRTaG93SW5mbz7lnIblv4PkvY3kuo7mr5vnjrvnkoPkuK3lv4M8L1N0ZFJlc3VsdFNob3dJbmZvPgogICAgICAgICAgICAgIDxUb3RhbFNjb3JlPjEwPC9Ub3RhbFNjb3JlPgogICAgICAgICAgICAgIDxSZWFsU2NvcmU+MTA8L1JlYWxTY29yZT4KICAgICAgICAgICAgICA8SnVkZ2VSdWxlPgogICAgICAgICAgICAgICAgPFJpZ2h0UnVsZT4KICAgICAgICAgICAgICAgICAgPFNjb3JlPjEwPC9TY29yZT4KICAgICAgICAgICAgICAgICAgPFJ1bGVTaG93SW5mbz7lnIblv4PkvY3kuo7mr5vnjrvnkoPkuK3lv4M8L1J1bGVTaG93SW5mbz4KICAgICAgICAgICAgICAgIDwvUmlnaHRSdWxlPgogICAgICAgICAgICAgICAgPFdyb25nUnVsZT4KICAgICAgICAgICAgICAgICAgPFNjb3JlPjA8L1Njb3JlPgogICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuWchuW/g+ayoeacieS9jeS6juavm+eOu+eSg+S4reW/gzwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgPC9Xcm9uZ1J1bGU+CiAgICAgICAgICAgICAgPC9KdWRnZVJ1bGU+CiAgICAgICAgICAgICAgPFN0dWRlbnRSZXN1bHRTaG93SW5mbz7lnIblv4PmsqHmnInkvY3kuo7mr5vnjrvnkoPkuK3lv4M8L1N0dWRlbnRSZXN1bHRTaG93SW5mbz4KICAgICAgICAgICAgPC9QYXJhPgogICAgICAgICAgPC9Hcm91cD4KICAgICAgICAgIDxSZWFsU2NvcmU+Mjc8L1JlYWxTY29yZT4KICAgICAgICA8L1Rlc3RUYXJnZXQ+CiAgICAgICAgPCEtLeivu+aVsOajgOafpSAz5YiGLS0+CiAgICAgICAgPFRlc3RUYXJnZXQ+CiAgICAgICAgICA8U2NyaXB0Puivu+aVsOajgOafpTwvU2NyaXB0PgogICAgICAgICAgPEdyb3VwPgogICAgICAgICAgICA8UGFyYSBTdHVkZW50VmlzaWJsZT0iRmFsc2UiPgogICAgICAgICAgICAgIDxTbj4yODwvU24+CiAgICAgICAgICAgICAgPE5hbWU+RFNHU19IZU5lPC9OYW1lPgogICAgICAgICAgICAgIDxTY3JpcHQ+6L+I5YWL5bCU6YCK5bmy5raJ5Luq6K+75pWw5qC85byP5qOA5p+l77yI5Lul5q+r57Gz5Li65Y2V5L2N77yM5L+d55WZ5bCP5pWw54K55ZCONeS9je+8iTwvU2NyaXB0PgogICAgICAgICAgICAgIDxWYXJUeXBlPmJvb2w8L1ZhclR5cGU+CiAgICAgICAgICAgICAgPFJlYWxSZXN1bHQ+VHJ1ZTwvUmVhbFJlc3VsdD4KICAgICAgICAgICAgICA8U3RkUmVzdWx0PlRydWU8L1N0ZFJlc3VsdD4KICAgICAgICAgICAgICA8U3RkUmVzdWx0U2hvd0luZm8+5qC85byP5q2j56GuPC9TdGRSZXN1bHRTaG93SW5mbz4KICAgICAgICAgICAgICA8U3RkU291cmNlPkRhdGFCYXNlPC9TdGRTb3VyY2U+CiAgICAgICAgICAgICAgPFRvdGFsU2NvcmU+MzwvVG90YWxTY29yZT4KICAgICAgICAgICAgICA8UmVhbFNjb3JlPjM8L1JlYWxTY29yZT4KICAgICAgICAgICAgICA8SnVkZ2VSdWxlPgogICAgICAgICAgICAgICAgPFJpZ2h0UnVsZT4KICAgICAgICAgICAgICAgICAgPFJ1bGVTaG93SW5mbz7moLzlvI/mraPnoa48L1J1bGVTaG93SW5mbz4KICAgICAgICAgICAgICAgICAgPFNjb3JlPjM8L1Njb3JlPgogICAgICAgICAgICAgICAgPC9SaWdodFJ1bGU+CiAgICAgICAgICAgICAgICA8V3JvbmdSdWxlPgogICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuagvOW8j+mUmeivrzwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgICA8U2NvcmU+MDwvU2NvcmU+CiAgICAgICAgICAgICAgICA8L1dyb25nUnVsZT4KICAgICAgICAgICAgICA8L0p1ZGdlUnVsZT4KICAgICAgICAgICAgICA8U3R1ZGVudFJlc3VsdFNob3dJbmZvPuagvOW8j+mUmeivrzwvU3R1ZGVudFJlc3VsdFNob3dJbmZvPgogICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICA8L0dyb3VwPgogICAgICAgICAgPFJlYWxTY29yZT4zPC9SZWFsU2NvcmU+CiAgICAgICAgPC9UZXN0VGFyZ2V0PgogICAgICAgIDwhLS3mjaLnmb3lhYnmupDvvIznp7vliqhNMe+8jOaJvuWIsGQ9MOeahOS9jee9ru+8jOinguWvn+WIsOS4reWkruaYr+ebtOe6v+m7kee6ueS4pOi+ueWvueensOWIhuW4g+W9qeiJsuiKsee6ueeahOebtOe6v+W5sua2ieadoee6ue+8jOW8gOWni+a1i+mHj+eOu+eSg+iWhOeJh+eahOaKmOWwhOeOh+OAgi0tPgogICAgICAgIDxUZXN0VGFyZ2V0PgogICAgICAgICAgPFNjcmlwdD7mjaLnmb3lhYnmupDvvIznp7vliqhNMe+8jOaJvuWIsGQ9MOeahOS9jee9ru+8jOinguWvn+WIsOS4reWkruaYr+ebtOe6v+m7kee6ueS4pOi+ueWvueensOWIhuW4g+W9qeiJsuiKsee6ueeahOebtOe6v+W5sua2ieadoee6ue+8jOW8gOWni+a1i+mHj+eOu+eSg+iWhOeJh+eahOaKmOWwhOeOh+OAgjwvU2NyaXB0PgogICAgICAgICAgPEdyb3VwPgogICAgICAgICAgICA8IS0t5bCG5Lit5aSu6buR57q556e75Yiw5Lit6Ze077yM54S25ZCO54K55Ye75oyJ6ZKu5L+d5a2Y54q25oCBICBEMFBvc0NoZWNrICA25YiGLS0+CiAgICAgICAgICAgIDxQYXJhIFN0dWRlbnRWaXNpYmxlPSJGYWxzZSI+CiAgICAgICAgICAgICAgPFNuPjAzPC9Tbj4KICAgICAgICAgICAgICA8TmFtZT5EMFBvc0NoZWNrPC9OYW1lPgogICAgICAgICAgICAgIDxTY3JpcHQ+5bCG5Lit5aSu6buR57q556e75Yiw5Lit6Ze077yM54S25ZCO54K55Ye75oyJ6ZKu5L+d5a2Y54q25oCBPC9TY3JpcHQ+CiAgICAgICAgICAgICAgPFZhclR5cGU+aW50PC9WYXJUeXBlPgogICAgICAgICAgICAgIDxSZWFsUmVzdWx0PjE8L1JlYWxSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdD4xPC9TdGRSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFNvdXJjZT5EYXRhQmFzZTwvU3RkU291cmNlPgogICAgICAgICAgICAgIDxTdGRSZXN1bHRTaG93SW5mbz7kuK3lpK7pu5HnurnkvY3kuo7op4blnLrkuK3lv4M8L1N0ZFJlc3VsdFNob3dJbmZvPgogICAgICAgICAgICAgIDxUb3RhbFNjb3JlPjY8L1RvdGFsU2NvcmU+CiAgICAgICAgICAgICAgPFJlYWxTY29yZT42PC9SZWFsU2NvcmU+CiAgICAgICAgICAgICAgPEp1ZGdlUnVsZT4KICAgICAgICAgICAgICAgIDxSdWxlPgogICAgICAgICAgICAgICAgICA8U3RkVmFsdWU+MTwvU3RkVmFsdWU+CiAgICAgICAgICAgICAgICAgIDxSYW5nZT4KICAgICAgICAgICAgICAgICAgICA8VHlwZT7nmb7liIbmr5Q8L1R5cGU+CiAgICAgICAgICAgICAgICAgICAgPE1pbj4wPC9NaW4+CiAgICAgICAgICAgICAgICAgICAgPE1heD4wPC9NYXg+CiAgICAgICAgICAgICAgICAgIDwvUmFuZ2U+CiAgICAgICAgICAgICAgICAgIDxTY29yZT42PC9TY29yZT4KICAgICAgICAgICAgICAgICAgPCEtLTxBbnN3ZXJTaG93SW5mbz7kuK3lpK7pu5HnurnkvY3kuo7op4blnLrkuK3lv4M8L0Fuc3dlclNob3dJbmZvPi0tPgogICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuS4reWkrum7kee6ueS9jeS6juinhuWcuuS4reW/gzwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgPC9SdWxlPgogICAgICAgICAgICAgICAgPFJ1bGU+CiAgICAgICAgICAgICAgICAgIDxTdGRWYWx1ZT4xPC9TdGRWYWx1ZT4KICAgICAgICAgICAgICAgICAgPFJhbmdlPgogICAgICAgICAgICAgICAgICAgIDxUeXBlPueZvuWIhuavlDwvVHlwZT4KICAgICAgICAgICAgICAgICAgICA8TWluPjAuMTwvTWluPgogICAgICAgICAgICAgICAgICAgIDxNYXg+MS4xPC9NYXg+CiAgICAgICAgICAgICAgICAgIDwvUmFuZ2U+CiAgICAgICAgICAgICAgICAgIDxTY29yZT4yPC9TY29yZT4KICAgICAgICAgICAgICAgICAgPCEtLTxBbnN3ZXJTaG93SW5mbz7kuK3lpK7pu5HnurnnmoTkvY3nva7mnInkuIDkupvlgY/lt648L0Fuc3dlclNob3dJbmZvPi0tPgogICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuS4reWkrum7kee6ueeahOS9jee9ruacieS4gOS6m+WBj+W3rjwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgPC9SdWxlPgogICAgICAgICAgICAgICAgPFJ1bGU+CiAgICAgICAgICAgICAgICAgIDxTdGRWYWx1ZT4xPC9TdGRWYWx1ZT4KICAgICAgICAgICAgICAgICAgPFJhbmdlPgogICAgICAgICAgICAgICAgICAgIDxUeXBlPueZvuWIhuavlDwvVHlwZT4KICAgICAgICAgICAgICAgICAgICA8TWluPi0xLjE8L01pbj4KICAgICAgICAgICAgICAgICAgICA8TWF4Pi0wLjE8L01heD4KICAgICAgICAgICAgICAgICAgPC9SYW5nZT4KICAgICAgICAgICAgICAgICAgPFNjb3JlPjA8L1Njb3JlPgogICAgICAgICAgICAgICAgICA8IS0tPEFuc3dlclNob3dJbmZvPuaTjeS9nOmUmeivr+aIluiAheayoeacieWHuueOsOW9qeiJsuadoee6uTwvQW5zd2VyU2hvd0luZm8+LS0+CiAgICAgICAgICAgICAgICAgIDxSdWxlU2hvd0luZm8+5pON5L2c6ZSZ6K+v5oiW6ICF5rKh5pyJ5Ye6546w5b2p6Imy5p2h57q5PC9SdWxlU2hvd0luZm8+CiAgICAgICAgICAgICAgICA8L1J1bGU+CiAgICAgICAgICAgICAgPC9KdWRnZVJ1bGU+CiAgICAgICAgICAgIDwvUGFyYT4KICAgICAgICAgICAgPCEtLeatpOaXtk0x55qE5L2N572uKG1tKSAgRDBQb3MtLT4KICAgICAgICAgICAgPFBhcmEgU3R1ZGVudFZpc2libGU9IlRydWUiPgogICAgICAgICAgICAgIDxTbj4wNDwvU24+CiAgICAgICAgICAgICAgPE5hbWU+RDBQb3M8L05hbWU+CiAgICAgICAgICAgICAgPFNjcmlwdD7mraTml7ZNMeeahOS9jee9rihtbSk8L1NjcmlwdD4KICAgICAgICAgICAgICA8VmFyVHlwZT5kb3VibGU8L1ZhclR5cGU+CiAgICAgICAgICAgICAgPFJlYWxSZXN1bHQ+PC9SZWFsUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRSZXN1bHQ+PC9TdGRSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFNvdXJjZT5FeHA8L1N0ZFNvdXJjZT4KICAgICAgICAgICAgICA8U3RkUmVzdWx0U2hvd0luZm8+5Y6f5YC8PC9TdGRSZXN1bHRTaG93SW5mbz4KICAgICAgICAgICAgICA8VG90YWxTY29yZT4wPC9Ub3RhbFNjb3JlPgogICAgICAgICAgICAgIDxSZWFsU2NvcmU+MDwvUmVhbFNjb3JlPgogICAgICAgICAgICAgIDxKdWRnZVJ1bGUgLz4KICAgICAgICAgICAgPC9QYXJhPgogICAgICAgICAgICA8IS0t5pS+572u546755KD6JaE54mH77yM5YaN5bCG5Lit5aSu6buR57q556e75Yqo6Iez5Lit5b+D77yM54K55Ye75oyJ6ZKu5L+d5a2Y54q25oCBICBEX0JMX1Bvc0NoZWNrICA25YiGLS0+CiAgICAgICAgICAgIDxQYXJhIFN0dWRlbnRWaXNpYmxlPSJGYWxzZSI+CiAgICAgICAgICAgICAgPFNuPjAwPC9Tbj4KICAgICAgICAgICAgICA8TmFtZT5EX0JMX1Bvc0NoZWNrPC9OYW1lPgogICAgICAgICAgICAgIDxTY3JpcHQ+5pS+572u546755KD6JaE54mH77yM5YaN5bCG5Lit5aSu6buR57q556e75Yqo6Iez5Lit5b+D77yM54K55Ye75oyJ6ZKu5L+d5a2Y54q25oCBPC9TY3JpcHQ+CiAgICAgICAgICAgICAgPFZhclR5cGU+aW50PC9WYXJUeXBlPgogICAgICAgICAgICAgIDxSZWFsUmVzdWx0PjE8L1JlYWxSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdD4xPC9TdGRSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFNvdXJjZT5EYXRhQmFzZTwvU3RkU291cmNlPgogICAgICAgICAgICAgIDxTdGRSZXN1bHRTaG93SW5mbz7kuK3lpK7pu5HnurnkvY3kuo7op4blnLrkuK3lv4M8L1N0ZFJlc3VsdFNob3dJbmZvPgogICAgICAgICAgICAgIDxUb3RhbFNjb3JlPjY8L1RvdGFsU2NvcmU+CiAgICAgICAgICAgICAgPFJlYWxTY29yZT42PC9SZWFsU2NvcmU+CiAgICAgICAgICAgICAgPEp1ZGdlUnVsZT4KICAgICAgICAgICAgICAgIDxSdWxlPgogICAgICAgICAgICAgICAgICA8U3RkVmFsdWU+MTwvU3RkVmFsdWU+CiAgICAgICAgICAgICAgICAgIDxSYW5nZT4KICAgICAgICAgICAgICAgICAgICA8VHlwZT7nmb7liIbmr5Q8L1R5cGU+CiAgICAgICAgICAgICAgICAgICAgPE1pbj4wPC9NaW4+CiAgICAgICAgICAgICAgICAgICAgPE1heD4wPC9NYXg+CiAgICAgICAgICAgICAgICAgIDwvUmFuZ2U+CiAgICAgICAgICAgICAgICAgIDxTY29yZT42PC9TY29yZT4KICAgICAgICAgICAgICAgICAgPCEtLTxBbnN3ZXJTaG93SW5mbz7kuK3lpK7pu5HnurnkvY3kuo7op4blnLrkuK3lv4M8L0Fuc3dlclNob3dJbmZvPi0tPgogICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuS4reWkrum7kee6ueS9jeS6juinhuWcuuS4reW/gzwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgPC9SdWxlPgogICAgICAgICAgICAgICAgPFJ1bGU+CiAgICAgICAgICAgICAgICAgIDxTdGRWYWx1ZT4xPC9TdGRWYWx1ZT4KICAgICAgICAgICAgICAgICAgPFJhbmdlPgogICAgICAgICAgICAgICAgICAgIDxUeXBlPueZvuWIhuavlDwvVHlwZT4KICAgICAgICAgICAgICAgICAgICA8TWluPjAuMTwvTWluPgogICAgICAgICAgICAgICAgICAgIDxNYXg+MS4xPC9NYXg+CiAgICAgICAgICAgICAgICAgIDwvUmFuZ2U+CiAgICAgICAgICAgICAgICAgIDxTY29yZT4yPC9TY29yZT4KICAgICAgICAgICAgICAgICAgPCEtLTxBbnN3ZXJTaG93SW5mbz7kuK3lpK7pu5HnurnnmoTkvY3nva7mnInkuIDkupvlgY/lt648L0Fuc3dlclNob3dJbmZvPi0tPgogICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuS4reWkrum7kee6ueeahOS9jee9ruacieS4gOS6m+WBj+W3rjwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgPC9SdWxlPgogICAgICAgICAgICAgICAgPFJ1bGU+CiAgICAgICAgICAgICAgICAgIDxTdGRWYWx1ZT4xPC9TdGRWYWx1ZT4KICAgICAgICAgICAgICAgICAgPFJhbmdlPgogICAgICAgICAgICAgICAgICAgIDxUeXBlPueZvuWIhuavlDwvVHlwZT4KICAgICAgICAgICAgICAgICAgICA8TWluPi0xLjE8L01pbj4KICAgICAgICAgICAgICAgICAgICA8TWF4Pi0wLjE8L01heD4KICAgICAgICAgICAgICAgICAgPC9SYW5nZT4KICAgICAgICAgICAgICAgICAgPFNjb3JlPjA8L1Njb3JlPgogICAgICAgICAgICAgICAgICA8IS0tPEFuc3dlclNob3dJbmZvPuaTjeS9nOmUmeivr+aIluiAheayoeacieWHuueOsOW9qeiJsuadoee6uTwvQW5zd2VyU2hvd0luZm8+LS0+CiAgICAgICAgICAgICAgICAgIDxSdWxlU2hvd0luZm8+5pON5L2c6ZSZ6K+v5oiW6ICF5rKh5pyJ5Ye6546w5b2p6Imy5p2h57q5PC9SdWxlU2hvd0luZm8+CiAgICAgICAgICAgICAgICA8L1J1bGU+CiAgICAgICAgICAgICAgPC9KdWRnZVJ1bGU+CiAgICAgICAgICAgIDwvUGFyYT4KICAgICAgICAgICAgPCEtLeatpOaXtk0x55qE5L2N572uKG1tKSAgRF9TWUJMX1Bvcy0tPgogICAgICAgICAgICA8UGFyYSBTdHVkZW50VmlzaWJsZT0iVHJ1ZSI+CiAgICAgICAgICAgICAgPFNuPjA0PC9Tbj4KICAgICAgICAgICAgICA8TmFtZT5EX1NZQkxfUG9zPC9OYW1lPgogICAgICAgICAgICAgIDxTY3JpcHQ+5q2k5pe2TTHnmoTkvY3nva4obW0pPC9TY3JpcHQ+CiAgICAgICAgICAgICAgPFZhclR5cGU+ZG91YmxlPC9WYXJUeXBlPgogICAgICAgICAgICAgIDxSZWFsUmVzdWx0PjwvUmVhbFJlc3VsdD4KICAgICAgICAgICAgICA8U3RkUmVzdWx0PjwvU3RkUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRTb3VyY2U+RXhwPC9TdGRTb3VyY2U+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdFNob3dJbmZvPuWOn+WAvDwvU3RkUmVzdWx0U2hvd0luZm8+CiAgICAgICAgICAgICAgPFRvdGFsU2NvcmU+MDwvVG90YWxTY29yZT4KICAgICAgICAgICAgICA8UmVhbFNjb3JlPjA8L1JlYWxTY29yZT4KICAgICAgICAgICAgICA8SnVkZ2VSdWxlIC8+CiAgICAgICAgICAgIDwvUGFyYT4KICAgICAgICAgIDwvR3JvdXA+CiAgICAgICAgICA8UmVhbFNjb3JlPjEyPC9SZWFsU2NvcmU+CiAgICAgICAgPC9UZXN0VGFyZ2V0PgogICAgICAgIDwhLS3np7vpmaTnjrvnkoPoloTniYfvvIznp7vliqhNMe+8jOaJvuWIsGQ9MOeahOS9jee9ru+8jOinguWvn+WIsOS4reWkruaYr+ebtOe6v+m7kee6ueS4pOi+ueWvueensOWIhuW4g+W9qeiJsuiKsee6ueeahOebtOe6v+W5sua2ieadoee6ue+8jOW8gOWni+a1i+mHj+awtOaZtuiWhOeJh+eahOaKmOWwhOeOh+OAgi0tPgogICAgICAgIDxUZXN0VGFyZ2V0IFN0dWRlbnRWaXNpYmxlPSJUcnVlIj4KICAgICAgICAgIDxTY3JpcHQ+56e76Zmk546755KD6JaE54mH77yM56e75YqoTTHvvIzmib7liLBkPTDnmoTkvY3nva7vvIzop4Llr5/liLDkuK3lpK7mmK/nm7Tnur/pu5HnurnkuKTovrnlr7nnp7DliIbluIPlvanoibLoirHnurnnmoTnm7Tnur/lubLmtonmnaHnurnvvIzlvIDlp4vmtYvph4/msLTmmbboloTniYfnmoTmipjlsITnjofjgII8L1NjcmlwdD4KICAgICAgICAgIDxHcm91cD4KICAgICAgICAgICAgPCEtLeWwhuS4reWkrum7kee6ueenu+WIsOS4remXtO+8jOeEtuWQjueCueWHu+aMiemSruS/neWtmOeKtuaAgSAgRDBQb3NDaGVjayAgNuWIhi0tPgogICAgICAgICAgICA8UGFyYSBTdHVkZW50VmlzaWJsZT0iRmFsc2UiPgogICAgICAgICAgICAgIDxTbj4wMzwvU24+CiAgICAgICAgICAgICAgPE5hbWU+RDBQb3NDaGVjazwvTmFtZT4KICAgICAgICAgICAgICA8U2NyaXB0PuWwhuS4reWkrum7kee6ueenu+WIsOS4remXtO+8jOeEtuWQjueCueWHu+aMiemSruS/neWtmOeKtuaAgTwvU2NyaXB0PgogICAgICAgICAgICAgIDxWYXJUeXBlPmludDwvVmFyVHlwZT4KICAgICAgICAgICAgICA8UmVhbFJlc3VsdD4xPC9SZWFsUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRSZXN1bHQ+MTwvU3RkUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRTb3VyY2U+RGF0YUJhc2U8L1N0ZFNvdXJjZT4KICAgICAgICAgICAgICA8U3RkUmVzdWx0U2hvd0luZm8+5Lit5aSu6buR57q55L2N5LqO6KeG5Zy65Lit5b+DPC9TdGRSZXN1bHRTaG93SW5mbz4KICAgICAgICAgICAgICA8VG90YWxTY29yZT42PC9Ub3RhbFNjb3JlPgogICAgICAgICAgICAgIDxSZWFsU2NvcmU+NjwvUmVhbFNjb3JlPgogICAgICAgICAgICAgIDxKdWRnZVJ1bGU+CiAgICAgICAgICAgICAgICA8UnVsZT4KICAgICAgICAgICAgICAgICAgPFN0ZFZhbHVlPjE8L1N0ZFZhbHVlPgogICAgICAgICAgICAgICAgICA8UmFuZ2U+CiAgICAgICAgICAgICAgICAgICAgPFR5cGU+55m+5YiG5q+UPC9UeXBlPgogICAgICAgICAgICAgICAgICAgIDxNaW4+MDwvTWluPgogICAgICAgICAgICAgICAgICAgIDxNYXg+MDwvTWF4PgogICAgICAgICAgICAgICAgICA8L1JhbmdlPgogICAgICAgICAgICAgICAgICA8U2NvcmU+NjwvU2NvcmU+CiAgICAgICAgICAgICAgICAgIDxBbnN3ZXJTaG93SW5mbz7kuK3lpK7pu5HnurnkvY3kuo7op4blnLrkuK3lv4M8L0Fuc3dlclNob3dJbmZvPgogICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuS4reWkrum7kee6ueS9jeS6juinhuWcuuS4reW/gzwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgPC9SdWxlPgogICAgICAgICAgICAgICAgPFJ1bGU+CiAgICAgICAgICAgICAgICAgIDxTdGRWYWx1ZT4xPC9TdGRWYWx1ZT4KICAgICAgICAgICAgICAgICAgPFJhbmdlPgogICAgICAgICAgICAgICAgICAgIDxUeXBlPueZvuWIhuavlDwvVHlwZT4KICAgICAgICAgICAgICAgICAgICA8TWluPjAuMTwvTWluPgogICAgICAgICAgICAgICAgICAgIDxNYXg+MS4xPC9NYXg+CiAgICAgICAgICAgICAgICAgIDwvUmFuZ2U+CiAgICAgICAgICAgICAgICAgIDxTY29yZT4yPC9TY29yZT4KICAgICAgICAgICAgICAgICAgPEFuc3dlclNob3dJbmZvPuS4reWkrum7kee6ueeahOS9jee9ruacieS4gOS6m+WBj+W3rjwvQW5zd2VyU2hvd0luZm8+CiAgICAgICAgICAgICAgICAgIDxSdWxlU2hvd0luZm8+5Lit5aSu6buR57q555qE5L2N572u5pyJ5LiA5Lqb5YGP5beuPC9SdWxlU2hvd0luZm8+CiAgICAgICAgICAgICAgICA8L1J1bGU+CiAgICAgICAgICAgICAgICA8UnVsZT4KICAgICAgICAgICAgICAgICAgPFN0ZFZhbHVlPjE8L1N0ZFZhbHVlPgogICAgICAgICAgICAgICAgICA8UmFuZ2U+CiAgICAgICAgICAgICAgICAgICAgPFR5cGU+55m+5YiG5q+UPC9UeXBlPgogICAgICAgICAgICAgICAgICAgIDxNaW4+LTEuMTwvTWluPgogICAgICAgICAgICAgICAgICAgIDxNYXg+LTAuMTwvTWF4PgogICAgICAgICAgICAgICAgICA8L1JhbmdlPgogICAgICAgICAgICAgICAgICA8U2NvcmU+MDwvU2NvcmU+CiAgICAgICAgICAgICAgICAgIDxBbnN3ZXJTaG93SW5mbz7mk43kvZzplJnor6/miJbogIXmsqHmnInlh7rnjrDlvanoibLmnaHnurk8L0Fuc3dlclNob3dJbmZvPgogICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuaTjeS9nOmUmeivr+aIluiAheayoeacieWHuueOsOW9qeiJsuadoee6uTwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgPC9SdWxlPgogICAgICAgICAgICAgIDwvSnVkZ2VSdWxlPgogICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICAgIDwhLS3mraTml7ZNMeeahOS9jee9rihtbSkgIEQwUG9zLS0+CiAgICAgICAgICAgIDxQYXJhIFN0dWRlbnRWaXNpYmxlPSJUcnVlIj4KICAgICAgICAgICAgICA8U24+MDQ8L1NuPgogICAgICAgICAgICAgIDxOYW1lPkQwUG9zPC9OYW1lPgogICAgICAgICAgICAgIDxTY3JpcHQ+5q2k5pe2TTHnmoTkvY3nva4obW0pPC9TY3JpcHQ+CiAgICAgICAgICAgICAgPFZhclR5cGU+ZG91YmxlPC9WYXJUeXBlPgogICAgICAgICAgICAgIDxSZWFsUmVzdWx0PjwvUmVhbFJlc3VsdD4KICAgICAgICAgICAgICA8U3RkUmVzdWx0PjwvU3RkUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRTb3VyY2U+RXhwPC9TdGRTb3VyY2U+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdFNob3dJbmZvPuWOn+WAvDwvU3RkUmVzdWx0U2hvd0luZm8+CiAgICAgICAgICAgICAgPFRvdGFsU2NvcmU+MDwvVG90YWxTY29yZT4KICAgICAgICAgICAgICA8UmVhbFNjb3JlPjA8L1JlYWxTY29yZT4KICAgICAgICAgICAgICA8SnVkZ2VSdWxlIC8+CiAgICAgICAgICAgIDwvUGFyYT4KICAgICAgICAgICAgPCEtLeaUvue9ruawtOaZtuiWhOeJh++8jOWGjeWwhuS4reWkrum7kee6ueenu+WKqOiHs+S4reW/g++8jOeCueWHu+aMiemSruS/neWtmOeKtuaAgSAgRF9TSl9Qb3NDaGVjayAgNuWIhi0tPgogICAgICAgICAgICA8UGFyYSBTdHVkZW50VmlzaWJsZT0iRmFsc2UiPgogICAgICAgICAgICAgIDxTbj4wMDwvU24+CiAgICAgICAgICAgICAgPE5hbWU+RF9TSl9Qb3NDaGVjazwvTmFtZT4KICAgICAgICAgICAgICA8U2NyaXB0PuaUvue9ruawtOaZtuiWhOeJh++8jOWGjeWwhuS4reWkrum7kee6ueenu+WKqOiHs+S4reW/g++8jOeCueWHu+aMiemSruS/neWtmOeKtuaAgTwvU2NyaXB0PgogICAgICAgICAgICAgIDxWYXJUeXBlPmludDwvVmFyVHlwZT4KICAgICAgICAgICAgICA8UmVhbFJlc3VsdD4xPC9SZWFsUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRSZXN1bHQ+MTwvU3RkUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRTb3VyY2U+RGF0YUJhc2U8L1N0ZFNvdXJjZT4KICAgICAgICAgICAgICA8U3RkUmVzdWx0U2hvd0luZm8+5Lit5aSu6buR57q55L2N5LqO6KeG5Zy65Lit5b+DPC9TdGRSZXN1bHRTaG93SW5mbz4KICAgICAgICAgICAgICA8VG90YWxTY29yZT42PC9Ub3RhbFNjb3JlPgogICAgICAgICAgICAgIDxSZWFsU2NvcmU+NjwvUmVhbFNjb3JlPgogICAgICAgICAgICAgIDxKdWRnZVJ1bGU+CiAgICAgICAgICAgICAgICA8UnVsZT4KICAgICAgICAgICAgICAgICAgPFN0ZFZhbHVlPjE8L1N0ZFZhbHVlPgogICAgICAgICAgICAgICAgICA8UmFuZ2U+CiAgICAgICAgICAgICAgICAgICAgPFR5cGU+55m+5YiG5q+UPC9UeXBlPgogICAgICAgICAgICAgICAgICAgIDxNaW4+MDwvTWluPgogICAgICAgICAgICAgICAgICAgIDxNYXg+MDwvTWF4PgogICAgICAgICAgICAgICAgICA8L1JhbmdlPgogICAgICAgICAgICAgICAgICA8U2NvcmU+NjwvU2NvcmU+CiAgICAgICAgICAgICAgICAgIDwhLS08QW5zd2VyU2hvd0luZm8+5Lit5aSu6buR57q55L2N5LqO6KeG5Zy65Lit5b+DPC9BbnN3ZXJTaG93SW5mbz4tLT4KICAgICAgICAgICAgICAgICAgPFJ1bGVTaG93SW5mbz7kuK3lpK7pu5HnurnkvY3kuo7op4blnLrkuK3lv4M8L1J1bGVTaG93SW5mbz4KICAgICAgICAgICAgICAgIDwvUnVsZT4KICAgICAgICAgICAgICAgIDxSdWxlPgogICAgICAgICAgICAgICAgICA8U3RkVmFsdWU+MTwvU3RkVmFsdWU+CiAgICAgICAgICAgICAgICAgIDxSYW5nZT4KICAgICAgICAgICAgICAgICAgICA8VHlwZT7nmb7liIbmr5Q8L1R5cGU+CiAgICAgICAgICAgICAgICAgICAgPE1pbj4wLjE8L01pbj4KICAgICAgICAgICAgICAgICAgICA8TWF4PjEuMTwvTWF4PgogICAgICAgICAgICAgICAgICA8L1JhbmdlPgogICAgICAgICAgICAgICAgICA8U2NvcmU+MjwvU2NvcmU+CiAgICAgICAgICAgICAgICAgIDwhLS08QW5zd2VyU2hvd0luZm8+5Lit5aSu6buR57q555qE5L2N572u5pyJ5LiA5Lqb5YGP5beuPC9BbnN3ZXJTaG93SW5mbz4tLT4KICAgICAgICAgICAgICAgICAgPFJ1bGVTaG93SW5mbz7kuK3lpK7pu5HnurnnmoTkvY3nva7mnInkuIDkupvlgY/lt648L1J1bGVTaG93SW5mbz4KICAgICAgICAgICAgICAgIDwvUnVsZT4KICAgICAgICAgICAgICAgIDxSdWxlPgogICAgICAgICAgICAgICAgICA8U3RkVmFsdWU+MTwvU3RkVmFsdWU+CiAgICAgICAgICAgICAgICAgIDxSYW5nZT4KICAgICAgICAgICAgICAgICAgICA8VHlwZT7nmb7liIbmr5Q8L1R5cGU+CiAgICAgICAgICAgICAgICAgICAgPE1pbj4tMS4xPC9NaW4+CiAgICAgICAgICAgICAgICAgICAgPE1heD4tMC4xPC9NYXg+CiAgICAgICAgICAgICAgICAgIDwvUmFuZ2U+CiAgICAgICAgICAgICAgICAgIDxTY29yZT4wPC9TY29yZT4KICAgICAgICAgICAgICAgICAgPCEtLTxBbnN3ZXJTaG93SW5mbz7mk43kvZzplJnor6/miJbogIXmsqHmnInlh7rnjrDlvanoibLmnaHnurk8L0Fuc3dlclNob3dJbmZvPi0tPgogICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuaTjeS9nOmUmeivr+aIluiAheayoeacieWHuueOsOW9qeiJsuadoee6uTwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgPC9SdWxlPgogICAgICAgICAgICAgIDwvSnVkZ2VSdWxlPgogICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICAgIDwhLS3mraTml7ZNMeeahOS9jee9rihtbSkgICBEX1NKQlBfUG9zLS0+CiAgICAgICAgICAgIDxQYXJhIFN0dWRlbnRWaXNpYmxlPSJUcnVlIj4KICAgICAgICAgICAgICA8U24+MDQ8L1NuPgogICAgICAgICAgICAgIDxOYW1lPkRfU0pCUF9Qb3M8L05hbWU+CiAgICAgICAgICAgICAgPFNjcmlwdD7mraTml7ZNMeeahOS9jee9rihtbSk8L1NjcmlwdD4KICAgICAgICAgICAgICA8VmFyVHlwZT5kb3VibGU8L1ZhclR5cGU+CiAgICAgICAgICAgICAgPFJlYWxSZXN1bHQ+PC9SZWFsUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRSZXN1bHQ+PC9TdGRSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFNvdXJjZT5FeHA8L1N0ZFNvdXJjZT4KICAgICAgICAgICAgICA8U3RkUmVzdWx0U2hvd0luZm8+5Y6f5YC8PC9TdGRSZXN1bHRTaG93SW5mbz4KICAgICAgICAgICAgICA8VG90YWxTY29yZT4wPC9Ub3RhbFNjb3JlPgogICAgICAgICAgICAgIDxSZWFsU2NvcmU+MDwvUmVhbFNjb3JlPgogICAgICAgICAgICAgIDxKdWRnZVJ1bGUgLz4KICAgICAgICAgICAgPC9QYXJhPgogICAgICAgICAgPC9Hcm91cD4KICAgICAgICAgIDxSZWFsU2NvcmU+MTI8L1JlYWxTY29yZT4KICAgICAgICA8L1Rlc3RUYXJnZXQ+CiAgICAgICAgPCEtLeagueaNruS4iumdoua1i+mHj+WHuueahOaVsOaNruWSjOiWhOeJh+eahOWOmuW6pu+8iDAuMDFtbe+8ie+8jOiuoeeul+WHuuS4pOenjeiWhOeJh+eahOaKmOWwhOeOh+OAgi0tPgogICAgICAgIDxUZXN0VGFyZ2V0IFN0dWRlbnRWaXNpYmxlPSJUcnVlIj4KICAgICAgICAgIDxTY3JpcHQ+5qC55o2u5LiK6Z2i5rWL6YeP5Ye655qE5pWw5o2u5ZKM6JaE54mH55qE5Y6a5bqm77yIMC4wMW1t77yJ77yM6K6h566X5Ye65Lik56eN6JaE54mH55qE5oqY5bCE546H44CCPC9TY3JpcHQ+CiAgICAgICAgICA8R3JvdXA+CiAgICAgICAgICAgIDwhLS3lsIborqHnrpfnu5PmnpzloavlhaXkuIvooaggNuWIhi0tPgogICAgICAgICAgICA8UGFyYSBTdHVkZW50VmlzaWJsZT0iVHJ1ZSI+CiAgICAgICAgICAgICAgPFNuPjA1PC9Tbj4KICAgICAgICAgICAgICA8TmFtZT5DYWxjTkxpc3Q8L05hbWU+CiAgICAgICAgICAgICAgPFNjcmlwdD7lsIborqHnrpfnu5PmnpzloavlhaXkuIvooag8L1NjcmlwdD4KICAgICAgICAgICAgICA8VmFyVHlwZSBDb3VudD0iMiI+VExpc3Q8L1ZhclR5cGU+CiAgICAgICAgICAgICAgPFJlYWxSZXN1bHQ+KOmAj+aYjuiWhOeJhyzmipjlsITnjodOKTso546755KDLDEuNTEpOyjmsLTmmbYsMS41NCk8L1JlYWxSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdD4o6YCP5piO6JaE54mHLOaKmOWwhOeOh04pOyjnjrvnkoMsMS41MSk7KOawtOaZtiwxLjU0KTwvU3RkUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRTb3VyY2U+RXhwPC9TdGRTb3VyY2U+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdFNob3dJbmZvPuWOn+WAvDwvU3RkUmVzdWx0U2hvd0luZm8+CiAgICAgICAgICAgICAgPFRvdGFsU2NvcmU+NjwvVG90YWxTY29yZT4KICAgICAgICAgICAgICA8UmVhbFNjb3JlPjY8L1JlYWxTY29yZT4KICAgICAgICAgICAgICA8UGFyYSBTdHVkZW50VmlzaWJsZT0iVHJ1ZSI+CiAgICAgICAgICAgICAgICA8U24+MDA8L1NuPgogICAgICAgICAgICAgICAgPE5hbWU+SU5ERVg8L05hbWU+CiAgICAgICAgICAgICAgICA8U2NyaXB0PumAj+aYjuiWhOeJhzwvU2NyaXB0PgogICAgICAgICAgICAgICAgPFZhclR5cGUgQ291bnQ9IjEiPmRvdWJsZTwvVmFyVHlwZT4KICAgICAgICAgICAgICAgIDxTdGRTb3VyY2U+PC9TdGRTb3VyY2U+CiAgICAgICAgICAgICAgPC9QYXJhPgogICAgICAgICAgICAgIDxQYXJhIFN0dWRlbnRWaXNpYmxlPSJUcnVlIj4KICAgICAgICAgICAgICAgIDxTbj4wMDwvU24+CiAgICAgICAgICAgICAgICA8TmFtZT5CUFpTTDwvTmFtZT4KICAgICAgICAgICAgICAgIDxTY3JpcHQ+5oqY5bCE546HTjwvU2NyaXB0PgogICAgICAgICAgICAgICAgPFZhclR5cGUgQ291bnQ9IjEiPmRvdWJsZTwvVmFyVHlwZT4KICAgICAgICAgICAgICAgIDxTdGRTb3VyY2U+PC9TdGRTb3VyY2U+CiAgICAgICAgICAgICAgICA8SnVkZ2VSdWxlPgogICAgICAgICAgICAgICAgICA8UnVsZT4KICAgICAgICAgICAgICAgICAgICA8U3RkVmFsdWU+MTwvU3RkVmFsdWU+CiAgICAgICAgICAgICAgICAgICAgPFJhbmdlPgogICAgICAgICAgICAgICAgICAgICAgPFR5cGU+55m+5YiG5q+UPC9UeXBlPgogICAgICAgICAgICAgICAgICAgICAgPE1pbj4tMC4wNTwvTWluPgogICAgICAgICAgICAgICAgICAgICAgPE1heD4wLjA1PC9NYXg+CiAgICAgICAgICAgICAgICAgICAgPC9SYW5nZT4KICAgICAgICAgICAgICAgICAgICA8U2NvcmU+MzwvU2NvcmU+CiAgICAgICAgICAgICAgICAgICAgPFJ1bGVTaG93SW5mbz7mr4/nqbrmraPnoa48L1J1bGVTaG93SW5mbz4KICAgICAgICAgICAgICAgICAgPC9SdWxlPgogICAgICAgICAgICAgICAgPC9KdWRnZVJ1bGU+CiAgICAgICAgICAgICAgPC9QYXJhPgogICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICA8L0dyb3VwPgogICAgICAgICAgPFJlYWxTY29yZT42PC9SZWFsU2NvcmU+CiAgICAgICAgPC9UZXN0VGFyZ2V0PgogICAgICA8L0NoZWNrUG9pbnQ+CiAgICA8L1F1ZXN0aW9uPgogICAgPFF1ZXN0aW9uIFR5cGU9Ik9QIj4KICAgICAgPFNuPjAxPC9Tbj4KICAgICAgPE5hbWU+5L2/55So6L+I5YWL5bCU6YCK5bmy5raJ5Luq5rWL6YePSGUtTmXmv4DlhYnnmoTms6Lplb88L05hbWU+CiAgICAgIDxJZD5TSU1RVUVTVF9NS0VYR1NZU1lfQ0xITkpHQkNfWkdLWEpTRFhfVjAwMTwvSWQ+CiAgICAgIDxUeXBlPuiAg+ivlemimOebrjwvVHlwZT4KICAgICAgPFNjb3JlPgogICAgICAgIDxSZWFsU2NvcmU+NTU8L1JlYWxTY29yZT4KICAgICAgICA8VG90YWw+NTU8L1RvdGFsPgogICAgICA8L1Njb3JlPgogICAgICA8U2NyaXB0PgogICAgICAgIDxET0M+CiAgICAgICAgICA8UGFyYWdyYXBoIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMiIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIj4KICAgICAgICAgICAgPElubGluZSBUeXBlPSJSdW4iIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMiIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIiBUZXh0PSLlrp7pqozlrqTmj5DkvptIZS1OZea/gOWFieWZqO+8jOeZveWFiea6kO+8jOWwj+WtlOWFiemYke+8jOefreeEpumAj+mVnO+8jOi/iOWFi+WwlOmAiuW5sua2ieS7qu+8jOivt+S9v+eUqOi/meS6m+S7quWZqOa1i+mHj0hlLU5l5r+A5YWJ55qE5rOi6ZW/44CCIiBUZXh0RGVjb3JhdGlvbnM9IlN5c3RlbS5XaW5kb3dzLlRleHREZWNvcmF0aW9uQ29sbGVjdGlvbiIgLz4KICAgICAgICAgIDwvUGFyYWdyYXBoPgogICAgICAgIDwvRE9DPgogICAgICA8L1NjcmlwdD4KICAgICAgPEluaXRpYWxTdGF0dXM+CiAgICAgICAgPFNjcmlwdD48L1NjcmlwdD4KICAgICAgICA8Q29uZmlnRmlsZT5TSU1RVUVTVF9NS0VYR1NZU1lfS1NUM19aR0tYSlNEWF9WMDAxLnhtbDwvQ29uZmlnRmlsZT4KICAgICAgPC9Jbml0aWFsU3RhdHVzPgogICAgICA8S2V5UG9pbnQ+CiAgICAgICAgPFNjcmlwdD4KICAgICAgICAgIDxET0M+CiAgICAgICAgICAgIDxQYXJhZ3JhcGggTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEzIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiPgogICAgICAgICAgICAgIDxJbmxpbmUgVHlwZT0iUnVuIiBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCIgVGV4dD0iTTLkuIrnmoTkuInkuKronrrpkonnmoTosIPoioLkvb/mmL7npLrlsY/nmoTkuKTmjpLlhYnngrnph43lkIjjgIIiIFRleHREZWNvcmF0aW9ucz0iIiAvPgogICAgICAgICAgICA8L1BhcmFncmFwaD4KICAgICAgICAgICAgPFBhcmFncmFwaCBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCI+CiAgICAgICAgICAgICAgPElubGluZSBUeXBlPSJSdW4iIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIiBUZXh0PSLliKnnlKjlubLmtonlm77lg4/nmoTlkJ7lkJDmtYvph49IZS1OZea/gOWFieeahOazoumVv+OAgiIgVGV4dERlY29yYXRpb25zPSIiIC8+CiAgICAgICAgICAgIDwvUGFyYWdyYXBoPgogICAgICAgICAgICA8UGFyYWdyYXBoIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIj4KICAgICAgICAgICAgICA8SW5saW5lIFR5cGU9IlJ1biIgTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEzIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiIFRleHQ9IuWIqeeUqOmAkOW3ruazleWkhOeQhuaVsOaNruOAgiIgVGV4dERlY29yYXRpb25zPSIiIC8+CiAgICAgICAgICAgIDwvUGFyYWdyYXBoPgogICAgICAgICAgPC9ET0M+CiAgICAgICAgPC9TY3JpcHQ+CiAgICAgIDwvS2V5UG9pbnQ+CiAgICAgIDxDaGVja1BvaW50PgogICAgICAgIDxTY3JpcHQ+PC9TY3JpcHQ+CiAgICAgICAgPCEtLeWFiei3r+iwg+iKgiAgMjfliIYtLT4KICAgICAgICA8VGVzdFRhcmdldD4KICAgICAgICAgIDxTY3JpcHQ+5YWJ6Lev6LCD6IqCPC9TY3JpcHQ+CiAgICAgICAgICA8R3JvdXA+CiAgICAgICAgICAgIDwhLS3mlL7nva5IZS1OZea/gOWFieWZqO+8jOW5tuaJk+W8gOa/gOWFieWZqOeUtea6kOW8gOWFs+OAgjXliIYtLT4KICAgICAgICAgICAgPFBhcmEgU3R1ZGVudFZpc2libGU9IkZhbHNlIj4KICAgICAgICAgICAgICA8U24+MTAwPC9Tbj4KICAgICAgICAgICAgICA8TmFtZT5Jc0hlTmVqZ3FPbkNoZWNrX3doaXRlPC9OYW1lPgogICAgICAgICAgICAgIDxTY3JpcHQ+5pS+572uSGUtTmXmv4DlhYnlmajvvIzlubbmiZPlvIDmv4DlhYnlmajnlLXmupDlvIDlhbPjgII8L1NjcmlwdD4KICAgICAgICAgICAgICA8VmFyVHlwZT5ib29sPC9WYXJUeXBlPgogICAgICAgICAgICAgIDxSZWFsUmVzdWx0PlRydWU8L1JlYWxSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdD5UcnVlPC9TdGRSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFNvdXJjZT5EYXRhQmFzZTwvU3RkU291cmNlPgogICAgICAgICAgICAgIDxTdGRSZXN1bHRTaG93SW5mbz7mk43kvZzmraPnoa48L1N0ZFJlc3VsdFNob3dJbmZvPgogICAgICAgICAgICAgIDxUb3RhbFNjb3JlPjU8L1RvdGFsU2NvcmU+CiAgICAgICAgICAgICAgPFJlYWxTY29yZT41PC9SZWFsU2NvcmU+CiAgICAgICAgICAgICAgPEp1ZGdlUnVsZT4KICAgICAgICAgICAgICAgIDxSaWdodFJ1bGU+CiAgICAgICAgICAgICAgICAgIDxTY29yZT41PC9TY29yZT4KICAgICAgICAgICAgICAgICAgPFJ1bGVTaG93SW5mbz7mk43kvZzmraPnoa48L1J1bGVTaG93SW5mbz4KICAgICAgICAgICAgICAgIDwvUmlnaHRSdWxlPgogICAgICAgICAgICAgICAgPFdyb25nUnVsZT4KICAgICAgICAgICAgICAgICAgPFNjb3JlPkxvc3RXaG9sZVF1ZXN0aW9uPC9TY29yZT4KICAgICAgICAgICAgICAgICAgPFJ1bGVTaG93SW5mbz7mk43kvZzplJnor688L1J1bGVTaG93SW5mbz4KICAgICAgICAgICAgICAgIDwvV3JvbmdSdWxlPgogICAgICAgICAgICAgIDwvSnVkZ2VSdWxlPgogICAgICAgICAgICAgIDxTdHVkZW50UmVzdWx0U2hvd0luZm8+5pON5L2c6ZSZ6K+vPC9TdHVkZW50UmVzdWx0U2hvd0luZm8+CiAgICAgICAgICAgIDwvUGFyYT4KICAgICAgICAgICAgPCEtLeaUvue9ruWwj+WtlOWFiemYke+8jOiwg+iKgk0y6ZWc5LiK55qE5LiJ5Liq6J666ZKJLCDkvb/lhYnngrnph43lkIjjgIIgIDEy5YiGLS0+CiAgICAgICAgICAgIDxQYXJhIFN0dWRlbnRWaXNpYmxlPSJGYWxzZSI+CiAgICAgICAgICAgICAgPE5hbWU+R0RDSENoZWNrX3doaXRlPC9OYW1lPgogICAgICAgICAgICAgIDxTY3JpcHQ+5pS+572u5bCP5a2U5YWJ6ZiR77yM6LCD6IqCTTLplZzkuIrnmoTkuInkuKronrrpkoksIOS9v+WFieeCuemHjeWQiOOAgjwvU2NyaXB0PgogICAgICAgICAgICAgIDxWYXJUeXBlPmJvb2w8L1ZhclR5cGU+CiAgICAgICAgICAgICAgPFJlYWxSZXN1bHQ+VHJ1ZTwvUmVhbFJlc3VsdD4KICAgICAgICAgICAgICA8U3RkUmVzdWx0PlRydWU8L1N0ZFJlc3VsdD4KICAgICAgICAgICAgICA8U3RkUmVzdWx0U2hvd0luZm8+5YWJ54K56YeN5ZCIPC9TdGRSZXN1bHRTaG93SW5mbz4KICAgICAgICAgICAgICA8U3RkU291cmNlPkRhdGFCYXNlPC9TdGRTb3VyY2U+CiAgICAgICAgICAgICAgPFRvdGFsU2NvcmU+MTI8L1RvdGFsU2NvcmU+CiAgICAgICAgICAgICAgPFJlYWxTY29yZT4xMjwvUmVhbFNjb3JlPgogICAgICAgICAgICAgIDxKdWRnZVJ1bGU+CiAgICAgICAgICAgICAgICA8UmlnaHRSdWxlPgogICAgICAgICAgICAgICAgICA8U2NvcmU+MTI8L1Njb3JlPgogICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuWFieeCuemHjeWQiDwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgPC9SaWdodFJ1bGU+CiAgICAgICAgICAgICAgICA8V3JvbmdSdWxlPgogICAgICAgICAgICAgICAgICA8U2NvcmU+MDwvU2NvcmU+CiAgICAgICAgICAgICAgICAgIDxSdWxlU2hvd0luZm8+5YWJ54K55rKh5pyJ6YeN5ZCIPC9SdWxlU2hvd0luZm8+CiAgICAgICAgICAgICAgICA8L1dyb25nUnVsZT4KICAgICAgICAgICAgICA8L0p1ZGdlUnVsZT4KICAgICAgICAgICAgICA8U3R1ZGVudFJlc3VsdFNob3dJbmZvPuWFieeCueayoeaciemHjeWQiDwvU3R1ZGVudFJlc3VsdFNob3dJbmZvPgogICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICAgIDwhLS3np7vpmaTlsI/lrZTlhYnpmJHvvIzmlL7nva7nn63nhKbpgI/plZzvvIwg5Ye6546w5piO5Lqu55qE5bmy5raJ5p2h57q577yM5bCP5b+D55qE6LCD6IqCTTLkuIrnmoTml4vpkq7vvIzkvb/lnIblv4PkvY3kuo7mr5vnjrvnkoPkuK3pl7TjgIIgMTDliIYtLT4KICAgICAgICAgICAgPFBhcmEgU3R1ZGVudFZpc2libGU9IkZhbHNlIj4KICAgICAgICAgICAgICA8TmFtZT5IZU5lR1NUV0NoZWNrX3doaXRlPC9OYW1lPgogICAgICAgICAgICAgIDxTY3JpcHQ+56e76Zmk5bCP5a2U5YWJ6ZiR77yM5pS+572u55+t54Sm6YCP6ZWc77yMIOWHuueOsOaYjuS6rueahOW5sua2ieadoee6ue+8jOWwj+W/g+eahOiwg+iKgk0y5LiK55qE5peL6ZKu77yM5L2/5ZyG5b+D5L2N5LqO5q+b546755KD5Lit6Ze044CCPC9TY3JpcHQ+CiAgICAgICAgICAgICAgPFZhclR5cGU+Ym9vbDwvVmFyVHlwZT4KICAgICAgICAgICAgICA8UmVhbFJlc3VsdD5UcnVlPC9SZWFsUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRSZXN1bHQ+VHJ1ZTwvU3RkUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRTb3VyY2U+RGF0YUJhc2U8L1N0ZFNvdXJjZT4KICAgICAgICAgICAgICA8U3RkUmVzdWx0U2hvd0luZm8+5ZyG5b+D5L2N5LqO5q+b546755KD5Lit5b+DPC9TdGRSZXN1bHRTaG93SW5mbz4KICAgICAgICAgICAgICA8VG90YWxTY29yZT4xMDwvVG90YWxTY29yZT4KICAgICAgICAgICAgICA8UmVhbFNjb3JlPjEwPC9SZWFsU2NvcmU+CiAgICAgICAgICAgICAgPEp1ZGdlUnVsZT4KICAgICAgICAgICAgICAgIDxSaWdodFJ1bGU+CiAgICAgICAgICAgICAgICAgIDxTY29yZT4xMDwvU2NvcmU+CiAgICAgICAgICAgICAgICAgIDxSdWxlU2hvd0luZm8+5ZyG5b+D5L2N5LqO5q+b546755KD5Lit5b+DPC9SdWxlU2hvd0luZm8+CiAgICAgICAgICAgICAgICA8L1JpZ2h0UnVsZT4KICAgICAgICAgICAgICAgIDxXcm9uZ1J1bGU+CiAgICAgICAgICAgICAgICAgIDxTY29yZT4wPC9TY29yZT4KICAgICAgICAgICAgICAgICAgPFJ1bGVTaG93SW5mbz7lnIblv4PmsqHmnInkvY3kuo7mr5vnjrvnkoPkuK3lv4M8L1J1bGVTaG93SW5mbz4KICAgICAgICAgICAgICAgIDwvV3JvbmdSdWxlPgogICAgICAgICAgICAgIDwvSnVkZ2VSdWxlPgogICAgICAgICAgICAgIDxTdHVkZW50UmVzdWx0U2hvd0luZm8+5ZyG5b+D5rKh5pyJ5L2N5LqO5q+b546755KD5Lit5b+DPC9TdHVkZW50UmVzdWx0U2hvd0luZm8+CiAgICAgICAgICAgIDwvUGFyYT4KICAgICAgICAgIDwvR3JvdXA+CiAgICAgICAgICA8UmVhbFNjb3JlPjI3PC9SZWFsU2NvcmU+CiAgICAgICAgPC9UZXN0VGFyZ2V0PgogICAgICAgIDwhLS3or7vmlbDmo4Dmn6UgIDPliIYtLT4KICAgICAgICA8VGVzdFRhcmdldD4KICAgICAgICAgIDxTY3JpcHQ+6K+75pWw5qOA5p+lPC9TY3JpcHQ+CiAgICAgICAgICA8R3JvdXA+CiAgICAgICAgICAgIDxQYXJhIFN0dWRlbnRWaXNpYmxlPSJGYWxzZSI+CiAgICAgICAgICAgICAgPFNuPjI4PC9Tbj4KICAgICAgICAgICAgICA8TmFtZT5EU0dTX3doaXRlPC9OYW1lPgogICAgICAgICAgICAgIDxTY3JpcHQ+6L+I5YWL5bCU6YCK5bmy5raJ5Luq6K+75pWw5qC85byP5qOA5p+l77yI5Lul5q+r57Gz5Li65Y2V5L2N77yM5L+d55WZ5bCP5pWw54K55ZCONeS9je+8iTwvU2NyaXB0PgogICAgICAgICAgICAgIDxWYXJUeXBlPmJvb2w8L1ZhclR5cGU+CiAgICAgICAgICAgICAgPFJlYWxSZXN1bHQ+VHJ1ZTwvUmVhbFJlc3VsdD4KICAgICAgICAgICAgICA8U3RkUmVzdWx0PlRydWU8L1N0ZFJlc3VsdD4KICAgICAgICAgICAgICA8U3RkUmVzdWx0U2hvd0luZm8+5qC85byP5q2j56GuPC9TdGRSZXN1bHRTaG93SW5mbz4KICAgICAgICAgICAgICA8U3RkU291cmNlPkRhdGFCYXNlPC9TdGRTb3VyY2U+CiAgICAgICAgICAgICAgPFRvdGFsU2NvcmU+MzwvVG90YWxTY29yZT4KICAgICAgICAgICAgICA8UmVhbFNjb3JlPjM8L1JlYWxTY29yZT4KICAgICAgICAgICAgICA8SnVkZ2VSdWxlPgogICAgICAgICAgICAgICAgPFJpZ2h0UnVsZT4KICAgICAgICAgICAgICAgICAgPFJ1bGVTaG93SW5mbz7moLzlvI/mraPnoa48L1J1bGVTaG93SW5mbz4KICAgICAgICAgICAgICAgICAgPFNjb3JlPjM8L1Njb3JlPgogICAgICAgICAgICAgICAgPC9SaWdodFJ1bGU+CiAgICAgICAgICAgICAgICA8V3JvbmdSdWxlPgogICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuagvOW8j+mUmeivrzwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgICA8U2NvcmU+MDwvU2NvcmU+CiAgICAgICAgICAgICAgICA8L1dyb25nUnVsZT4KICAgICAgICAgICAgICA8L0p1ZGdlUnVsZT4KICAgICAgICAgICAgICA8U3R1ZGVudFJlc3VsdFNob3dJbmZvPuagvOW8j+mUmeivrzwvU3R1ZGVudFJlc3VsdFNob3dJbmZvPgogICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICA8L0dyb3VwPgogICAgICAgICAgPFJlYWxTY29yZT4zPC9SZWFsU2NvcmU+CiAgICAgICAgPC9UZXN0VGFyZ2V0PgogICAgICAgIDwhLS3ovazliqjpvJPova7vvIzop4Llr5/liLDlubLmtonmnaHnurnkuK3igJzlkJ7igJ3igJzlkJDigJ3lj5jljJbjgILkuK3lv4Pmr4/igJznlJ/miJDigJ3miJbigJzlkJ7ov5vigJ0zMOS4quW5sua2ieadoee6ueiusOW9leS4gOasoeaVsOaNru+8jOi/nue7reiusOW9lTbmrKHjgIItLT4KICAgICAgICA8VGVzdFRhcmdldD4KICAgICAgICAgIDxTY3JpcHQ+6L2s5Yqo6byT6L2u77yM6KeC5a+f5Yiw5bmy5raJ5p2h57q55Lit4oCc5ZCe4oCd4oCc5ZCQ4oCd5Y+Y5YyW44CC5Lit5b+D5q+P4oCc55Sf5oiQ4oCd5oiW4oCc5ZCe6L+b4oCdMzDkuKrlubLmtonmnaHnurnorrDlvZXkuIDmrKHmlbDmja7vvIzov57nu63orrDlvZU25qyh44CCPC9TY3JpcHQ+CiAgICAgICAgICA8R3JvdXA+CiAgICAgICAgICAgIDwhLS3pgInmi6lNMemVnOeahOS4gOS4quWIneWni+S9jee9ru+8jOS9nOS4uuesrOS4gOWIl+Whq+WFpeihqOagvO+8jOeEtuWQjuWwhuS4reW/g+avj+KAnOeUn+WHuuKAneaIluKAnOWQnui/m+KAnTMw5Liq5p2h57q55pe2TTHplZznmoTkvY3nva7loavlhaXooajmoLzlhbbku5bliJfkuK3jgIItLT4KICAgICAgICAgICAgPFBhcmEgU3R1ZGVudFZpc2libGU9IlRydWUiPgogICAgICAgICAgICAgIDxTbj4wMDwvU24+CiAgICAgICAgICAgICAgPE5hbWU+TTFQb3NMaXN0PC9OYW1lPgogICAgICAgICAgICAgIDxTY3JpcHQ+6YCJ5oupTTHplZznmoTkuIDkuKrliJ3lp4vkvY3nva7vvIzkvZzkuLrnrKzkuIDliJfloavlhaXooajmoLzvvIznhLblkI7lsIbkuK3lv4Pmr4/igJznlJ/lh7rigJ3miJbigJzlkJ7ov5vigJ0zMOS4quadoee6ueaXtk0x6ZWc55qE5L2N572u5aGr5YWl6KGo5qC85YW25LuW5YiX5Lit44CCPC9TY3JpcHQ+CiAgICAgICAgICAgICAgPFZhclR5cGUgQ291bnQ9IjYiPlRMaXN0PC9WYXJUeXBlPgogICAgICAgICAgICAgIDxSZWFsUmVzdWx0PijmtYvph4/nvJblj7csRChtbSkpOygxLCk7KDIsKTsoMywpOyg0LCk7KDUsKTsoNiwpPC9SZWFsUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRSZXN1bHQ+KOa1i+mHj+e8luWPtyxEKG1tKSk7KDEsKTsoMiwpOygzLCk7KDQsKTsoNSwpOyg2LCk8L1N0ZFJlc3VsdD4KICAgICAgICAgICAgICA8U3RkU291cmNlPkV4cDwvU3RkU291cmNlPgogICAgICAgICAgICAgIDxTdGRSZXN1bHRTaG93SW5mbz7ljp/lgLw8L1N0ZFJlc3VsdFNob3dJbmZvPgogICAgICAgICAgICAgIDxUb3RhbFNjb3JlPjA8L1RvdGFsU2NvcmU+CiAgICAgICAgICAgICAgPFJlYWxTY29yZT4wPC9SZWFsU2NvcmU+CiAgICAgICAgICAgICAgPFBhcmEgU3R1ZGVudFZpc2libGU9IlRydWUiPgogICAgICAgICAgICAgICAgPFNuPjAwPC9Tbj4KICAgICAgICAgICAgICAgIDxOYW1lPklOREVYPC9OYW1lPgogICAgICAgICAgICAgICAgPFNjcmlwdD7mtYvph4/nvJblj7c8L1NjcmlwdD4KICAgICAgICAgICAgICAgIDxWYXJUeXBlIENvdW50PSIxIj5kb3VibGU8L1ZhclR5cGU+CiAgICAgICAgICAgICAgICA8U3RkU291cmNlPkRhdGFCYXNlPC9TdGRTb3VyY2U+CiAgICAgICAgICAgICAgPC9QYXJhPgogICAgICAgICAgICAgIDxQYXJhIFN0dWRlbnRWaXNpYmxlPSJUcnVlIj4KICAgICAgICAgICAgICAgIDxTbj4wMDwvU24+CiAgICAgICAgICAgICAgICA8TmFtZT5NMVBvczwvTmFtZT4KICAgICAgICAgICAgICAgIDxTY3JpcHQ+RChtbSk8L1NjcmlwdD4KICAgICAgICAgICAgICAgIDxWYXJUeXBlPmRvdWJsZTwvVmFyVHlwZT4KICAgICAgICAgICAgICAgIDxTdGRTb3VyY2U+RXhwPC9TdGRTb3VyY2U+CiAgICAgICAgICAgICAgPC9QYXJhPgogICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICAgIDwhLS3liKnnlKjpgJDlt67ms5XvvIzmoLnmja7kuIrpnaLnmoTmlbDmja7nrpflh7rkuInnu4Tlt67lgLzvvIzlubbloavlhaXkuIvooaggIDE15YiGLS0+CiAgICAgICAgICAgIDxQYXJhIFN0dWRlbnRWaXNpYmxlPSJUcnVlIj4KICAgICAgICAgICAgICA8U24+MDA8L1NuPgogICAgICAgICAgICAgIDxOYW1lPkZEWUdTX1hYTVM8L05hbWU+CiAgICAgICAgICAgICAgPFNjcmlwdD7liKnnlKjpgJDlt67ms5XvvIzmoLnmja7kuIrpnaLnmoTmlbDmja7nrpflh7rkuInnu4Tlt67lgLzvvIzlubbloavlhaXkuIvooag8L1NjcmlwdD4KICAgICAgICAgICAgICA8VmFyVHlwZSBDb3VudD0iMyI+VExpc3Q8L1ZhclR5cGU+CiAgICAgICAgICAgICAgPFJlYWxSZXN1bHQ+KOa1i+mHj+e8luWPtyzOlEQobW0pKTsoMSwwLjAwMDAwKTsoMiwwLjAwMDAwKTsoMywwLjAwMDAwKTwvUmVhbFJlc3VsdD4KICAgICAgICAgICAgICA8U3RkUmVzdWx0PijmtYvph4/nvJblj7cszpREKG1tKSk7KDEsMC4wMDAwMCk7KDIsMC4wMDAwMCk7KDMsMC4wMDAwMCk8L1N0ZFJlc3VsdD4KICAgICAgICAgICAgICA8U3RkU291cmNlPkV4cDwvU3RkU291cmNlPgogICAgICAgICAgICAgIDxTdGRSZXN1bHRTaG93SW5mbz7ljp/lgLw8L1N0ZFJlc3VsdFNob3dJbmZvPgogICAgICAgICAgICAgIDxUb3RhbFNjb3JlPjE1PC9Ub3RhbFNjb3JlPgogICAgICAgICAgICAgIDxSZWFsU2NvcmU+MTU8L1JlYWxTY29yZT4KICAgICAgICAgICAgICA8UGFyYSBTdHVkZW50VmlzaWJsZT0iVHJ1ZSI+CiAgICAgICAgICAgICAgICA8U24+MDA8L1NuPgogICAgICAgICAgICAgICAgPE5hbWU+SU5ERVg8L05hbWU+CiAgICAgICAgICAgICAgICA8U2NyaXB0Pua1i+mHj+e8luWPtzwvU2NyaXB0PgogICAgICAgICAgICAgICAgPFZhclR5cGUgQ291bnQ9IjMiPmRvdWJsZTwvVmFyVHlwZT4KICAgICAgICAgICAgICAgIDxTdGRTb3VyY2U+RGF0YUJhc2U8L1N0ZFNvdXJjZT4KICAgICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICAgICAgPFBhcmEgU3R1ZGVudFZpc2libGU9IlRydWUiPgogICAgICAgICAgICAgICAgPFNuPjAwPC9Tbj4KICAgICAgICAgICAgICAgIDxOYW1lPkRlbHRhSF8zMF9IZU5lXzM8L05hbWU+CiAgICAgICAgICAgICAgICA8U2NyaXB0Ps6URChtbSk8L1NjcmlwdD4KICAgICAgICAgICAgICAgIDxWYXJUeXBlIENvdW50PSIxIj5kb3VibGU8L1ZhclR5cGU+CiAgICAgICAgICAgICAgICA8U3RkU291cmNlPkV4cDwvU3RkU291cmNlPgogICAgICAgICAgICAgICAgPEp1ZGdlUnVsZT4KICAgICAgICAgICAgICAgICAgPFJ1bGU+CiAgICAgICAgICAgICAgICAgICAgPFN0ZFZhbHVlPjE8L1N0ZFZhbHVlPgogICAgICAgICAgICAgICAgICAgIDxSYW5nZT4KICAgICAgICAgICAgICAgICAgICAgIDxUeXBlPueZvuWIhuavlDwvVHlwZT4KICAgICAgICAgICAgICAgICAgICAgIDxNaW4+LTAuMTwvTWluPgogICAgICAgICAgICAgICAgICAgICAgPE1heD4wLjE8L01heD4KICAgICAgICAgICAgICAgICAgICA8L1JhbmdlPgogICAgICAgICAgICAgICAgICAgIDxTY29yZT41PC9TY29yZT4KICAgICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuavj+epuuato+ehrjwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgICA8L1J1bGU+CiAgICAgICAgICAgICAgICA8L0p1ZGdlUnVsZT4KICAgICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICAgIDwvUGFyYT4KICAgICAgICAgICAgPCEtLeeUqOmAkOW3ruazleWkhOeQhuaVsOaNru+8jOagueaNruebuOW6lOWFrOW8j+iuoeeul0hlLU5l5r+A5YWJ55qE5rOi6ZW/zrvvvIhube+8iSAxMOWIhi0tPgogICAgICAgICAgICA8UGFyYSBTdHVkZW50VmlzaWJsZT0iVHJ1ZSI+CiAgICAgICAgICAgICAgPFNuPjAwPC9Tbj4KICAgICAgICAgICAgICA8TmFtZT5OYW5iZGFfSGVOZTwvTmFtZT4KICAgICAgICAgICAgICA8U2NyaXB0PueUqOmAkOW3ruazleWkhOeQhuaVsOaNru+8jOagueaNruebuOW6lOWFrOW8j+iuoeeul0hlLU5l5r+A5YWJ55qE5rOi6ZW/zrvvvIhube+8iT08L1NjcmlwdD4KICAgICAgICAgICAgICA8VmFyVHlwZT5Eb3VibGU8L1ZhclR5cGU+CiAgICAgICAgICAgICAgPFJlYWxSZXN1bHQ+MC4wMDwvUmVhbFJlc3VsdD4KICAgICAgICAgICAgICA8U3RkUmVzdWx0PjAuMDA8L1N0ZFJlc3VsdD4KICAgICAgICAgICAgICA8U3RkU291cmNlPkV4cDwvU3RkU291cmNlPgogICAgICAgICAgICAgIDxTdGRSZXN1bHRTaG93SW5mbz7ljp/lgLw8L1N0ZFJlc3VsdFNob3dJbmZvPgogICAgICAgICAgICAgIDxUb3RhbFNjb3JlPjEwPC9Ub3RhbFNjb3JlPgogICAgICAgICAgICAgIDxSZWFsU2NvcmU+MTA8L1JlYWxTY29yZT4KICAgICAgICAgICAgICA8SnVkZ2VSdWxlPgogICAgICAgICAgICAgICAgPFJ1bGU+CiAgICAgICAgICAgICAgICAgIDxTdGRWYWx1ZT4xPC9TdGRWYWx1ZT4KICAgICAgICAgICAgICAgICAgPFJhbmdlPgogICAgICAgICAgICAgICAgICAgIDxUeXBlPueZvuWIhuavlDwvVHlwZT4KICAgICAgICAgICAgICAgICAgICA8TWluPi0wLjA1PC9NaW4+CiAgICAgICAgICAgICAgICAgICAgPE1heD4wLjA1PC9NYXg+CiAgICAgICAgICAgICAgICAgIDwvUmFuZ2U+CiAgICAgICAgICAgICAgICAgIDxTY29yZT4xMDwvU2NvcmU+CiAgICAgICAgICAgICAgICAgIDxSdWxlU2hvd0luZm8+5a6e6ZmF5rWL6YeP5YGP5beuPC9SdWxlU2hvd0luZm8+CiAgICAgICAgICAgICAgICA8L1J1bGU+CiAgICAgICAgICAgICAgICA8UnVsZT4KICAgICAgICAgICAgICAgICAgPFN0ZFZhbHVlPjE8L1N0ZFZhbHVlPgogICAgICAgICAgICAgICAgICA8UmFuZ2U+CiAgICAgICAgICAgICAgICAgICAgPFR5cGU+55m+5YiG5q+UPC9UeXBlPgogICAgICAgICAgICAgICAgICAgIDxNaW4+LTAuMTwvTWluPgogICAgICAgICAgICAgICAgICAgIDxNYXg+MC4xPC9NYXg+CiAgICAgICAgICAgICAgICAgIDwvUmFuZ2U+CiAgICAgICAgICAgICAgICAgIDxTY29yZT45PC9TY29yZT4KICAgICAgICAgICAgICAgICAgPFJ1bGVTaG93SW5mbz7lrp7pmYXmtYvph4/lgY/lt648L1J1bGVTaG93SW5mbz4KICAgICAgICAgICAgICAgIDwvUnVsZT4KICAgICAgICAgICAgICAgIDxSdWxlPgogICAgICAgICAgICAgICAgICA8U3RkVmFsdWU+MTwvU3RkVmFsdWU+CiAgICAgICAgICAgICAgICAgIDxSYW5nZT4KICAgICAgICAgICAgICAgICAgICA8VHlwZT7nmb7liIbmr5Q8L1R5cGU+CiAgICAgICAgICAgICAgICAgICAgPE1pbj4tMC41PC9NaW4+CiAgICAgICAgICAgICAgICAgICAgPE1heD4wLjU8L01heD4KICAgICAgICAgICAgICAgICAgPC9SYW5nZT4KICAgICAgICAgICAgICAgICAgPFNjb3JlPjY8L1Njb3JlPgogICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuWunumZhea1i+mHj+WBj+W3rjwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgPC9SdWxlPgogICAgICAgICAgICAgIDwvSnVkZ2VSdWxlPgogICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICA8L0dyb3VwPgogICAgICAgICAgPFJlYWxTY29yZT4yNTwvUmVhbFNjb3JlPgogICAgICAgIDwvVGVzdFRhcmdldD4KICAgICAgPC9DaGVja1BvaW50PgogICAgPC9RdWVzdGlvbj4KICA8L0NvbnRlbnQ+CjwvRXhhbVBhcGVyPg==

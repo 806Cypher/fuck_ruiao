@@ -8,7 +8,7 @@
       <Name>使用者姓名</Name>
       <Time>
         <MaxTime>考试时间限制</MaxTime>
-        <RealTime>670</RealTime>
+        <RealTime>2112</RealTime>
       </Time>
     </User>
     <FinalResult>true</FinalResult>
@@ -237,7 +237,7 @@
               </JudgeRule>
             </Para>
           </Group>
-          <RealScore>12</RealScore>
+          <RealScore>36</RealScore>
         </TestTarget>
         <!--测量汞光灯光谱-->
         <TestTarget>
@@ -536,7 +536,7 @@
               </JudgeRule>
             </Para>
           </Group>
-          <RealScore>10</RealScore>
+          <RealScore>34</RealScore>
         </TestTarget>
       </CheckPoint>
     </Question>

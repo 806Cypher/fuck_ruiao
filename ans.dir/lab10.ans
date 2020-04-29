@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExamPaper>
+  <Title>
+    <Name>PN结温度特性与伏安特性的研究</Name>
+    <Id>SIMEXP_PNJWDTXYFATXYJ_ZGKXJSDX_V001</Id>
+    <User>
+      <Id>使用者ＩＤ</Id>
+      <Name>使用者姓名</Name>
+      <Time>
+        <MaxTime>考试时间限制</MaxTime>
+        <RealTime>2137</RealTime>
+      </Time>
+    </User>
+    <FinalResult>true</FinalResult>
+  </Title>
+  <Content>
+    <Question Type="OP">
+      <Sn>题目编号1</Sn>
+      <Name>PN结温度特性与伏安特性的研究</Name>
+      <Id>SIMEXP_COPDZTXYJ_PNTEMPTURE_V001</Id>
+      <Type>实验内容</Type>
+      <Score>
+        <Total>100</Total>
+        <RealScore>100</RealScore>
+      </Score>
+      <Script>
+        <DOC>
+          <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+            <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="PN结物理特性测试。" TextDecorations="" />
+          </Paragraph>
+          <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+            <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="（1）根据实验原理，连接实验线路并保存实验连线。" TextDecorations="" />
+          </Paragraph>
+          <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+            <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="（2）在恒定温度条件下，测量正向电压随正向电流的变化关系，绘制伏安特性曲线。" TextDecorations="" />
+          </Paragraph>
+          <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+            <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="（3）在恒定电流IF=50μA条件下，测绘PN结正向压降VF随温度的变化曲线，并计算灵敏度。" TextDecorations="" />
+          </Paragraph>
+          <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+            <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="（4）计算玻尔兹曼常数k。" TextDecorations="" />
+          </Paragraph>
+          <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+            <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="（5）求被测PN结正向压降随温度变化的灵敏度S(mV/℃)。" TextDecorations="" />
+          </Paragraph>
+          <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+            <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="（6）估算被测PN结的禁带宽度Eg(0)。" TextDecorations="" />
+          </Paragraph>
+          <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+            <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="（7）根据测量结果，完成实验表格。" TextDecorations="" />
+          </Paragraph>
+        </DOC>
+      </Script>
+      <InitialStatus>
+        <Script>
+          仪器：PN结正向特性综合实验仪、温度传感实验装置、样品室、Pt100温度传感器、PN结集成温度传感器
+          仪器的初始状态：所有仪器都摆放在试验桌上，允许拖动和删除。
+        </Script>
+        <ConfigFile>SIMEXP_COPDZTXYJ_PNTEMPTURE_V001.xml</ConfigFile>
+      </InitialStatus>
+      <KeyPoint>
+        <Script>
+          <DOC>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="PN结物理特性测试。" TextDecorations="" />
+            </Paragraph>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="（1）根据实验原理，连接实验线路并保存实验连线。" TextDecorations="" />
+            </Paragraph>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="（2）在恒定温度条件下，测量正向电压随正向电流的变化关系，绘制伏安特性曲线。" TextDecorations="" />
+            </Paragraph>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="（3）在恒定电流IF=50μA条件下，测绘PN结正向压降VF随温度的变化曲线，并计算灵敏度。" TextDecorations="" />
+            </Paragraph>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="（4）计算玻尔兹曼常数k。" TextDecorations="" />
+            </Paragraph>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="（5）求被测PN结正向压降随温度变化的灵敏度S(mV/℃)。" TextDecorations="" />
+            </Paragraph>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="（6）估算被测PN结的禁带宽度Eg(0)。" TextDecorations="" />
+            </Paragraph>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="（7）根据测量结果，完成实验表格。" TextDecorations="" />
+            </Paragraph>
+          </DOC>
+        </Script>
+      </KeyPoint>
+      <CheckPoint>
+        <Script>
+          <DOC>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="PN结物理特性测试。" TextDecorations="" />
+            </Paragraph>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="（1）根据实验原理，连接实验线路并保存实验连线。" TextDecorations="" />
+            </Paragraph>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="（2）在恒定温度条件下，测量正向电压随正向电流的变化关系，绘制伏安特性曲线。" TextDecorations="" />
+            </Paragraph>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="（3）在恒定电流IF=50μA条件下，测绘PN结正向压降VF随温度的变化曲线，并计算灵敏度。" TextDecorations="" />
+            </Paragraph>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="（4）计算玻尔兹曼常数k。" TextDecorations="" />
+            </Paragraph>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="（5）求被测PN结正向压降随温度变化的灵敏度S(mV/℃)。" TextDecorations="" />
+            </Paragraph>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="（6）估算被测PN结的禁带宽度Eg(0)。" TextDecorations="" />
+            </Paragraph>
+            <Paragraph Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000">
+              <Inline Type="Run" Name="" FontFamily="Portable User Interface" FontSize="13" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FF000000" Text="（7）根据测量结果，完成实验表格。" TextDecorations="" />
+            </Paragraph>
+          </DOC>
+        </Script>
+        <!--1、连线   15分-->
+        <TestTarget>
+          <Script>连线</Script>
+          <Group>
+            <Para StudentVisible="false">
+              <Sn>1</Sn>
+              <Name>LineConnStatus</Name>
+              <VarType>bool</VarType>
+              <Script>将电路连接好，然后点击按钮保存连线状态</Script>
+              <RealResult>true</RealResult>
+              <StdResult>true</StdResult>
+              <StdResultShowInfo>连接成功</StdResultShowInfo>
+              <StdSource>Exp</StdSource>
+              <TotalScore>15</TotalScore>
+              <RealScore>15</RealScore>
+              <JudgeRule>
+                <RightRule>
+                  <Score>15</Score>
+                  <RuleShowInfo>连接成功</RuleShowInfo>
+                </RightRule>
+                <WrongRule>
+                  <Score>0</Score>
+                  <RuleShowInfo>连接失败</RuleShowInfo>
+                </WrongRule>
+              </JudgeRule>
+              <StudentResultShowInfo>连接失败</StudentResultShowInfo>
+            </Para>
+          </Group>
+          <RealScore>15</RealScore>
+        </TestTarget>
+        <!--2、测量正向电压随正向电流的变化关系   10分-->
+        <TestTarget>
+          <Script>测量正向电压随正向电流的变化关系</Script>
+          <Group>
+            <Para StudentVisible="True">
+              <sn>11</sn>
+              <Name>AVList</Name>
+              <VarType Count="19">TList</VarType>
+              <Script>选取温度值为30℃，待温度恒定后开始实验。调节电流旋钮，使IF逐渐增大，正向压降VF将随之增大。要求VF在0.450V-0.540V范围内每变化0.005V记录对应的IF，绘制IF-VF曲线。</Script>
+              <RealResult>(VF(V),IF(μA));(0.450,1.974);(0.455,2.391);(0.460,2.895);(0.465,3.506);(0.470,4.246);(0.475,5.141);(0.480,6.226);(0.485,7.539);(0.490,9.130);(0.495,11.056);(0.500,13.388);(0.505,16.213);(0.510,19.633);(0.515,23.774);(0.520,28.790);(0.525,34.863);(0.530,42.217);(0.535,51.123);(0.540,61.908)</RealResult>
+              <StdResult>(VF(V),IF(μA));(0.450,1.974);(0.455,2.391);(0.460,2.895);(0.465,3.506);(0.470,4.246);(0.475,5.141);(0.480,6.226);(0.485,7.539);(0.490,9.130);(0.495,11.056);(0.500,13.388);(0.505,16.213);(0.510,19.633);(0.515,23.774);(0.520,28.790);(0.525,34.863);(0.530,42.217);(0.535,51.123);(0.540,61.908)</StdResult>
+              <StdResultShowInfo>原值</StdResultShowInfo>
+              <StdSource>Exp</StdSource>
+              <TotalScore>19</TotalScore>
+              <RealScore>19</RealScore>
+              <Para>
+                <Sn>0</Sn>
+                <Name>INDEX</Name>
+                <Script>VF(V);0.450;0.455;0.460;0.465;0.470;0.475;0.480;0.485;0.490;0.495;0.500;0.505;0.510;0.515;0.520;0.525;0.530;0.535;0.540</Script>
+                <VarType>double</VarType>
+                <RealResult>未知</RealResult>
+                <StdResult>未知</StdResult>
+                <StdSource>Exp</StdSource>
+              </Para>
+              <Para>
+                <sn>1</sn>
+                <Name>Ameter</Name>
+                <Script>IF(μA)</Script>
+                <VarType>double</VarType>
+                <RealResult>未知</RealResult>
+                <StdResult>未知</StdResult>
+                <StdSource>Exp</StdSource>
+                <TotalScore>19</TotalScore>
+                <RealScore>19</RealScore>
+                <JudgeRule>
+                  <Rule>
+                    <StdValue>1</StdValue>
+                    <Range>
+                      <Type>百分比</Type>
+                      <Min>-0.10</Min>
+                      <Max>0.10</Max>
+                    </Range>
+                    <Score>1.0</Score>
+                    <RuleShowInfo>实际测量偏差</RuleShowInfo>
+                  </Rule>
+                </JudgeRule>
+              </Para>
+            </Para>
+            <Para StudentVisible="true">
+              <Sn>1</Sn>
+              <Name>BEZCSK</Name>
+              <VarType>double</VarType>
+              <Script>计算得到的波尔兹曼常数K(单位：10-23J/K)=</Script>
+              <RealResult>1.381</RealResult>
+              <StdResult>1.381</StdResult>
+              <StdResultShowInfo>原值</StdResultShowInfo>
+              <StdSource>Exp</StdSource>
+              <TotalScore>9</TotalScore>
+              <RealScore>9</RealScore>
+              <JudgeRule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>-0.10</Min>
+                    <Max>0.10</Max>
+                  </Range>
+                  <Score>9</Score>
+                  <RuleShowInfo>实际测量偏差</RuleShowInfo>
+                </Rule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>-0.20</Min>
+                    <Max>0.20</Max>
+                  </Range>
+                  <Score>5</Score>
+                  <RuleShowInfo>实际测量偏差</RuleShowInfo>
+                </Rule>
+              </JudgeRule>
+            </Para>
+          </Group>
+          <RealScore>47</RealScore>
+        </TestTarget>
+        <!--3、测绘PN结正向压降VF随温度的变化曲线   10分-->
+        <TestTarget>
+          <Script>测量正向电压随温度的变化关系</Script>
+          <Group>
+            <Para StudentVisible="True">
+              <sn>11</sn>
+              <Name>PTList</Name>
+              <VarType Count="11">TList</VarType>
+              <Script>在恒定电流IF=50μA条件下，测绘PN结正向压降VF随温度的变化曲线，要求在30℃~80℃左右温度范围（温度不宜太高）内每隔5℃测量一个点，升温过程和降温过程各测一遍，记录对应的VF，确定其灵敏度。</Script>
+              <RealResult>(温度值（℃）,升温VF(V),降温VF(V),VF平均值(V));(30,0.534,0.534,0.534);(35,0.523,0.523,0.523);(40,0.511,0.511,0.511);(45,0.500,0.500,0.500);(50,0.489,0.489,0.489);(55,0.477,0.477,0.477);(60,0.466,0.466,0.466);(65,0.454,0.454,0.454);(70,0.443,0.443,0.443);(75,0.431,0.431,0.431);(80,0.420,0.420,0.420)</RealResult>
+              <StdResult>(温度值（℃）,升温VF(V),降温VF(V),VF平均值(V));(30,0.534,0.534,0.534);(35,0.523,0.523,0.523);(40,0.511,0.511,0.511);(45,0.500,0.500,0.500);(50,0.489,0.489,0.489);(55,0.477,0.477,0.477);(60,0.466,0.466,0.466);(65,0.454,0.454,0.454);(70,0.443,0.443,0.443);(75,0.431,0.431,0.431);(80,0.420,0.420,0.420)</StdResult>
+              <StdResultShowInfo>原值</StdResultShowInfo>
+              <StdSource>Exp</StdSource>
+              <TotalScore>33</TotalScore>
+              <RealScore>33</RealScore>
+              <Para>
+                <Sn>0</Sn>
+                <Name>INDEX</Name>
+                <Script>温度值（℃）;30;35;40;45;50;55;60;65;70;75;80</Script>
+                <VarType>int</VarType>
+                <RealResult>未知</RealResult>
+                <StdResult>未知</StdResult>
+                <StdSource>Exp</StdSource>
+              </Para>
+              <Para>
+                <sn>1</sn>
+                <Name>ShenWen</Name>
+                <Script>升温VF(V)</Script>
+                <VarType>double</VarType>
+                <RealResult>未知</RealResult>
+                <StdResult>未知</StdResult>
+                <StdSource>Exp</StdSource>
+                <TotalScore>11</TotalScore>
+                <RealScore>11</RealScore>
+                <JudgeRule>
+                  <Rule>
+                    <StdValue>1</StdValue>
+                    <Range>
+                      <Type>绝对值</Type>
+                      <Min>-0.005</Min>
+                      <Max>0.005</Max>
+                    </Range>
+                    <Score>1</Score>
+                    <RuleShowInfo>实际测量偏差</RuleShowInfo>
+                  </Rule>
+                </JudgeRule>
+              </Para>
+              <Para>
+                <sn>2</sn>
+                <Name>JiangWen</Name>
+                <Script>降温VF(V)</Script>
+                <VarType>double</VarType>
+                <RealResult>未知</RealResult>
+                <StdResult>未知</StdResult>
+                <StdSource>Exp</StdSource>
+                <TotalScore>11</TotalScore>
+                <RealScore>11</RealScore>
+                <JudgeRule>
+                  <Rule>
+                    <StdValue>1</StdValue>
+                    <Range>
+                      <Type>绝对值</Type>
+                      <Min>-0.005</Min>
+                      <Max>0.0005</Max>
+                    </Range>
+                    <Score>1</Score>
+                    <RuleShowInfo>实际测量偏差</RuleShowInfo>
+                  </Rule>
+                </JudgeRule>
+              </Para>
+              <Para>
+                <sn>3</sn>
+                <Name>VFAVER</Name>
+                <Script>VF平均值(V)</Script>
+                <VarType>double</VarType>
+                <RealResult>未知</RealResult>
+                <StdResult>未知</StdResult>
+                <StdSource>Exp</StdSource>
+                <TotalScore>11</TotalScore>
+                <RealScore>11</RealScore>
+                <JudgeRule>
+                  <Rule>
+                    <StdValue>1</StdValue>
+                    <Range>
+                      <Type>绝对值</Type>
+                      <Min>-0.005</Min>
+                      <Max>0.005</Max>
+                    </Range>
+                    <Score>1</Score>
+                    <RuleShowInfo>实际测量偏差</RuleShowInfo>
+                  </Rule>
+                </JudgeRule>
+              </Para>
+            </Para>
+            <Para StudentVisible="true">
+              <Sn>1</Sn>
+              <Name>LingMinDu</Name>
+              <VarType>double</VarType>
+              <Script>PN结正向压降随温度变化的灵敏度S(单位：mV/℃)=</Script>
+              <RealResult>-2.29</RealResult>
+              <StdResult>-2.29</StdResult>
+              <StdResultShowInfo>原值</StdResultShowInfo>
+              <StdSource>Exp</StdSource>
+              <TotalScore>12</TotalScore>
+              <RealScore>12</RealScore>
+              <JudgeRule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>-0.05</Min>
+                    <Max>0.05</Max>
+                  </Range>
+                  <Score>12</Score>
+                  <RuleShowInfo>实际测量偏差</RuleShowInfo>
+                </Rule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>-0.10</Min>
+                    <Max>0.10</Max>
+                  </Range>
+                  <Score>6</Score>
+                  <RuleShowInfo>实际测量偏差</RuleShowInfo>
+                </Rule>
+              </JudgeRule>
+            </Para>
+            <Para StudentVisible="true">
+              <Sn>1</Sn>
+              <Name>EgZhi</Name>
+              <VarType>double</VarType>
+              <Script>估算被测PN结的禁带宽度Eg(0)(单位：eV)=</Script>
+              <RealResult>1.23</RealResult>
+              <StdResult>1.23</StdResult>
+              <StdResultShowInfo>原值</StdResultShowInfo>
+              <StdSource>Exp</StdSource>
+              <TotalScore>12</TotalScore>
+              <RealScore>12</RealScore>
+              <JudgeRule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>-0.05</Min>
+                    <Max>0.05</Max>
+                  </Range>
+                  <Score>12</Score>
+                  <RuleShowInfo>实际测量偏差</RuleShowInfo>
+                </Rule>
+                <Rule>
+                  <StdValue>1</StdValue>
+                  <Range>
+                    <Type>百分比</Type>
+                    <Min>-0.10</Min>
+                    <Max>0.10</Max>
+                  </Range>
+                  <Score>6</Score>
+                  <RuleShowInfo>实际测量偏差</RuleShowInfo>
+                </Rule>
+              </JudgeRule>
+            </Para>
+          </Group>
+          <RealScore>90</RealScore>
+        </TestTarget>
+      </CheckPoint>
+    </Question>
+  </Content>
+</ExamPaper>
+
+
+77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPEV4YW1QYXBlcj4KICA8VGl0bGU+CiAgICA8TmFtZT5QTue7k+a4qeW6pueJueaAp+S4juS8j+WuieeJueaAp+eahOeglOeptjwvTmFtZT4KICAgIDxJZD5TSU1FWFBfUE5KV0RUWFlGQVRYWUpfWkdLWEpTRFhfVjAwMTwvSWQ+CiAgICA8VXNlcj4KICAgICAgPElkPuS9v+eUqOiAhe+8qe+8pDwvSWQ+CiAgICAgIDxOYW1lPuS9v+eUqOiAheWnk+WQjTwvTmFtZT4KICAgICAgPFRpbWU+CiAgICAgICAgPE1heFRpbWU+6ICD6K+V5pe26Ze06ZmQ5Yi2PC9NYXhUaW1lPgogICAgICAgIDxSZWFsVGltZT4yMTM3PC9SZWFsVGltZT4KICAgICAgPC9UaW1lPgogICAgPC9Vc2VyPgogICAgPEZpbmFsUmVzdWx0PnRydWU8L0ZpbmFsUmVzdWx0PgogIDwvVGl0bGU+CiAgPENvbnRlbnQ+CiAgICA8UXVlc3Rpb24gVHlwZT0iT1AiPgogICAgICA8U24+6aKY55uu57yW5Y+3MTwvU24+CiAgICAgIDxOYW1lPlBO57uT5rip5bqm54m55oCn5LiO5LyP5a6J54m55oCn55qE56CU56m2PC9OYW1lPgogICAgICA8SWQ+U0lNRVhQX0NPUERaVFhZSl9QTlRFTVBUVVJFX1YwMDE8L0lkPgogICAgICA8VHlwZT7lrp7pqozlhoXlrrk8L1R5cGU+CiAgICAgIDxTY29yZT4KICAgICAgICA8VG90YWw+MTAwPC9Ub3RhbD4KICAgICAgICA8UmVhbFNjb3JlPjEwMDwvUmVhbFNjb3JlPgogICAgICA8L1Njb3JlPgogICAgICA8U2NyaXB0PgogICAgICAgIDxET0M+CiAgICAgICAgICA8UGFyYWdyYXBoIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIj4KICAgICAgICAgICAgPElubGluZSBUeXBlPSJSdW4iIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIiBUZXh0PSJQTue7k+eJqeeQhueJueaAp+a1i+ivleOAgiIgVGV4dERlY29yYXRpb25zPSIiIC8+CiAgICAgICAgICA8L1BhcmFncmFwaD4KICAgICAgICAgIDxQYXJhZ3JhcGggTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEzIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiPgogICAgICAgICAgICA8SW5saW5lIFR5cGU9IlJ1biIgTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEzIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiIFRleHQ9Iu+8iDHvvInmoLnmja7lrp7pqozljp/nkIbvvIzov57mjqXlrp7pqoznur/ot6/lubbkv53lrZjlrp7pqozov57nur/jgIIiIFRleHREZWNvcmF0aW9ucz0iIiAvPgogICAgICAgICAgPC9QYXJhZ3JhcGg+CiAgICAgICAgICA8UGFyYWdyYXBoIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIj4KICAgICAgICAgICAgPElubGluZSBUeXBlPSJSdW4iIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIiBUZXh0PSLvvIgy77yJ5Zyo5oGS5a6a5rip5bqm5p2h5Lu25LiL77yM5rWL6YeP5q2j5ZCR55S15Y6L6ZqP5q2j5ZCR55S15rWB55qE5Y+Y5YyW5YWz57O777yM57uY5Yi25LyP5a6J54m55oCn5puy57q/44CCIiBUZXh0RGVjb3JhdGlvbnM9IiIgLz4KICAgICAgICAgIDwvUGFyYWdyYXBoPgogICAgICAgICAgPFBhcmFncmFwaCBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCI+CiAgICAgICAgICAgIDxJbmxpbmUgVHlwZT0iUnVuIiBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCIgVGV4dD0i77yIM++8ieWcqOaBkuWumueUtea1gUlGPTUwzrxB5p2h5Lu25LiL77yM5rWL57uYUE7nu5PmraPlkJHljovpmY1WRumaj+a4qeW6pueahOWPmOWMluabsue6v++8jOW5tuiuoeeul+eBteaVj+W6puOAgiIgVGV4dERlY29yYXRpb25zPSIiIC8+CiAgICAgICAgICA8L1BhcmFncmFwaD4KICAgICAgICAgIDxQYXJhZ3JhcGggTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEzIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiPgogICAgICAgICAgICA8SW5saW5lIFR5cGU9IlJ1biIgTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEzIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiIFRleHQ9Iu+8iDTvvInorqHnrpfnjrvlsJTlhbnmm7zluLjmlbBr44CCIiBUZXh0RGVjb3JhdGlvbnM9IiIgLz4KICAgICAgICAgIDwvUGFyYWdyYXBoPgogICAgICAgICAgPFBhcmFncmFwaCBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCI+CiAgICAgICAgICAgIDxJbmxpbmUgVHlwZT0iUnVuIiBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCIgVGV4dD0i77yINe+8ieaxguiiq+a1i1BO57uT5q2j5ZCR5Y6L6ZmN6ZqP5rip5bqm5Y+Y5YyW55qE54G15pWP5bqmUyhtVi/ihIMp44CCIiBUZXh0RGVjb3JhdGlvbnM9IiIgLz4KICAgICAgICAgIDwvUGFyYWdyYXBoPgogICAgICAgICAgPFBhcmFncmFwaCBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCI+CiAgICAgICAgICAgIDxJbmxpbmUgVHlwZT0iUnVuIiBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCIgVGV4dD0i77yINu+8ieS8sOeul+iiq+a1i1BO57uT55qE56aB5bim5a695bqmRWcoMCnjgIIiIFRleHREZWNvcmF0aW9ucz0iIiAvPgogICAgICAgICAgPC9QYXJhZ3JhcGg+CiAgICAgICAgICA8UGFyYWdyYXBoIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIj4KICAgICAgICAgICAgPElubGluZSBUeXBlPSJSdW4iIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIiBUZXh0PSLvvIg377yJ5qC55o2u5rWL6YeP57uT5p6c77yM5a6M5oiQ5a6e6aqM6KGo5qC844CCIiBUZXh0RGVjb3JhdGlvbnM9IiIgLz4KICAgICAgICAgIDwvUGFyYWdyYXBoPgogICAgICAgIDwvRE9DPgogICAgICA8L1NjcmlwdD4KICAgICAgPEluaXRpYWxTdGF0dXM+CiAgICAgICAgPFNjcmlwdD4KICAgICAgICAgIOS7quWZqO+8mlBO57uT5q2j5ZCR54m55oCn57u85ZCI5a6e6aqM5Luq44CB5rip5bqm5Lyg5oSf5a6e6aqM6KOF572u44CB5qC35ZOB5a6k44CBUHQxMDDmuKnluqbkvKDmhJ/lmajjgIFQTue7k+mbhuaIkOa4qeW6puS8oOaEn+WZqAogICAgICAgICAg5Luq5Zmo55qE5Yid5aeL54q25oCB77ya5omA5pyJ5Luq5Zmo6YO95pGG5pS+5Zyo6K+V6aqM5qGM5LiK77yM5YWB6K645ouW5Yqo5ZKM5Yig6Zmk44CCCiAgICAgICAgPC9TY3JpcHQ+CiAgICAgICAgPENvbmZpZ0ZpbGU+U0lNRVhQX0NPUERaVFhZSl9QTlRFTVBUVVJFX1YwMDEueG1sPC9Db25maWdGaWxlPgogICAgICA8L0luaXRpYWxTdGF0dXM+CiAgICAgIDxLZXlQb2ludD4KICAgICAgICA8U2NyaXB0PgogICAgICAgICAgPERPQz4KICAgICAgICAgICAgPFBhcmFncmFwaCBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCI+CiAgICAgICAgICAgICAgPElubGluZSBUeXBlPSJSdW4iIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIiBUZXh0PSJQTue7k+eJqeeQhueJueaAp+a1i+ivleOAgiIgVGV4dERlY29yYXRpb25zPSIiIC8+CiAgICAgICAgICAgIDwvUGFyYWdyYXBoPgogICAgICAgICAgICA8UGFyYWdyYXBoIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIj4KICAgICAgICAgICAgICA8SW5saW5lIFR5cGU9IlJ1biIgTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEzIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiIFRleHQ9Iu+8iDHvvInmoLnmja7lrp7pqozljp/nkIbvvIzov57mjqXlrp7pqoznur/ot6/lubbkv53lrZjlrp7pqozov57nur/jgIIiIFRleHREZWNvcmF0aW9ucz0iIiAvPgogICAgICAgICAgICA8L1BhcmFncmFwaD4KICAgICAgICAgICAgPFBhcmFncmFwaCBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCI+CiAgICAgICAgICAgICAgPElubGluZSBUeXBlPSJSdW4iIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIiBUZXh0PSLvvIgy77yJ5Zyo5oGS5a6a5rip5bqm5p2h5Lu25LiL77yM5rWL6YeP5q2j5ZCR55S15Y6L6ZqP5q2j5ZCR55S15rWB55qE5Y+Y5YyW5YWz57O777yM57uY5Yi25LyP5a6J54m55oCn5puy57q/44CCIiBUZXh0RGVjb3JhdGlvbnM9IiIgLz4KICAgICAgICAgICAgPC9QYXJhZ3JhcGg+CiAgICAgICAgICAgIDxQYXJhZ3JhcGggTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEzIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiPgogICAgICAgICAgICAgIDxJbmxpbmUgVHlwZT0iUnVuIiBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCIgVGV4dD0i77yIM++8ieWcqOaBkuWumueUtea1gUlGPTUwzrxB5p2h5Lu25LiL77yM5rWL57uYUE7nu5PmraPlkJHljovpmY1WRumaj+a4qeW6pueahOWPmOWMluabsue6v++8jOW5tuiuoeeul+eBteaVj+W6puOAgiIgVGV4dERlY29yYXRpb25zPSIiIC8+CiAgICAgICAgICAgIDwvUGFyYWdyYXBoPgogICAgICAgICAgICA8UGFyYWdyYXBoIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIj4KICAgICAgICAgICAgICA8SW5saW5lIFR5cGU9IlJ1biIgTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEzIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiIFRleHQ9Iu+8iDTvvInorqHnrpfnjrvlsJTlhbnmm7zluLjmlbBr44CCIiBUZXh0RGVjb3JhdGlvbnM9IiIgLz4KICAgICAgICAgICAgPC9QYXJhZ3JhcGg+CiAgICAgICAgICAgIDxQYXJhZ3JhcGggTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEzIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiPgogICAgICAgICAgICAgIDxJbmxpbmUgVHlwZT0iUnVuIiBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCIgVGV4dD0i77yINe+8ieaxguiiq+a1i1BO57uT5q2j5ZCR5Y6L6ZmN6ZqP5rip5bqm5Y+Y5YyW55qE54G15pWP5bqmUyhtVi/ihIMp44CCIiBUZXh0RGVjb3JhdGlvbnM9IiIgLz4KICAgICAgICAgICAgPC9QYXJhZ3JhcGg+CiAgICAgICAgICAgIDxQYXJhZ3JhcGggTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEzIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiPgogICAgICAgICAgICAgIDxJbmxpbmUgVHlwZT0iUnVuIiBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCIgVGV4dD0i77yINu+8ieS8sOeul+iiq+a1i1BO57uT55qE56aB5bim5a695bqmRWcoMCnjgIIiIFRleHREZWNvcmF0aW9ucz0iIiAvPgogICAgICAgICAgICA8L1BhcmFncmFwaD4KICAgICAgICAgICAgPFBhcmFncmFwaCBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCI+CiAgICAgICAgICAgICAgPElubGluZSBUeXBlPSJSdW4iIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIiBUZXh0PSLvvIg377yJ5qC55o2u5rWL6YeP57uT5p6c77yM5a6M5oiQ5a6e6aqM6KGo5qC844CCIiBUZXh0RGVjb3JhdGlvbnM9IiIgLz4KICAgICAgICAgICAgPC9QYXJhZ3JhcGg+CiAgICAgICAgICA8L0RPQz4KICAgICAgICA8L1NjcmlwdD4KICAgICAgPC9LZXlQb2ludD4KICAgICAgPENoZWNrUG9pbnQ+CiAgICAgICAgPFNjcmlwdD4KICAgICAgICAgIDxET0M+CiAgICAgICAgICAgIDxQYXJhZ3JhcGggTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEzIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiPgogICAgICAgICAgICAgIDxJbmxpbmUgVHlwZT0iUnVuIiBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCIgVGV4dD0iUE7nu5PniannkIbnibnmgKfmtYvor5XjgIIiIFRleHREZWNvcmF0aW9ucz0iIiAvPgogICAgICAgICAgICA8L1BhcmFncmFwaD4KICAgICAgICAgICAgPFBhcmFncmFwaCBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCI+CiAgICAgICAgICAgICAgPElubGluZSBUeXBlPSJSdW4iIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIiBUZXh0PSLvvIgx77yJ5qC55o2u5a6e6aqM5Y6f55CG77yM6L+e5o6l5a6e6aqM57q/6Lev5bm25L+d5a2Y5a6e6aqM6L+e57q/44CCIiBUZXh0RGVjb3JhdGlvbnM9IiIgLz4KICAgICAgICAgICAgPC9QYXJhZ3JhcGg+CiAgICAgICAgICAgIDxQYXJhZ3JhcGggTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEzIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiPgogICAgICAgICAgICAgIDxJbmxpbmUgVHlwZT0iUnVuIiBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCIgVGV4dD0i77yIMu+8ieWcqOaBkuWumua4qeW6puadoeS7tuS4i++8jOa1i+mHj+ato+WQkeeUteWOi+maj+ato+WQkeeUtea1geeahOWPmOWMluWFs+ezu++8jOe7mOWItuS8j+WuieeJueaAp+absue6v+OAgiIgVGV4dERlY29yYXRpb25zPSIiIC8+CiAgICAgICAgICAgIDwvUGFyYWdyYXBoPgogICAgICAgICAgICA8UGFyYWdyYXBoIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIj4KICAgICAgICAgICAgICA8SW5saW5lIFR5cGU9IlJ1biIgTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEzIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiIFRleHQ9Iu+8iDPvvInlnKjmgZLlrprnlLXmtYFJRj01MM68QeadoeS7tuS4i++8jOa1i+e7mFBO57uT5q2j5ZCR5Y6L6ZmNVkbpmo/muKnluqbnmoTlj5jljJbmm7Lnur/vvIzlubborqHnrpfngbXmlY/luqbjgIIiIFRleHREZWNvcmF0aW9ucz0iIiAvPgogICAgICAgICAgICA8L1BhcmFncmFwaD4KICAgICAgICAgICAgPFBhcmFncmFwaCBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCI+CiAgICAgICAgICAgICAgPElubGluZSBUeXBlPSJSdW4iIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIiBUZXh0PSLvvIg077yJ6K6h566X54675bCU5YW55pu85bi45pWwa+OAgiIgVGV4dERlY29yYXRpb25zPSIiIC8+CiAgICAgICAgICAgIDwvUGFyYWdyYXBoPgogICAgICAgICAgICA8UGFyYWdyYXBoIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIj4KICAgICAgICAgICAgICA8SW5saW5lIFR5cGU9IlJ1biIgTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEzIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiIFRleHQ9Iu+8iDXvvInmsYLooqvmtYtQTue7k+ato+WQkeWOi+mZjemaj+a4qeW6puWPmOWMlueahOeBteaVj+W6plMobVYv4oSDKeOAgiIgVGV4dERlY29yYXRpb25zPSIiIC8+CiAgICAgICAgICAgIDwvUGFyYWdyYXBoPgogICAgICAgICAgICA8UGFyYWdyYXBoIE5hbWU9IiIgRm9udEZhbWlseT0iUG9ydGFibGUgVXNlciBJbnRlcmZhY2UiIEZvbnRTaXplPSIxMyIgRm9udFN0cmV0Y2g9Ik5vcm1hbCIgRm9udFN0eWxlPSJOb3JtYWwiIEZvbnRXZWlnaHQ9Ik5vcm1hbCIgRm9yZWdyb3VuZD0iI0ZGMDAwMDAwIj4KICAgICAgICAgICAgICA8SW5saW5lIFR5cGU9IlJ1biIgTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEzIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiIFRleHQ9Iu+8iDbvvInkvLDnrpfooqvmtYtQTue7k+eahOemgeW4puWuveW6pkVnKDAp44CCIiBUZXh0RGVjb3JhdGlvbnM9IiIgLz4KICAgICAgICAgICAgPC9QYXJhZ3JhcGg+CiAgICAgICAgICAgIDxQYXJhZ3JhcGggTmFtZT0iIiBGb250RmFtaWx5PSJQb3J0YWJsZSBVc2VyIEludGVyZmFjZSIgRm9udFNpemU9IjEzIiBGb250U3RyZXRjaD0iTm9ybWFsIiBGb250U3R5bGU9Ik5vcm1hbCIgRm9udFdlaWdodD0iTm9ybWFsIiBGb3JlZ3JvdW5kPSIjRkYwMDAwMDAiPgogICAgICAgICAgICAgIDxJbmxpbmUgVHlwZT0iUnVuIiBOYW1lPSIiIEZvbnRGYW1pbHk9IlBvcnRhYmxlIFVzZXIgSW50ZXJmYWNlIiBGb250U2l6ZT0iMTMiIEZvbnRTdHJldGNoPSJOb3JtYWwiIEZvbnRTdHlsZT0iTm9ybWFsIiBGb250V2VpZ2h0PSJOb3JtYWwiIEZvcmVncm91bmQ9IiNGRjAwMDAwMCIgVGV4dD0i77yIN++8ieagueaNrua1i+mHj+e7k+aenO+8jOWujOaIkOWunumqjOihqOagvOOAgiIgVGV4dERlY29yYXRpb25zPSIiIC8+CiAgICAgICAgICAgIDwvUGFyYWdyYXBoPgogICAgICAgICAgPC9ET0M+CiAgICAgICAgPC9TY3JpcHQ+CiAgICAgICAgPCEtLTHjgIHov57nur8gICAxNeWIhi0tPgogICAgICAgIDxUZXN0VGFyZ2V0PgogICAgICAgICAgPFNjcmlwdD7ov57nur88L1NjcmlwdD4KICAgICAgICAgIDxHcm91cD4KICAgICAgICAgICAgPFBhcmEgU3R1ZGVudFZpc2libGU9ImZhbHNlIj4KICAgICAgICAgICAgICA8U24+MTwvU24+CiAgICAgICAgICAgICAgPE5hbWU+TGluZUNvbm5TdGF0dXM8L05hbWU+CiAgICAgICAgICAgICAgPFZhclR5cGU+Ym9vbDwvVmFyVHlwZT4KICAgICAgICAgICAgICA8U2NyaXB0PuWwhueUtei3r+i/nuaOpeWlve+8jOeEtuWQjueCueWHu+aMiemSruS/neWtmOi/nue6v+eKtuaAgTwvU2NyaXB0PgogICAgICAgICAgICAgIDxSZWFsUmVzdWx0PnRydWU8L1JlYWxSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdD50cnVlPC9TdGRSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdFNob3dJbmZvPui/nuaOpeaIkOWKnzwvU3RkUmVzdWx0U2hvd0luZm8+CiAgICAgICAgICAgICAgPFN0ZFNvdXJjZT5FeHA8L1N0ZFNvdXJjZT4KICAgICAgICAgICAgICA8VG90YWxTY29yZT4xNTwvVG90YWxTY29yZT4KICAgICAgICAgICAgICA8UmVhbFNjb3JlPjE1PC9SZWFsU2NvcmU+CiAgICAgICAgICAgICAgPEp1ZGdlUnVsZT4KICAgICAgICAgICAgICAgIDxSaWdodFJ1bGU+CiAgICAgICAgICAgICAgICAgIDxTY29yZT4xNTwvU2NvcmU+CiAgICAgICAgICAgICAgICAgIDxSdWxlU2hvd0luZm8+6L+e5o6l5oiQ5YqfPC9SdWxlU2hvd0luZm8+CiAgICAgICAgICAgICAgICA8L1JpZ2h0UnVsZT4KICAgICAgICAgICAgICAgIDxXcm9uZ1J1bGU+CiAgICAgICAgICAgICAgICAgIDxTY29yZT4wPC9TY29yZT4KICAgICAgICAgICAgICAgICAgPFJ1bGVTaG93SW5mbz7ov57mjqXlpLHotKU8L1J1bGVTaG93SW5mbz4KICAgICAgICAgICAgICAgIDwvV3JvbmdSdWxlPgogICAgICAgICAgICAgIDwvSnVkZ2VSdWxlPgogICAgICAgICAgICAgIDxTdHVkZW50UmVzdWx0U2hvd0luZm8+6L+e5o6l5aSx6LSlPC9TdHVkZW50UmVzdWx0U2hvd0luZm8+CiAgICAgICAgICAgIDwvUGFyYT4KICAgICAgICAgIDwvR3JvdXA+CiAgICAgICAgICA8UmVhbFNjb3JlPjE1PC9SZWFsU2NvcmU+CiAgICAgICAgPC9UZXN0VGFyZ2V0PgogICAgICAgIDwhLS0y44CB5rWL6YeP5q2j5ZCR55S15Y6L6ZqP5q2j5ZCR55S15rWB55qE5Y+Y5YyW5YWz57O7ICAgMTDliIYtLT4KICAgICAgICA8VGVzdFRhcmdldD4KICAgICAgICAgIDxTY3JpcHQ+5rWL6YeP5q2j5ZCR55S15Y6L6ZqP5q2j5ZCR55S15rWB55qE5Y+Y5YyW5YWz57O7PC9TY3JpcHQ+CiAgICAgICAgICA8R3JvdXA+CiAgICAgICAgICAgIDxQYXJhIFN0dWRlbnRWaXNpYmxlPSJUcnVlIj4KICAgICAgICAgICAgICA8c24+MTE8L3NuPgogICAgICAgICAgICAgIDxOYW1lPkFWTGlzdDwvTmFtZT4KICAgICAgICAgICAgICA8VmFyVHlwZSBDb3VudD0iMTkiPlRMaXN0PC9WYXJUeXBlPgogICAgICAgICAgICAgIDxTY3JpcHQ+6YCJ5Y+W5rip5bqm5YC85Li6MzDihIPvvIzlvoXmuKnluqbmgZLlrprlkI7lvIDlp4vlrp7pqozjgILosIPoioLnlLXmtYHml4vpkq7vvIzkvb9JRumAkOa4kOWinuWkp++8jOato+WQkeWOi+mZjVZG5bCG6ZqP5LmL5aKe5aSn44CC6KaB5rGCVkblnKgwLjQ1MFYtMC41NDBW6IyD5Zu05YaF5q+P5Y+Y5YyWMC4wMDVW6K6w5b2V5a+55bqU55qESUbvvIznu5jliLZJRi1WRuabsue6v+OAgjwvU2NyaXB0PgogICAgICAgICAgICAgIDxSZWFsUmVzdWx0PihWRihWKSxJRijOvEEpKTsoMC40NTAsMS45NzQpOygwLjQ1NSwyLjM5MSk7KDAuNDYwLDIuODk1KTsoMC40NjUsMy41MDYpOygwLjQ3MCw0LjI0Nik7KDAuNDc1LDUuMTQxKTsoMC40ODAsNi4yMjYpOygwLjQ4NSw3LjUzOSk7KDAuNDkwLDkuMTMwKTsoMC40OTUsMTEuMDU2KTsoMC41MDAsMTMuMzg4KTsoMC41MDUsMTYuMjEzKTsoMC41MTAsMTkuNjMzKTsoMC41MTUsMjMuNzc0KTsoMC41MjAsMjguNzkwKTsoMC41MjUsMzQuODYzKTsoMC41MzAsNDIuMjE3KTsoMC41MzUsNTEuMTIzKTsoMC41NDAsNjEuOTA4KTwvUmVhbFJlc3VsdD4KICAgICAgICAgICAgICA8U3RkUmVzdWx0PihWRihWKSxJRijOvEEpKTsoMC40NTAsMS45NzQpOygwLjQ1NSwyLjM5MSk7KDAuNDYwLDIuODk1KTsoMC40NjUsMy41MDYpOygwLjQ3MCw0LjI0Nik7KDAuNDc1LDUuMTQxKTsoMC40ODAsNi4yMjYpOygwLjQ4NSw3LjUzOSk7KDAuNDkwLDkuMTMwKTsoMC40OTUsMTEuMDU2KTsoMC41MDAsMTMuMzg4KTsoMC41MDUsMTYuMjEzKTsoMC41MTAsMTkuNjMzKTsoMC41MTUsMjMuNzc0KTsoMC41MjAsMjguNzkwKTsoMC41MjUsMzQuODYzKTsoMC41MzAsNDIuMjE3KTsoMC41MzUsNTEuMTIzKTsoMC41NDAsNjEuOTA4KTwvU3RkUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRSZXN1bHRTaG93SW5mbz7ljp/lgLw8L1N0ZFJlc3VsdFNob3dJbmZvPgogICAgICAgICAgICAgIDxTdGRTb3VyY2U+RXhwPC9TdGRTb3VyY2U+CiAgICAgICAgICAgICAgPFRvdGFsU2NvcmU+MTk8L1RvdGFsU2NvcmU+CiAgICAgICAgICAgICAgPFJlYWxTY29yZT4xOTwvUmVhbFNjb3JlPgogICAgICAgICAgICAgIDxQYXJhPgogICAgICAgICAgICAgICAgPFNuPjA8L1NuPgogICAgICAgICAgICAgICAgPE5hbWU+SU5ERVg8L05hbWU+CiAgICAgICAgICAgICAgICA8U2NyaXB0PlZGKFYpOzAuNDUwOzAuNDU1OzAuNDYwOzAuNDY1OzAuNDcwOzAuNDc1OzAuNDgwOzAuNDg1OzAuNDkwOzAuNDk1OzAuNTAwOzAuNTA1OzAuNTEwOzAuNTE1OzAuNTIwOzAuNTI1OzAuNTMwOzAuNTM1OzAuNTQwPC9TY3JpcHQ+CiAgICAgICAgICAgICAgICA8VmFyVHlwZT5kb3VibGU8L1ZhclR5cGU+CiAgICAgICAgICAgICAgICA8UmVhbFJlc3VsdD7mnKrnn6U8L1JlYWxSZXN1bHQ+CiAgICAgICAgICAgICAgICA8U3RkUmVzdWx0PuacquefpTwvU3RkUmVzdWx0PgogICAgICAgICAgICAgICAgPFN0ZFNvdXJjZT5FeHA8L1N0ZFNvdXJjZT4KICAgICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICAgICAgPFBhcmE+CiAgICAgICAgICAgICAgICA8c24+MTwvc24+CiAgICAgICAgICAgICAgICA8TmFtZT5BbWV0ZXI8L05hbWU+CiAgICAgICAgICAgICAgICA8U2NyaXB0PklGKM68QSk8L1NjcmlwdD4KICAgICAgICAgICAgICAgIDxWYXJUeXBlPmRvdWJsZTwvVmFyVHlwZT4KICAgICAgICAgICAgICAgIDxSZWFsUmVzdWx0PuacquefpTwvUmVhbFJlc3VsdD4KICAgICAgICAgICAgICAgIDxTdGRSZXN1bHQ+5pyq55+lPC9TdGRSZXN1bHQ+CiAgICAgICAgICAgICAgICA8U3RkU291cmNlPkV4cDwvU3RkU291cmNlPgogICAgICAgICAgICAgICAgPFRvdGFsU2NvcmU+MTk8L1RvdGFsU2NvcmU+CiAgICAgICAgICAgICAgICA8UmVhbFNjb3JlPjE5PC9SZWFsU2NvcmU+CiAgICAgICAgICAgICAgICA8SnVkZ2VSdWxlPgogICAgICAgICAgICAgICAgICA8UnVsZT4KICAgICAgICAgICAgICAgICAgICA8U3RkVmFsdWU+MTwvU3RkVmFsdWU+CiAgICAgICAgICAgICAgICAgICAgPFJhbmdlPgogICAgICAgICAgICAgICAgICAgICAgPFR5cGU+55m+5YiG5q+UPC9UeXBlPgogICAgICAgICAgICAgICAgICAgICAgPE1pbj4tMC4xMDwvTWluPgogICAgICAgICAgICAgICAgICAgICAgPE1heD4wLjEwPC9NYXg+CiAgICAgICAgICAgICAgICAgICAgPC9SYW5nZT4KICAgICAgICAgICAgICAgICAgICA8U2NvcmU+MS4wPC9TY29yZT4KICAgICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuWunumZhea1i+mHj+WBj+W3rjwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgICA8L1J1bGU+CiAgICAgICAgICAgICAgICA8L0p1ZGdlUnVsZT4KICAgICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICAgIDwvUGFyYT4KICAgICAgICAgICAgPFBhcmEgU3R1ZGVudFZpc2libGU9InRydWUiPgogICAgICAgICAgICAgIDxTbj4xPC9Tbj4KICAgICAgICAgICAgICA8TmFtZT5CRVpDU0s8L05hbWU+CiAgICAgICAgICAgICAgPFZhclR5cGU+ZG91YmxlPC9WYXJUeXBlPgogICAgICAgICAgICAgIDxTY3JpcHQ+6K6h566X5b6X5Yiw55qE5rOi5bCU5YW55pu85bi45pWwSyjljZXkvY3vvJoxMC0yM0ovSyk9PC9TY3JpcHQ+CiAgICAgICAgICAgICAgPFJlYWxSZXN1bHQ+MS4zODE8L1JlYWxSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdD4xLjM4MTwvU3RkUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRSZXN1bHRTaG93SW5mbz7ljp/lgLw8L1N0ZFJlc3VsdFNob3dJbmZvPgogICAgICAgICAgICAgIDxTdGRTb3VyY2U+RXhwPC9TdGRTb3VyY2U+CiAgICAgICAgICAgICAgPFRvdGFsU2NvcmU+OTwvVG90YWxTY29yZT4KICAgICAgICAgICAgICA8UmVhbFNjb3JlPjk8L1JlYWxTY29yZT4KICAgICAgICAgICAgICA8SnVkZ2VSdWxlPgogICAgICAgICAgICAgICAgPFJ1bGU+CiAgICAgICAgICAgICAgICAgIDxTdGRWYWx1ZT4xPC9TdGRWYWx1ZT4KICAgICAgICAgICAgICAgICAgPFJhbmdlPgogICAgICAgICAgICAgICAgICAgIDxUeXBlPueZvuWIhuavlDwvVHlwZT4KICAgICAgICAgICAgICAgICAgICA8TWluPi0wLjEwPC9NaW4+CiAgICAgICAgICAgICAgICAgICAgPE1heD4wLjEwPC9NYXg+CiAgICAgICAgICAgICAgICAgIDwvUmFuZ2U+CiAgICAgICAgICAgICAgICAgIDxTY29yZT45PC9TY29yZT4KICAgICAgICAgICAgICAgICAgPFJ1bGVTaG93SW5mbz7lrp7pmYXmtYvph4/lgY/lt648L1J1bGVTaG93SW5mbz4KICAgICAgICAgICAgICAgIDwvUnVsZT4KICAgICAgICAgICAgICAgIDxSdWxlPgogICAgICAgICAgICAgICAgICA8U3RkVmFsdWU+MTwvU3RkVmFsdWU+CiAgICAgICAgICAgICAgICAgIDxSYW5nZT4KICAgICAgICAgICAgICAgICAgICA8VHlwZT7nmb7liIbmr5Q8L1R5cGU+CiAgICAgICAgICAgICAgICAgICAgPE1pbj4tMC4yMDwvTWluPgogICAgICAgICAgICAgICAgICAgIDxNYXg+MC4yMDwvTWF4PgogICAgICAgICAgICAgICAgICA8L1JhbmdlPgogICAgICAgICAgICAgICAgICA8U2NvcmU+NTwvU2NvcmU+CiAgICAgICAgICAgICAgICAgIDxSdWxlU2hvd0luZm8+5a6e6ZmF5rWL6YeP5YGP5beuPC9SdWxlU2hvd0luZm8+CiAgICAgICAgICAgICAgICA8L1J1bGU+CiAgICAgICAgICAgICAgPC9KdWRnZVJ1bGU+CiAgICAgICAgICAgIDwvUGFyYT4KICAgICAgICAgIDwvR3JvdXA+CiAgICAgICAgICA8UmVhbFNjb3JlPjQ3PC9SZWFsU2NvcmU+CiAgICAgICAgPC9UZXN0VGFyZ2V0PgogICAgICAgIDwhLS0z44CB5rWL57uYUE7nu5PmraPlkJHljovpmY1WRumaj+a4qeW6pueahOWPmOWMluabsue6vyAgIDEw5YiGLS0+CiAgICAgICAgPFRlc3RUYXJnZXQ+CiAgICAgICAgICA8U2NyaXB0Pua1i+mHj+ato+WQkeeUteWOi+maj+a4qeW6pueahOWPmOWMluWFs+ezuzwvU2NyaXB0PgogICAgICAgICAgPEdyb3VwPgogICAgICAgICAgICA8UGFyYSBTdHVkZW50VmlzaWJsZT0iVHJ1ZSI+CiAgICAgICAgICAgICAgPHNuPjExPC9zbj4KICAgICAgICAgICAgICA8TmFtZT5QVExpc3Q8L05hbWU+CiAgICAgICAgICAgICAgPFZhclR5cGUgQ291bnQ9IjExIj5UTGlzdDwvVmFyVHlwZT4KICAgICAgICAgICAgICA8U2NyaXB0PuWcqOaBkuWumueUtea1gUlGPTUwzrxB5p2h5Lu25LiL77yM5rWL57uYUE7nu5PmraPlkJHljovpmY1WRumaj+a4qeW6pueahOWPmOWMluabsue6v++8jOimgeaxguWcqDMw4oSDfjgw4oSD5bem5Y+z5rip5bqm6IyD5Zu077yI5rip5bqm5LiN5a6c5aSq6auY77yJ5YaF5q+P6ZqUNeKEg+a1i+mHj+S4gOS4queCue+8jOWNh+a4qei/h+eoi+WSjOmZjea4qei/h+eoi+WQhOa1i+S4gOmBje+8jOiusOW9leWvueW6lOeahFZG77yM56Gu5a6a5YW254G15pWP5bqm44CCPC9TY3JpcHQ+CiAgICAgICAgICAgICAgPFJlYWxSZXN1bHQ+KOa4qeW6puWAvO+8iOKEg++8iSzljYfmuKlWRihWKSzpmY3muKlWRihWKSxWRuW5s+Wdh+WAvChWKSk7KDMwLDAuNTM0LDAuNTM0LDAuNTM0KTsoMzUsMC41MjMsMC41MjMsMC41MjMpOyg0MCwwLjUxMSwwLjUxMSwwLjUxMSk7KDQ1LDAuNTAwLDAuNTAwLDAuNTAwKTsoNTAsMC40ODksMC40ODksMC40ODkpOyg1NSwwLjQ3NywwLjQ3NywwLjQ3Nyk7KDYwLDAuNDY2LDAuNDY2LDAuNDY2KTsoNjUsMC40NTQsMC40NTQsMC40NTQpOyg3MCwwLjQ0MywwLjQ0MywwLjQ0Myk7KDc1LDAuNDMxLDAuNDMxLDAuNDMxKTsoODAsMC40MjAsMC40MjAsMC40MjApPC9SZWFsUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRSZXN1bHQ+KOa4qeW6puWAvO+8iOKEg++8iSzljYfmuKlWRihWKSzpmY3muKlWRihWKSxWRuW5s+Wdh+WAvChWKSk7KDMwLDAuNTM0LDAuNTM0LDAuNTM0KTsoMzUsMC41MjMsMC41MjMsMC41MjMpOyg0MCwwLjUxMSwwLjUxMSwwLjUxMSk7KDQ1LDAuNTAwLDAuNTAwLDAuNTAwKTsoNTAsMC40ODksMC40ODksMC40ODkpOyg1NSwwLjQ3NywwLjQ3NywwLjQ3Nyk7KDYwLDAuNDY2LDAuNDY2LDAuNDY2KTsoNjUsMC40NTQsMC40NTQsMC40NTQpOyg3MCwwLjQ0MywwLjQ0MywwLjQ0Myk7KDc1LDAuNDMxLDAuNDMxLDAuNDMxKTsoODAsMC40MjAsMC40MjAsMC40MjApPC9TdGRSZXN1bHQ+CiAgICAgICAgICAgICAgPFN0ZFJlc3VsdFNob3dJbmZvPuWOn+WAvDwvU3RkUmVzdWx0U2hvd0luZm8+CiAgICAgICAgICAgICAgPFN0ZFNvdXJjZT5FeHA8L1N0ZFNvdXJjZT4KICAgICAgICAgICAgICA8VG90YWxTY29yZT4zMzwvVG90YWxTY29yZT4KICAgICAgICAgICAgICA8UmVhbFNjb3JlPjMzPC9SZWFsU2NvcmU+CiAgICAgICAgICAgICAgPFBhcmE+CiAgICAgICAgICAgICAgICA8U24+MDwvU24+CiAgICAgICAgICAgICAgICA8TmFtZT5JTkRFWDwvTmFtZT4KICAgICAgICAgICAgICAgIDxTY3JpcHQ+5rip5bqm5YC877yI4oSD77yJOzMwOzM1OzQwOzQ1OzUwOzU1OzYwOzY1OzcwOzc1OzgwPC9TY3JpcHQ+CiAgICAgICAgICAgICAgICA8VmFyVHlwZT5pbnQ8L1ZhclR5cGU+CiAgICAgICAgICAgICAgICA8UmVhbFJlc3VsdD7mnKrnn6U8L1JlYWxSZXN1bHQ+CiAgICAgICAgICAgICAgICA8U3RkUmVzdWx0PuacquefpTwvU3RkUmVzdWx0PgogICAgICAgICAgICAgICAgPFN0ZFNvdXJjZT5FeHA8L1N0ZFNvdXJjZT4KICAgICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICAgICAgPFBhcmE+CiAgICAgICAgICAgICAgICA8c24+MTwvc24+CiAgICAgICAgICAgICAgICA8TmFtZT5TaGVuV2VuPC9OYW1lPgogICAgICAgICAgICAgICAgPFNjcmlwdD7ljYfmuKlWRihWKTwvU2NyaXB0PgogICAgICAgICAgICAgICAgPFZhclR5cGU+ZG91YmxlPC9WYXJUeXBlPgogICAgICAgICAgICAgICAgPFJlYWxSZXN1bHQ+5pyq55+lPC9SZWFsUmVzdWx0PgogICAgICAgICAgICAgICAgPFN0ZFJlc3VsdD7mnKrnn6U8L1N0ZFJlc3VsdD4KICAgICAgICAgICAgICAgIDxTdGRTb3VyY2U+RXhwPC9TdGRTb3VyY2U+CiAgICAgICAgICAgICAgICA8VG90YWxTY29yZT4xMTwvVG90YWxTY29yZT4KICAgICAgICAgICAgICAgIDxSZWFsU2NvcmU+MTE8L1JlYWxTY29yZT4KICAgICAgICAgICAgICAgIDxKdWRnZVJ1bGU+CiAgICAgICAgICAgICAgICAgIDxSdWxlPgogICAgICAgICAgICAgICAgICAgIDxTdGRWYWx1ZT4xPC9TdGRWYWx1ZT4KICAgICAgICAgICAgICAgICAgICA8UmFuZ2U+CiAgICAgICAgICAgICAgICAgICAgICA8VHlwZT7nu53lr7nlgLw8L1R5cGU+CiAgICAgICAgICAgICAgICAgICAgICA8TWluPi0wLjAwNTwvTWluPgogICAgICAgICAgICAgICAgICAgICAgPE1heD4wLjAwNTwvTWF4PgogICAgICAgICAgICAgICAgICAgIDwvUmFuZ2U+CiAgICAgICAgICAgICAgICAgICAgPFNjb3JlPjE8L1Njb3JlPgogICAgICAgICAgICAgICAgICAgIDxSdWxlU2hvd0luZm8+5a6e6ZmF5rWL6YeP5YGP5beuPC9SdWxlU2hvd0luZm8+CiAgICAgICAgICAgICAgICAgIDwvUnVsZT4KICAgICAgICAgICAgICAgIDwvSnVkZ2VSdWxlPgogICAgICAgICAgICAgIDwvUGFyYT4KICAgICAgICAgICAgICA8UGFyYT4KICAgICAgICAgICAgICAgIDxzbj4yPC9zbj4KICAgICAgICAgICAgICAgIDxOYW1lPkppYW5nV2VuPC9OYW1lPgogICAgICAgICAgICAgICAgPFNjcmlwdD7pmY3muKlWRihWKTwvU2NyaXB0PgogICAgICAgICAgICAgICAgPFZhclR5cGU+ZG91YmxlPC9WYXJUeXBlPgogICAgICAgICAgICAgICAgPFJlYWxSZXN1bHQ+5pyq55+lPC9SZWFsUmVzdWx0PgogICAgICAgICAgICAgICAgPFN0ZFJlc3VsdD7mnKrnn6U8L1N0ZFJlc3VsdD4KICAgICAgICAgICAgICAgIDxTdGRTb3VyY2U+RXhwPC9TdGRTb3VyY2U+CiAgICAgICAgICAgICAgICA8VG90YWxTY29yZT4xMTwvVG90YWxTY29yZT4KICAgICAgICAgICAgICAgIDxSZWFsU2NvcmU+MTE8L1JlYWxTY29yZT4KICAgICAgICAgICAgICAgIDxKdWRnZVJ1bGU+CiAgICAgICAgICAgICAgICAgIDxSdWxlPgogICAgICAgICAgICAgICAgICAgIDxTdGRWYWx1ZT4xPC9TdGRWYWx1ZT4KICAgICAgICAgICAgICAgICAgICA8UmFuZ2U+CiAgICAgICAgICAgICAgICAgICAgICA8VHlwZT7nu53lr7nlgLw8L1R5cGU+CiAgICAgICAgICAgICAgICAgICAgICA8TWluPi0wLjAwNTwvTWluPgogICAgICAgICAgICAgICAgICAgICAgPE1heD4wLjAwMDU8L01heD4KICAgICAgICAgICAgICAgICAgICA8L1JhbmdlPgogICAgICAgICAgICAgICAgICAgIDxTY29yZT4xPC9TY29yZT4KICAgICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuWunumZhea1i+mHj+WBj+W3rjwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgICA8L1J1bGU+CiAgICAgICAgICAgICAgICA8L0p1ZGdlUnVsZT4KICAgICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICAgICAgPFBhcmE+CiAgICAgICAgICAgICAgICA8c24+Mzwvc24+CiAgICAgICAgICAgICAgICA8TmFtZT5WRkFWRVI8L05hbWU+CiAgICAgICAgICAgICAgICA8U2NyaXB0PlZG5bmz5Z2H5YC8KFYpPC9TY3JpcHQ+CiAgICAgICAgICAgICAgICA8VmFyVHlwZT5kb3VibGU8L1ZhclR5cGU+CiAgICAgICAgICAgICAgICA8UmVhbFJlc3VsdD7mnKrnn6U8L1JlYWxSZXN1bHQ+CiAgICAgICAgICAgICAgICA8U3RkUmVzdWx0PuacquefpTwvU3RkUmVzdWx0PgogICAgICAgICAgICAgICAgPFN0ZFNvdXJjZT5FeHA8L1N0ZFNvdXJjZT4KICAgICAgICAgICAgICAgIDxUb3RhbFNjb3JlPjExPC9Ub3RhbFNjb3JlPgogICAgICAgICAgICAgICAgPFJlYWxTY29yZT4xMTwvUmVhbFNjb3JlPgogICAgICAgICAgICAgICAgPEp1ZGdlUnVsZT4KICAgICAgICAgICAgICAgICAgPFJ1bGU+CiAgICAgICAgICAgICAgICAgICAgPFN0ZFZhbHVlPjE8L1N0ZFZhbHVlPgogICAgICAgICAgICAgICAgICAgIDxSYW5nZT4KICAgICAgICAgICAgICAgICAgICAgIDxUeXBlPue7neWvueWAvDwvVHlwZT4KICAgICAgICAgICAgICAgICAgICAgIDxNaW4+LTAuMDA1PC9NaW4+CiAgICAgICAgICAgICAgICAgICAgICA8TWF4PjAuMDA1PC9NYXg+CiAgICAgICAgICAgICAgICAgICAgPC9SYW5nZT4KICAgICAgICAgICAgICAgICAgICA8U2NvcmU+MTwvU2NvcmU+CiAgICAgICAgICAgICAgICAgICAgPFJ1bGVTaG93SW5mbz7lrp7pmYXmtYvph4/lgY/lt648L1J1bGVTaG93SW5mbz4KICAgICAgICAgICAgICAgICAgPC9SdWxlPgogICAgICAgICAgICAgICAgPC9KdWRnZVJ1bGU+CiAgICAgICAgICAgICAgPC9QYXJhPgogICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICAgIDxQYXJhIFN0dWRlbnRWaXNpYmxlPSJ0cnVlIj4KICAgICAgICAgICAgICA8U24+MTwvU24+CiAgICAgICAgICAgICAgPE5hbWU+TGluZ01pbkR1PC9OYW1lPgogICAgICAgICAgICAgIDxWYXJUeXBlPmRvdWJsZTwvVmFyVHlwZT4KICAgICAgICAgICAgICA8U2NyaXB0PlBO57uT5q2j5ZCR5Y6L6ZmN6ZqP5rip5bqm5Y+Y5YyW55qE54G15pWP5bqmUyjljZXkvY3vvJptVi/ihIMpPTwvU2NyaXB0PgogICAgICAgICAgICAgIDxSZWFsUmVzdWx0Pi0yLjI5PC9SZWFsUmVzdWx0PgogICAgICAgICAgICAgIDxTdGRSZXN1bHQ+LTIuMjk8L1N0ZFJlc3VsdD4KICAgICAgICAgICAgICA8U3RkUmVzdWx0U2hvd0luZm8+5Y6f5YC8PC9TdGRSZXN1bHRTaG93SW5mbz4KICAgICAgICAgICAgICA8U3RkU291cmNlPkV4cDwvU3RkU291cmNlPgogICAgICAgICAgICAgIDxUb3RhbFNjb3JlPjEyPC9Ub3RhbFNjb3JlPgogICAgICAgICAgICAgIDxSZWFsU2NvcmU+MTI8L1JlYWxTY29yZT4KICAgICAgICAgICAgICA8SnVkZ2VSdWxlPgogICAgICAgICAgICAgICAgPFJ1bGU+CiAgICAgICAgICAgICAgICAgIDxTdGRWYWx1ZT4xPC9TdGRWYWx1ZT4KICAgICAgICAgICAgICAgICAgPFJhbmdlPgogICAgICAgICAgICAgICAgICAgIDxUeXBlPueZvuWIhuavlDwvVHlwZT4KICAgICAgICAgICAgICAgICAgICA8TWluPi0wLjA1PC9NaW4+CiAgICAgICAgICAgICAgICAgICAgPE1heD4wLjA1PC9NYXg+CiAgICAgICAgICAgICAgICAgIDwvUmFuZ2U+CiAgICAgICAgICAgICAgICAgIDxTY29yZT4xMjwvU2NvcmU+CiAgICAgICAgICAgICAgICAgIDxSdWxlU2hvd0luZm8+5a6e6ZmF5rWL6YeP5YGP5beuPC9SdWxlU2hvd0luZm8+CiAgICAgICAgICAgICAgICA8L1J1bGU+CiAgICAgICAgICAgICAgICA8UnVsZT4KICAgICAgICAgICAgICAgICAgPFN0ZFZhbHVlPjE8L1N0ZFZhbHVlPgogICAgICAgICAgICAgICAgICA8UmFuZ2U+CiAgICAgICAgICAgICAgICAgICAgPFR5cGU+55m+5YiG5q+UPC9UeXBlPgogICAgICAgICAgICAgICAgICAgIDxNaW4+LTAuMTA8L01pbj4KICAgICAgICAgICAgICAgICAgICA8TWF4PjAuMTA8L01heD4KICAgICAgICAgICAgICAgICAgPC9SYW5nZT4KICAgICAgICAgICAgICAgICAgPFNjb3JlPjY8L1Njb3JlPgogICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuWunumZhea1i+mHj+WBj+W3rjwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgPC9SdWxlPgogICAgICAgICAgICAgIDwvSnVkZ2VSdWxlPgogICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICAgIDxQYXJhIFN0dWRlbnRWaXNpYmxlPSJ0cnVlIj4KICAgICAgICAgICAgICA8U24+MTwvU24+CiAgICAgICAgICAgICAgPE5hbWU+RWdaaGk8L05hbWU+CiAgICAgICAgICAgICAgPFZhclR5cGU+ZG91YmxlPC9WYXJUeXBlPgogICAgICAgICAgICAgIDxTY3JpcHQ+5Lyw566X6KKr5rWLUE7nu5PnmoTnpoHluKblrr3luqZFZygwKSjljZXkvY3vvJplVik9PC9TY3JpcHQ+CiAgICAgICAgICAgICAgPFJlYWxSZXN1bHQ+MS4yMzwvUmVhbFJlc3VsdD4KICAgICAgICAgICAgICA8U3RkUmVzdWx0PjEuMjM8L1N0ZFJlc3VsdD4KICAgICAgICAgICAgICA8U3RkUmVzdWx0U2hvd0luZm8+5Y6f5YC8PC9TdGRSZXN1bHRTaG93SW5mbz4KICAgICAgICAgICAgICA8U3RkU291cmNlPkV4cDwvU3RkU291cmNlPgogICAgICAgICAgICAgIDxUb3RhbFNjb3JlPjEyPC9Ub3RhbFNjb3JlPgogICAgICAgICAgICAgIDxSZWFsU2NvcmU+MTI8L1JlYWxTY29yZT4KICAgICAgICAgICAgICA8SnVkZ2VSdWxlPgogICAgICAgICAgICAgICAgPFJ1bGU+CiAgICAgICAgICAgICAgICAgIDxTdGRWYWx1ZT4xPC9TdGRWYWx1ZT4KICAgICAgICAgICAgICAgICAgPFJhbmdlPgogICAgICAgICAgICAgICAgICAgIDxUeXBlPueZvuWIhuavlDwvVHlwZT4KICAgICAgICAgICAgICAgICAgICA8TWluPi0wLjA1PC9NaW4+CiAgICAgICAgICAgICAgICAgICAgPE1heD4wLjA1PC9NYXg+CiAgICAgICAgICAgICAgICAgIDwvUmFuZ2U+CiAgICAgICAgICAgICAgICAgIDxTY29yZT4xMjwvU2NvcmU+CiAgICAgICAgICAgICAgICAgIDxSdWxlU2hvd0luZm8+5a6e6ZmF5rWL6YeP5YGP5beuPC9SdWxlU2hvd0luZm8+CiAgICAgICAgICAgICAgICA8L1J1bGU+CiAgICAgICAgICAgICAgICA8UnVsZT4KICAgICAgICAgICAgICAgICAgPFN0ZFZhbHVlPjE8L1N0ZFZhbHVlPgogICAgICAgICAgICAgICAgICA8UmFuZ2U+CiAgICAgICAgICAgICAgICAgICAgPFR5cGU+55m+5YiG5q+UPC9UeXBlPgogICAgICAgICAgICAgICAgICAgIDxNaW4+LTAuMTA8L01pbj4KICAgICAgICAgICAgICAgICAgICA8TWF4PjAuMTA8L01heD4KICAgICAgICAgICAgICAgICAgPC9SYW5nZT4KICAgICAgICAgICAgICAgICAgPFNjb3JlPjY8L1Njb3JlPgogICAgICAgICAgICAgICAgICA8UnVsZVNob3dJbmZvPuWunumZhea1i+mHj+WBj+W3rjwvUnVsZVNob3dJbmZvPgogICAgICAgICAgICAgICAgPC9SdWxlPgogICAgICAgICAgICAgIDwvSnVkZ2VSdWxlPgogICAgICAgICAgICA8L1BhcmE+CiAgICAgICAgICA8L0dyb3VwPgogICAgICAgICAgPFJlYWxTY29yZT45MDwvUmVhbFNjb3JlPgogICAgICAgIDwvVGVzdFRhcmdldD4KICAgICAgPC9DaGVja1BvaW50PgogICAgPC9RdWVzdGlvbj4KICA8L0NvbnRlbnQ+CjwvRXhhbVBhcGVyPg==
